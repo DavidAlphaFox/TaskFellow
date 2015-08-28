@@ -1,0 +1,7 @@
+<% boards.forEach( function (board) { %>
+  <a href="<%= "#/boards/" + board.id %>"><li><%= board.escape('title') %></li></a>
+<% }); %>
+
+<p>
+  <a href="#/boards/new">Create New Board</a>
+</p>

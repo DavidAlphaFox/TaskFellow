@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TrelloApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="errors">
+    <% if flash[:errors] %>
+      <% flash[:errors].each do |error| %>
+        <p>
+          <%= error %>
+        </p>
+      <% end %>
+    <% end %>
+  </div>
+  <div class="status-bar" align="right">
+    <% if logged_in? %>
+      <p>
+        <%= current_user.username %>
+      </p>
+      <p>
+        <%= button_to "Sign Out", session_url, method: :delete %>
+      </p>
+    <% else %>
+      <p>
+        <%= link_to "Sign In", new_session_url, target: :blank %>
+      </p>
+      <p>
+        <%= link_to "Sign Up", new_user_url, target: :blank %>
+      </p>
+    <% end %>
+  </div>
+<%= yield %>
+
+</body>
+</html>
