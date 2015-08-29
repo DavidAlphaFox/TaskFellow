@@ -17,9 +17,8 @@ class Api::BoardsController < ApplicationController
   end
 
   def show
-    @board = Board.find(params[:id])
+    @board = Board.includes(lists: :cards).find(params[:id])
     # generate lists variable so we can show them on the board show page
-    @lists = @board.lists
     render "show"
   end
 

@@ -42224,3 +42224,2939 @@ Processing by Api::BoardsController#show as JSON
   Rendered api/lists/_list.json.jbuilder (0.1ms)
   Rendered api/boards/show.json.jbuilder (5.9ms)
 Completed 200 OK in 12ms (Views: 8.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 13:34:03 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (3.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (1.9ms)
+  [1m[35mUser Load (4.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Apc-uX2a_fnXS7nf7_EOBA"]]
+Completed 200 OK in 1081ms (Views: 1063.4ms | ActiveRecord: 17.1ms)
+
+
+Started GET "/assets/api/boards.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 13:34:05 -0700
+
+
+Started GET "/assets/api/lists.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 13:34:05 -0700
+
+
+Started GET "/assets/api/cards.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 13:34:05 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 13:34:05 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 13:34:05 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 13:34:05 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-28 13:34:05 -0700
+
+
+Started GET "/assets/trello_app.self-d122dd122d7caf18e3c61d5994e0914a54c23464d1cc1d781cdf79467f185118.js?body=1" for ::1 at 2015-08-28 13:34:05 -0700
+
+
+Started GET "/assets/board/show.self-679183c6befed31b96c25bdf06d83eaff450eb6ad6a71c25741a3725148edbc7.js?body=1" for ::1 at 2015-08-28 13:34:05 -0700
+
+
+Started GET "/assets/board/index.self-6c5172487145153043448c902e41119663d9587a0fb427bcdee25524367736dd.js?body=1" for ::1 at 2015-08-28 13:34:05 -0700
+
+
+Started GET "/assets/board/index_deprecated.self-a4242141a646ffd0d5d69234f90ef816db80376549f581c0353d56fefa167133.js?body=1" for ::1 at 2015-08-28 13:34:05 -0700
+
+
+Started GET "/assets/board/index_item.self-2054b9d581b0849276cee8a37a2bf74741aea5bfc9a41bab9940863261958a2b.js?body=1" for ::1 at 2015-08-28 13:34:05 -0700
+
+
+Started GET "/assets/board/form.self-4feb192ae3a96572fad6f4f9d3f617ac73a9ef88a8907adc4c4b23f48cbfb181.js?body=1" for ::1 at 2015-08-28 13:34:05 -0700
+
+
+Started GET "/assets/list/form.self-f4e2fed226be1a99072f05907af25e983e4c8e0d8b24487938be2da045b098e5.js?body=1" for ::1 at 2015-08-28 13:34:05 -0700
+
+
+Started GET "/assets/list/list.self-112b0744a10ac9f11153a8826fe3a0fb822df9c4dab7ec9cb0eaa181bfb868f9.js?body=1" for ::1 at 2015-08-28 13:34:05 -0700
+
+
+Started GET "/assets/models/board.self-b809cae4ef5ebe5d0cbc18aeaefa314a262e339932c9a96c64fde49392946628.js?body=1" for ::1 at 2015-08-28 13:34:05 -0700
+
+
+Started GET "/assets/models/card.self-4ff4265caa2ac826c076b89881646b309ae2638092671a32b9e05bfae3eca8d6.js?body=1" for ::1 at 2015-08-28 13:34:05 -0700
+
+
+Started GET "/assets/models/list.self-3a473167bf07984f30a880681330dc0134f8128bc8e2980504861b4f255c06ce.js?body=1" for ::1 at 2015-08-28 13:34:05 -0700
+
+
+Started GET "/assets/collections/boards.self-8623aebb08152a5bd0231b78d968ccd3e389443b6a47b382966474c6fb162ee5.js?body=1" for ::1 at 2015-08-28 13:34:05 -0700
+
+
+Started GET "/assets/collections/cards.self-65f2e9e3989272b19bf5b723f7df22857105a3ca10e3a8194f52fd962fd2c97b.js?body=1" for ::1 at 2015-08-28 13:34:05 -0700
+
+
+Started GET "/assets/collections/lists.self-4f74425b3eb818e06f9c45d0f21191556449526f4b948af3a4233126e8776c8d.js?body=1" for ::1 at 2015-08-28 13:34:05 -0700
+
+
+Started GET "/assets/views/board/form.self-e1db94e694137e7e5c6220103c4a8149bd729a3f88a7c320e77c851e0cce0753.js?body=1" for ::1 at 2015-08-28 13:34:05 -0700
+
+
+Started GET "/assets/views/board/index.self-b5a95e29cd15b5acb38329d9a2524cf14e8201312e78581e209401bd93206de1.js?body=1" for ::1 at 2015-08-28 13:34:05 -0700
+
+
+Started GET "/assets/views/board/index_item.self-6883d167b8213f1411fe426bfba519e3b56e5f7972e24b6ed95941a66bb96850.js?body=1" for ::1 at 2015-08-28 13:34:05 -0700
+
+
+Started GET "/assets/views/board/show.self-f161a3f5c395a74daf9f102f8d1e01baf6b7453b6e60046402fcc4675950c503.js?body=1" for ::1 at 2015-08-28 13:34:05 -0700
+
+
+Started GET "/assets/views/card/card.self-8ac4a7854bdcf2b662dfcf27f5d0ccec9ef00e36a322142c577bbd2b5dc1d589.js?body=1" for ::1 at 2015-08-28 13:34:05 -0700
+
+
+Started GET "/assets/views/list/form.self-05546ef01c4e33fb284aae0859f2a24cf93274877776230df59d9c658fbf6593.js?body=1" for ::1 at 2015-08-28 13:34:05 -0700
+
+
+Started GET "/assets/views/list/list.self-62d93ad6fd765df2d0448b082693c1f167a1fbea72fcfa118370c62a4b78eb37.js?body=1" for ::1 at 2015-08-28 13:34:05 -0700
+
+
+Started GET "/assets/routers/router.self-9b62645252f9e6535ff7f276a261597854ce5d34f3505101dec7e487d991b2eb.js?body=1" for ::1 at 2015-08-28 13:34:05 -0700
+
+
+Started GET "/assets/api/boards.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 13:34:05 -0700
+
+
+Started GET "/assets/api/cards.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 13:34:05 -0700
+
+
+Started GET "/assets/api/lists.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 13:34:05 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 13:34:05 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 13:34:05 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 13:34:05 -0700
+
+
+Started GET "/assets/application.self-55d2f88127dcaaa99d5c6a5261f9015880991431c520781213525a199c900f0d.js?body=1" for ::1 at 2015-08-28 13:34:05 -0700
+
+
+Started GET "/api/boards" for ::1 at 2015-08-28 13:34:05 -0700
+Processing by Api::BoardsController#index as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Apc-uX2a_fnXS7nf7_EOBA"]]
+  [1m[35mBoard Load (2.9ms)[0m  SELECT "boards".* FROM "boards"
+  Rendered api/boards/_board.json.jbuilder (0.8ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.2ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.2ms)
+  Rendered api/boards/index.json.jbuilder (24.6ms)
+Completed 200 OK in 35ms (Views: 22.5ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 13:34:09 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Apc-uX2a_fnXS7nf7_EOBA"]]
+Completed 200 OK in 112ms (Views: 111.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/api/boards.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/api/cards.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/api/lists.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/trello_app.self-d122dd122d7caf18e3c61d5994e0914a54c23464d1cc1d781cdf79467f185118.js?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/board/form.self-4feb192ae3a96572fad6f4f9d3f617ac73a9ef88a8907adc4c4b23f48cbfb181.js?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/board/index.self-6c5172487145153043448c902e41119663d9587a0fb427bcdee25524367736dd.js?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/board/index_deprecated.self-a4242141a646ffd0d5d69234f90ef816db80376549f581c0353d56fefa167133.js?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/board/index_item.self-2054b9d581b0849276cee8a37a2bf74741aea5bfc9a41bab9940863261958a2b.js?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/board/show.self-679183c6befed31b96c25bdf06d83eaff450eb6ad6a71c25741a3725148edbc7.js?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/list/form.self-f4e2fed226be1a99072f05907af25e983e4c8e0d8b24487938be2da045b098e5.js?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/list/list.self-112b0744a10ac9f11153a8826fe3a0fb822df9c4dab7ec9cb0eaa181bfb868f9.js?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/utils/composite_view.self-ae3948e953312d3e050f4baf312fdaea87b998a104d2eece8f5b81287ad1a4f7.js?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/models/board.self-b809cae4ef5ebe5d0cbc18aeaefa314a262e339932c9a96c64fde49392946628.js?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/models/card.self-4ff4265caa2ac826c076b89881646b309ae2638092671a32b9e05bfae3eca8d6.js?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/models/list.self-3a473167bf07984f30a880681330dc0134f8128bc8e2980504861b4f255c06ce.js?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/collections/boards.self-8623aebb08152a5bd0231b78d968ccd3e389443b6a47b382966474c6fb162ee5.js?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/collections/cards.self-65f2e9e3989272b19bf5b723f7df22857105a3ca10e3a8194f52fd962fd2c97b.js?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/collections/lists.self-4f74425b3eb818e06f9c45d0f21191556449526f4b948af3a4233126e8776c8d.js?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/views/board/form.self-e1db94e694137e7e5c6220103c4a8149bd729a3f88a7c320e77c851e0cce0753.js?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/views/board/index.self-b5a95e29cd15b5acb38329d9a2524cf14e8201312e78581e209401bd93206de1.js?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/views/board/index_item.self-6883d167b8213f1411fe426bfba519e3b56e5f7972e24b6ed95941a66bb96850.js?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/views/board/show.self-f161a3f5c395a74daf9f102f8d1e01baf6b7453b6e60046402fcc4675950c503.js?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/views/card/card.self-8ac4a7854bdcf2b662dfcf27f5d0ccec9ef00e36a322142c577bbd2b5dc1d589.js?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/views/list/form.self-05546ef01c4e33fb284aae0859f2a24cf93274877776230df59d9c658fbf6593.js?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/views/list/list.self-62d93ad6fd765df2d0448b082693c1f167a1fbea72fcfa118370c62a4b78eb37.js?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/routers/router.self-9b62645252f9e6535ff7f276a261597854ce5d34f3505101dec7e487d991b2eb.js?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/api/boards.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/api/cards.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/api/lists.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/assets/application.self-55d2f88127dcaaa99d5c6a5261f9015880991431c520781213525a199c900f0d.js?body=1" for ::1 at 2015-08-28 13:34:09 -0700
+
+
+Started GET "/api/boards" for ::1 at 2015-08-28 13:34:09 -0700
+Processing by Api::BoardsController#index as JSON
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Apc-uX2a_fnXS7nf7_EOBA"]]
+  [1m[36mBoard Load (0.4ms)[0m  [1mSELECT "boards".* FROM "boards"[0m
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/index.json.jbuilder (6.0ms)
+Completed 200 OK in 11ms (Views: 7.8ms | ActiveRecord: 0.9ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (5.6ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'boards'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (3.2ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'cards'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (3.3ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'lists'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (3.1ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (3.9ms)[0m  [1mINSERT INTO "users" ("username", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "edhuang"], ["password_digest", "$2a$10$D3YOwIv7WCOmoa.GXReyAOLbmby.yp5KDL0H2eORHgM4Tp2tRP9E."], ["session_token", "nG3lWDPrG_N62R6Nrc4x9w"], ["created_at", "2015-08-28 20:35:08.705629"], ["updated_at", "2015-08-28 20:35:08.705629"]]
+  [1m[35m (1.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "boards" ("user_id", "title", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 1], ["title", "sister"], ["created_at", "2015-08-28 20:35:08.965376"], ["updated_at", "2015-08-28 20:35:08.965376"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "boards" ("user_id", "title", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["title", "guy"], ["created_at", "2015-08-28 20:35:08.969317"], ["updated_at", "2015-08-28 20:35:08.969317"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "boards" ("user_id", "title", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 1], ["title", "faye"], ["created_at", "2015-08-28 20:35:08.971138"], ["updated_at", "2015-08-28 20:35:08.971138"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "boards" ("user_id", "title", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["title", "lance_harber"], ["created_at", "2015-08-28 20:35:08.972836"], ["updated_at", "2015-08-28 20:35:08.972836"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "boards" ("user_id", "title", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 1], ["title", "nia_runolfon"], ["created_at", "2015-08-28 20:35:08.974467"], ["updated_at", "2015-08-28 20:35:08.974467"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/" for ::1 at 2015-08-28 13:35:14 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Apc-uX2a_fnXS7nf7_EOBA"]]
+Completed 200 OK in 121ms (Views: 117.6ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/api/boards.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/api/cards.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/api/lists.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/trello_app.self-d122dd122d7caf18e3c61d5994e0914a54c23464d1cc1d781cdf79467f185118.js?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/board/form.self-4feb192ae3a96572fad6f4f9d3f617ac73a9ef88a8907adc4c4b23f48cbfb181.js?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/board/index.self-6c5172487145153043448c902e41119663d9587a0fb427bcdee25524367736dd.js?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/board/index_deprecated.self-a4242141a646ffd0d5d69234f90ef816db80376549f581c0353d56fefa167133.js?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/board/index_item.self-2054b9d581b0849276cee8a37a2bf74741aea5bfc9a41bab9940863261958a2b.js?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/board/show.self-679183c6befed31b96c25bdf06d83eaff450eb6ad6a71c25741a3725148edbc7.js?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/list/form.self-f4e2fed226be1a99072f05907af25e983e4c8e0d8b24487938be2da045b098e5.js?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/list/list.self-112b0744a10ac9f11153a8826fe3a0fb822df9c4dab7ec9cb0eaa181bfb868f9.js?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/models/board.self-b809cae4ef5ebe5d0cbc18aeaefa314a262e339932c9a96c64fde49392946628.js?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/utils/composite_view.self-ae3948e953312d3e050f4baf312fdaea87b998a104d2eece8f5b81287ad1a4f7.js?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/models/card.self-4ff4265caa2ac826c076b89881646b309ae2638092671a32b9e05bfae3eca8d6.js?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/models/list.self-3a473167bf07984f30a880681330dc0134f8128bc8e2980504861b4f255c06ce.js?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/collections/boards.self-8623aebb08152a5bd0231b78d968ccd3e389443b6a47b382966474c6fb162ee5.js?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/collections/cards.self-65f2e9e3989272b19bf5b723f7df22857105a3ca10e3a8194f52fd962fd2c97b.js?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/collections/lists.self-4f74425b3eb818e06f9c45d0f21191556449526f4b948af3a4233126e8776c8d.js?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/views/board/form.self-e1db94e694137e7e5c6220103c4a8149bd729a3f88a7c320e77c851e0cce0753.js?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/views/board/index.self-b5a95e29cd15b5acb38329d9a2524cf14e8201312e78581e209401bd93206de1.js?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/views/board/index_item.self-6883d167b8213f1411fe426bfba519e3b56e5f7972e24b6ed95941a66bb96850.js?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/views/board/show.self-f161a3f5c395a74daf9f102f8d1e01baf6b7453b6e60046402fcc4675950c503.js?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/views/card/card.self-8ac4a7854bdcf2b662dfcf27f5d0ccec9ef00e36a322142c577bbd2b5dc1d589.js?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/views/list/form.self-05546ef01c4e33fb284aae0859f2a24cf93274877776230df59d9c658fbf6593.js?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/views/list/list.self-62d93ad6fd765df2d0448b082693c1f167a1fbea72fcfa118370c62a4b78eb37.js?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/routers/router.self-9b62645252f9e6535ff7f276a261597854ce5d34f3505101dec7e487d991b2eb.js?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/api/boards.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/api/cards.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/api/lists.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/assets/application.self-55d2f88127dcaaa99d5c6a5261f9015880991431c520781213525a199c900f0d.js?body=1" for ::1 at 2015-08-28 13:35:15 -0700
+
+
+Started GET "/api/boards" for ::1 at 2015-08-28 13:35:15 -0700
+Processing by Api::BoardsController#index as JSON
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Apc-uX2a_fnXS7nf7_EOBA"]]
+  [1m[35mBoard Load (0.5ms)[0m  SELECT "boards".* FROM "boards"
+  Rendered api/boards/_board.json.jbuilder (0.3ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.2ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/index.json.jbuilder (33.9ms)
+Completed 200 OK in 41ms (Views: 33.1ms | ActiveRecord: 3.4ms)
+
+
+Started DELETE "/session" for ::1 at 2015-08-28 13:35:25 -0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"d9/qQ112CWf/kY/JzbrUS56fcguCoyIPUf2bEfM5YHz4qMkBz7mG5XqzhNdTFCCwpKtPvOY85++nCtvBA2wusQ=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Apc-uX2a_fnXS7nf7_EOBA"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "gw0wKIQqxyZ1iPExVaQbZw"], ["updated_at", "2015-08-28 20:35:25.622900"], ["id", 2]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/session/new
+Completed 302 Found in 9ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/session/new" for ::1 at 2015-08-28 13:35:25 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1[0m
+Completed 200 OK in 108ms (Views: 107.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/session" for ::1 at 2015-08-28 13:35:32 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"pW+BltMlVn1KYQDaGfM85Isi7rNExsY+TtE+V52d3V0qGKLUQerZ/89DC8SHXcgfsRbTBCBZA964Jn6HbciTkA==", "user"=>{"username"=>"edhuang", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT 1  [["username", "edhuang"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", "wJa6XSexPY6-JQlRpX6q0w"], ["updated_at", "2015-08-28 20:35:32.550465"], ["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000#
+Completed 302 Found in 82ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 13:35:32 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "wJa6XSexPY6-JQlRpX6q0w"]]
+Completed 200 OK in 108ms (Views: 107.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/boards" for ::1 at 2015-08-28 13:35:32 -0700
+Processing by Api::BoardsController#index as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "wJa6XSexPY6-JQlRpX6q0w"]]
+  [1m[35mBoard Load (0.3ms)[0m  SELECT "boards".* FROM "boards"
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.0ms)
+  Rendered api/boards/_board.json.jbuilder (0.0ms)
+  Rendered api/boards/_board.json.jbuilder (0.0ms)
+  Rendered api/boards/_board.json.jbuilder (0.0ms)
+  Rendered api/boards/index.json.jbuilder (6.4ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.5ms)
+  [1m[36m (5054.7ms)[0m  [1mDROP DATABASE IF EXISTS "TrelloApp_development"[0m
+PG::ObjectInUse: ERROR:  database "TrelloApp_development" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+: DROP DATABASE IF EXISTS "TrelloApp_development"
+  [1m[35m (137.4ms)[0m  DROP DATABASE IF EXISTS "TrelloApp_test"
+  [1m[36m (0.6ms)[0m  [1mCREATE DATABASE "TrelloApp_development" ENCODING = 'unicode'[0m
+PG::DuplicateDatabase: ERROR:  database "TrelloApp_development" already exists
+: CREATE DATABASE "TrelloApp_development" ENCODING = 'unicode'
+  [1m[35m (362.9ms)[0m  CREATE DATABASE "TrelloApp_test" ENCODING = 'unicode'
+  [1m[36mSQL (2.3ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (12.2ms)[0m  DROP TABLE "boards" CASCADE
+  [1m[36m (18.6ms)[0m  [1mCREATE TABLE "boards" ("id" serial primary key, "user_id" integer NOT NULL, "title" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (1.5ms)[0m  CREATE UNIQUE INDEX  "index_boards_on_user_id_and_title" ON "boards" USING btree ("user_id", "title")
+  [1m[36m (2.6ms)[0m  [1mDROP TABLE "cards" CASCADE[0m
+  [1m[35m (3.8ms)[0m  CREATE TABLE "cards" ("id" serial primary key, "list_id" integer NOT NULL, "title" character varying NOT NULL, "description" text NOT NULL, "ord" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (2.5ms)[0m  [1mDROP TABLE "lists" CASCADE[0m
+  [1m[35m (3.9ms)[0m  CREATE TABLE "lists" ("id" serial primary key, "board_id" integer NOT NULL, "title" character varying NOT NULL, "ord" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (3.0ms)[0m  [1mDROP TABLE "users" CASCADE[0m
+  [1m[35m (4.0ms)[0m  CREATE TABLE "users" ("id" serial primary key, "username" character varying NOT NULL, "password_digest" character varying NOT NULL, "session_token" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (1.1ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_password_digest" ON "users" USING btree ("password_digest")[0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX  "index_users_on_session_token" ON "users" USING btree ("session_token")
+  [1m[36m (0.4ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35mSQL (0.3ms)[0m  CREATE EXTENSION IF NOT EXISTS "plpgsql"
+  [1m[36m (6.7ms)[0m  [1mCREATE TABLE "boards" ("id" serial primary key, "user_id" integer NOT NULL, "title" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (1.2ms)[0m  CREATE UNIQUE INDEX  "index_boards_on_user_id_and_title" ON "boards" USING btree ("user_id", "title")
+  [1m[36m (4.3ms)[0m  [1mCREATE TABLE "cards" ("id" serial primary key, "list_id" integer NOT NULL, "title" character varying NOT NULL, "description" text NOT NULL, "ord" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (5.4ms)[0m  CREATE TABLE "lists" ("id" serial primary key, "board_id" integer NOT NULL, "title" character varying NOT NULL, "ord" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (3.7ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "username" character varying NOT NULL, "password_digest" character varying NOT NULL, "session_token" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (1.3ms)[0m  CREATE UNIQUE INDEX  "index_users_on_password_digest" ON "users" USING btree ("password_digest")
+  [1m[36m (1.3ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_session_token" ON "users" USING btree ("session_token")[0m
+  [1m[35m (2.4ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (1.3ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150811074524')[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150807175352')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150807212646')[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150808014508')
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("username", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "edhuang"], ["password_digest", "$2a$10$InqqNJX4wD6hzuEwig1JJe2Q0x.ofn0Pv4E4.YGJICtZaU.S9iYFC"], ["session_token", "On338FXjEO0_hwaaQWCGUw"], ["created_at", "2015-08-28 20:41:05.920214"], ["updated_at", "2015-08-28 20:41:05.920214"]]
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "boards" ("user_id", "title", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 1], ["title", "montana"], ["created_at", "2015-08-28 20:41:06.155169"], ["updated_at", "2015-08-28 20:41:06.155169"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "boards" ("user_id", "title", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["title", "levi_zemlak"], ["created_at", "2015-08-28 20:41:06.158567"], ["updated_at", "2015-08-28 20:41:06.158567"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "boards" ("user_id", "title", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 1], ["title", "shaniya"], ["created_at", "2015-08-28 20:41:06.160508"], ["updated_at", "2015-08-28 20:41:06.160508"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "boards" ("user_id", "title", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["title", "eldridge"], ["created_at", "2015-08-28 20:41:06.162296"], ["updated_at", "2015-08-28 20:41:06.162296"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "boards" ("user_id", "title", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 1], ["title", "autumn"], ["created_at", "2015-08-28 20:41:06.163846"], ["updated_at", "2015-08-28 20:41:06.163846"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["board_id", 1], ["title", "mollitia dolorum quaerat sit"], ["ord", 1], ["created_at", "2015-08-28 20:41:06.175463"], ["updated_at", "2015-08-28 20:41:06.175463"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["board_id", 1], ["title", "sed asperiores ipsa et"], ["ord", 2], ["created_at", "2015-08-28 20:41:06.178384"], ["updated_at", "2015-08-28 20:41:06.178384"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["board_id", 1], ["title", "tenetur et eveniet impedit"], ["ord", 3], ["created_at", "2015-08-28 20:41:06.180521"], ["updated_at", "2015-08-28 20:41:06.180521"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["board_id", 1], ["title", "inventore eum minima earum"], ["ord", 4], ["created_at", "2015-08-28 20:41:06.182365"], ["updated_at", "2015-08-28 20:41:06.182365"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["board_id", 1], ["title", "id voluptate similique ab"], ["ord", 5], ["created_at", "2015-08-28 20:41:06.184183"], ["updated_at", "2015-08-28 20:41:06.184183"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["board_id", 1], ["title", "enim qui architecto a"], ["ord", 6], ["created_at", "2015-08-28 20:41:06.186000"], ["updated_at", "2015-08-28 20:41:06.186000"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["board_id", 1], ["title", "minus culpa ut nam"], ["ord", 7], ["created_at", "2015-08-28 20:41:06.187769"], ["updated_at", "2015-08-28 20:41:06.187769"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["board_id", 1], ["title", "sequi et quibusdam fuga"], ["ord", 8], ["created_at", "2015-08-28 20:41:06.189434"], ["updated_at", "2015-08-28 20:41:06.189434"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["board_id", 1], ["title", "illo quidem laborum est"], ["ord", 9], ["created_at", "2015-08-28 20:41:06.191049"], ["updated_at", "2015-08-28 20:41:06.191049"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["board_id", 1], ["title", "molestias minus recusandae rerum"], ["ord", 10], ["created_at", "2015-08-28 20:41:06.192553"], ["updated_at", "2015-08-28 20:41:06.192553"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[36m (139.4ms)[0m  [1mDROP DATABASE IF EXISTS "TrelloApp_development"[0m
+  [1m[35m (119.7ms)[0m  DROP DATABASE IF EXISTS "TrelloApp_test"
+  [1m[36m (237.0ms)[0m  [1mCREATE DATABASE "TrelloApp_development" ENCODING = 'unicode'[0m
+  [1m[35m (238.2ms)[0m  CREATE DATABASE "TrelloApp_test" ENCODING = 'unicode'
+  [1m[36mSQL (0.2ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (6.0ms)[0m  CREATE TABLE "boards" ("id" serial primary key, "user_id" integer NOT NULL, "title" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (1.4ms)[0m  [1mCREATE UNIQUE INDEX  "index_boards_on_user_id_and_title" ON "boards" USING btree ("user_id", "title")[0m
+  [1m[35m (5.9ms)[0m  CREATE TABLE "cards" ("id" serial primary key, "list_id" integer NOT NULL, "title" character varying NOT NULL, "description" text NOT NULL, "ord" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (3.6ms)[0m  [1mCREATE TABLE "lists" ("id" serial primary key, "board_id" integer NOT NULL, "title" character varying NOT NULL, "ord" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (3.6ms)[0m  CREATE TABLE "users" ("id" serial primary key, "username" character varying NOT NULL, "password_digest" character varying NOT NULL, "session_token" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (1.2ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_password_digest" ON "users" USING btree ("password_digest")[0m
+  [1m[35m (1.7ms)[0m  CREATE UNIQUE INDEX  "index_users_on_session_token" ON "users" USING btree ("session_token")
+  [1m[36m (2.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.2ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36m (0.4ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150811074524')
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150807175352')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150807212646')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150808014508')[0m
+  [1m[35mSQL (0.4ms)[0m  CREATE EXTENSION IF NOT EXISTS "plpgsql"
+  [1m[36m (6.2ms)[0m  [1mCREATE TABLE "boards" ("id" serial primary key, "user_id" integer NOT NULL, "title" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX  "index_boards_on_user_id_and_title" ON "boards" USING btree ("user_id", "title")
+  [1m[36m (4.6ms)[0m  [1mCREATE TABLE "cards" ("id" serial primary key, "list_id" integer NOT NULL, "title" character varying NOT NULL, "description" text NOT NULL, "ord" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (3.8ms)[0m  CREATE TABLE "lists" ("id" serial primary key, "board_id" integer NOT NULL, "title" character varying NOT NULL, "ord" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (3.8ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "username" character varying NOT NULL, "password_digest" character varying NOT NULL, "session_token" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (1.2ms)[0m  CREATE UNIQUE INDEX  "index_users_on_password_digest" ON "users" USING btree ("password_digest")
+  [1m[36m (1.2ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_session_token" ON "users" USING btree ("session_token")[0m
+  [1m[35m (2.0ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (1.2ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150811074524')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150807175352')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150807212646')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150808014508')
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("username", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "edhuang"], ["password_digest", "$2a$10$Jig44PK9sDpuOYUPk5ZF/Opgq9Eip3Kbw4BhRJFgAIujK0A6UdEb."], ["session_token", "l_N7MmK6fro8sJRBbcONuA"], ["created_at", "2015-08-28 20:41:12.255750"], ["updated_at", "2015-08-28 20:41:12.255750"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "boards" ("user_id", "title", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 1], ["title", "nella_gleason"], ["created_at", "2015-08-28 20:41:12.485512"], ["updated_at", "2015-08-28 20:41:12.485512"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "boards" ("user_id", "title", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["title", "micheal"], ["created_at", "2015-08-28 20:41:12.489043"], ["updated_at", "2015-08-28 20:41:12.489043"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "boards" ("user_id", "title", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 1], ["title", "chaim"], ["created_at", "2015-08-28 20:41:12.491699"], ["updated_at", "2015-08-28 20:41:12.491699"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "boards" ("user_id", "title", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["title", "simeon_grant"], ["created_at", "2015-08-28 20:41:12.493591"], ["updated_at", "2015-08-28 20:41:12.493591"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "boards" ("user_id", "title", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 1], ["title", "bobbie"], ["created_at", "2015-08-28 20:41:12.495381"], ["updated_at", "2015-08-28 20:41:12.495381"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["board_id", 1], ["title", "ut nostrum aut consequatur"], ["ord", 1], ["created_at", "2015-08-28 20:41:12.505150"], ["updated_at", "2015-08-28 20:41:12.505150"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["board_id", 1], ["title", "magnam consequatur tempore doloribus"], ["ord", 2], ["created_at", "2015-08-28 20:41:12.507493"], ["updated_at", "2015-08-28 20:41:12.507493"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["board_id", 1], ["title", "iure ab quae ut"], ["ord", 3], ["created_at", "2015-08-28 20:41:12.509106"], ["updated_at", "2015-08-28 20:41:12.509106"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["board_id", 1], ["title", "fuga quam eos eum"], ["ord", 4], ["created_at", "2015-08-28 20:41:12.510637"], ["updated_at", "2015-08-28 20:41:12.510637"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["board_id", 1], ["title", "omnis non ut rerum"], ["ord", 5], ["created_at", "2015-08-28 20:41:12.512161"], ["updated_at", "2015-08-28 20:41:12.512161"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["board_id", 1], ["title", "at quos dolorem aut"], ["ord", 6], ["created_at", "2015-08-28 20:41:12.513722"], ["updated_at", "2015-08-28 20:41:12.513722"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["board_id", 1], ["title", "ut et aliquid hic"], ["ord", 7], ["created_at", "2015-08-28 20:41:12.515228"], ["updated_at", "2015-08-28 20:41:12.515228"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["board_id", 1], ["title", "sint ipsam dolore culpa"], ["ord", 8], ["created_at", "2015-08-28 20:41:12.516711"], ["updated_at", "2015-08-28 20:41:12.516711"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["board_id", 1], ["title", "praesentium voluptates asperiores pariatur"], ["ord", 9], ["created_at", "2015-08-28 20:41:12.518171"], ["updated_at", "2015-08-28 20:41:12.518171"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["board_id", 1], ["title", "iste omnis odio reprehenderit"], ["ord", 10], ["created_at", "2015-08-28 20:41:12.519625"], ["updated_at", "2015-08-28 20:41:12.519625"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/" for ::1 at 2015-08-28 13:41:27 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (1.1ms)
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "wJa6XSexPY6-JQlRpX6q0w"]]
+Completed 200 OK in 320ms (Views: 317.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/api/boards" for ::1 at 2015-08-28 13:41:28 -0700
+Processing by Api::BoardsController#index as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "wJa6XSexPY6-JQlRpX6q0w"]]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as :redirect_if_not_logged_in rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/session/new" for ::1 at 2015-08-28 13:41:28 -0700
+Processing by SessionsController#new as JSON
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "wJa6XSexPY6-JQlRpX6q0w"]]
+Completed 200 OK in 182ms (Views: 181.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/session/new" for ::1 at 2015-08-28 13:41:32 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "wJa6XSexPY6-JQlRpX6q0w"]]
+Completed 200 OK in 120ms (Views: 119.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/session" for ::1 at 2015-08-28 13:41:37 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"1t1OprN8F++l5fW8zvwb2Srw7VPxUnfsqD7wGzUhUJFZqm3kIbOYbSDH/qJQUu8iEMTQ5JXNsgxeybDLxXQeXA==", "user"=>{"username"=>"edhuang", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT 1  [["username", "edhuang"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", "Qjb2xzyr2ZnzNkyW0u2-XA"], ["updated_at", "2015-08-28 20:41:37.640492"], ["id", 1]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000#
+Completed 302 Found in 93ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 13:41:37 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Qjb2xzyr2ZnzNkyW0u2-XA"]]
+Completed 200 OK in 99ms (Views: 98.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/boards" for ::1 at 2015-08-28 13:41:37 -0700
+Processing by Api::BoardsController#index as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Qjb2xzyr2ZnzNkyW0u2-XA"]]
+  [1m[35mBoard Load (0.6ms)[0m  SELECT "boards".* FROM "boards"
+  Rendered api/boards/_board.json.jbuilder (0.5ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/index.json.jbuilder (16.9ms)
+Completed 200 OK in 24ms (Views: 16.2ms | ActiveRecord: 2.7ms)
+  [1m[36mList Load (0.5ms)[0m  [1mSELECT "lists".* FROM "lists"[0m
+
+
+Started GET "/" for ::1 at 2015-08-28 13:42:31 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (1.1ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Qjb2xzyr2ZnzNkyW0u2-XA"]]
+Completed 200 OK in 319ms (Views: 313.7ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/assets/api/cards.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/api/lists.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/api/boards.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/board/form.self-4feb192ae3a96572fad6f4f9d3f617ac73a9ef88a8907adc4c4b23f48cbfb181.js?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/trello_app.self-d122dd122d7caf18e3c61d5994e0914a54c23464d1cc1d781cdf79467f185118.js?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/board/show.self-679183c6befed31b96c25bdf06d83eaff450eb6ad6a71c25741a3725148edbc7.js?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/board/index_deprecated.self-a4242141a646ffd0d5d69234f90ef816db80376549f581c0353d56fefa167133.js?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/list/form.self-f4e2fed226be1a99072f05907af25e983e4c8e0d8b24487938be2da045b098e5.js?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/board/index.self-6c5172487145153043448c902e41119663d9587a0fb427bcdee25524367736dd.js?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/list/list.self-112b0744a10ac9f11153a8826fe3a0fb822df9c4dab7ec9cb0eaa181bfb868f9.js?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/utils/composite_view.self-ae3948e953312d3e050f4baf312fdaea87b998a104d2eece8f5b81287ad1a4f7.js?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/collections/boards.self-8623aebb08152a5bd0231b78d968ccd3e389443b6a47b382966474c6fb162ee5.js?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/models/board.self-b809cae4ef5ebe5d0cbc18aeaefa314a262e339932c9a96c64fde49392946628.js?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/models/card.self-4ff4265caa2ac826c076b89881646b309ae2638092671a32b9e05bfae3eca8d6.js?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/collections/cards.self-65f2e9e3989272b19bf5b723f7df22857105a3ca10e3a8194f52fd962fd2c97b.js?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/models/list.self-3a473167bf07984f30a880681330dc0134f8128bc8e2980504861b4f255c06ce.js?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/board/index_item.self-2054b9d581b0849276cee8a37a2bf74741aea5bfc9a41bab9940863261958a2b.js?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/views/board/form.self-e1db94e694137e7e5c6220103c4a8149bd729a3f88a7c320e77c851e0cce0753.js?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/collections/lists.self-4f74425b3eb818e06f9c45d0f21191556449526f4b948af3a4233126e8776c8d.js?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/views/board/index.self-b5a95e29cd15b5acb38329d9a2524cf14e8201312e78581e209401bd93206de1.js?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/views/board/index_item.self-6883d167b8213f1411fe426bfba519e3b56e5f7972e24b6ed95941a66bb96850.js?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/views/board/show.self-f161a3f5c395a74daf9f102f8d1e01baf6b7453b6e60046402fcc4675950c503.js?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/views/card/card.self-8ac4a7854bdcf2b662dfcf27f5d0ccec9ef00e36a322142c577bbd2b5dc1d589.js?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/views/list/form.self-05546ef01c4e33fb284aae0859f2a24cf93274877776230df59d9c658fbf6593.js?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/views/list/list.self-62d93ad6fd765df2d0448b082693c1f167a1fbea72fcfa118370c62a4b78eb37.js?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/routers/router.self-9b62645252f9e6535ff7f276a261597854ce5d34f3505101dec7e487d991b2eb.js?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/api/boards.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/api/cards.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/api/lists.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 13:42:31 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 13:42:32 -0700
+
+
+Started GET "/assets/application.self-55d2f88127dcaaa99d5c6a5261f9015880991431c520781213525a199c900f0d.js?body=1" for ::1 at 2015-08-28 13:42:32 -0700
+
+
+Started GET "/api/boards" for ::1 at 2015-08-28 13:42:32 -0700
+Processing by Api::BoardsController#index as JSON
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Qjb2xzyr2ZnzNkyW0u2-XA"]]
+  [1m[35mBoard Load (0.5ms)[0m  SELECT "boards".* FROM "boards"
+  Rendered api/boards/_board.json.jbuilder (0.7ms)
+  Rendered api/boards/_board.json.jbuilder (0.3ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/index.json.jbuilder (34.2ms)
+Completed 200 OK in 47ms (Views: 31.5ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/api/boards/1" for ::1 at 2015-08-28 13:46:20 -0700
+Processing by Api::BoardsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Qjb2xzyr2ZnzNkyW0u2-XA"]]
+  [1m[35mBoard Load (0.2ms)[0m  SELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  [1m[36mList Load (0.4ms)[0m  [1mSELECT "lists".* FROM "lists" WHERE "lists"."board_id" = $1[0m  [["board_id", 1]]
+  Rendered api/lists/_list.json.jbuilder (0.4ms)
+  Rendered api/lists/_list.json.jbuilder (0.0ms)
+  Rendered api/lists/_list.json.jbuilder (0.0ms)
+  Rendered api/lists/_list.json.jbuilder (0.0ms)
+  Rendered api/lists/_list.json.jbuilder (0.0ms)
+  Rendered api/lists/_list.json.jbuilder (0.0ms)
+  Rendered api/lists/_list.json.jbuilder (0.0ms)
+  Rendered api/lists/_list.json.jbuilder (0.0ms)
+  Rendered api/lists/_list.json.jbuilder (0.0ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/boards/show.json.jbuilder (15.0ms)
+Completed 200 OK in 49ms (Views: 16.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/api/boards" for ::1 at 2015-08-28 15:29:39 -0700
+Processing by Api::BoardsController#index as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Qjb2xzyr2ZnzNkyW0u2-XA"]]
+  [1m[36mBoard Load (0.3ms)[0m  [1mSELECT "boards".* FROM "boards"[0m
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.0ms)
+  Rendered api/boards/_board.json.jbuilder (0.0ms)
+  Rendered api/boards/_board.json.jbuilder (0.0ms)
+  Rendered api/boards/index.json.jbuilder (3.2ms)
+Completed 200 OK in 7ms (Views: 4.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 15:29:43 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Qjb2xzyr2ZnzNkyW0u2-XA"]]
+Completed 200 OK in 98ms (Views: 97.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/api/boards.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/api/cards.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/api/lists.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/trello_app.self-d122dd122d7caf18e3c61d5994e0914a54c23464d1cc1d781cdf79467f185118.js?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/board/form.self-4feb192ae3a96572fad6f4f9d3f617ac73a9ef88a8907adc4c4b23f48cbfb181.js?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/board/index.self-6c5172487145153043448c902e41119663d9587a0fb427bcdee25524367736dd.js?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/board/index_deprecated.self-a4242141a646ffd0d5d69234f90ef816db80376549f581c0353d56fefa167133.js?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/board/index_item.self-2054b9d581b0849276cee8a37a2bf74741aea5bfc9a41bab9940863261958a2b.js?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/board/show.self-679183c6befed31b96c25bdf06d83eaff450eb6ad6a71c25741a3725148edbc7.js?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/list/form.self-f4e2fed226be1a99072f05907af25e983e4c8e0d8b24487938be2da045b098e5.js?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/list/list.self-112b0744a10ac9f11153a8826fe3a0fb822df9c4dab7ec9cb0eaa181bfb868f9.js?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/utils/composite_view.self-ae3948e953312d3e050f4baf312fdaea87b998a104d2eece8f5b81287ad1a4f7.js?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/models/board.self-b809cae4ef5ebe5d0cbc18aeaefa314a262e339932c9a96c64fde49392946628.js?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/models/card.self-4ff4265caa2ac826c076b89881646b309ae2638092671a32b9e05bfae3eca8d6.js?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/models/list.self-3a473167bf07984f30a880681330dc0134f8128bc8e2980504861b4f255c06ce.js?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/collections/boards.self-8623aebb08152a5bd0231b78d968ccd3e389443b6a47b382966474c6fb162ee5.js?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/collections/cards.self-65f2e9e3989272b19bf5b723f7df22857105a3ca10e3a8194f52fd962fd2c97b.js?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/collections/lists.self-4f74425b3eb818e06f9c45d0f21191556449526f4b948af3a4233126e8776c8d.js?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/views/board/form.self-e1db94e694137e7e5c6220103c4a8149bd729a3f88a7c320e77c851e0cce0753.js?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/views/board/index.self-b5a95e29cd15b5acb38329d9a2524cf14e8201312e78581e209401bd93206de1.js?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/views/board/index_item.self-6883d167b8213f1411fe426bfba519e3b56e5f7972e24b6ed95941a66bb96850.js?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/views/board/show.self-f161a3f5c395a74daf9f102f8d1e01baf6b7453b6e60046402fcc4675950c503.js?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/views/card/card.self-8ac4a7854bdcf2b662dfcf27f5d0ccec9ef00e36a322142c577bbd2b5dc1d589.js?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/views/list/form.self-05546ef01c4e33fb284aae0859f2a24cf93274877776230df59d9c658fbf6593.js?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/views/list/list.self-62d93ad6fd765df2d0448b082693c1f167a1fbea72fcfa118370c62a4b78eb37.js?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/routers/router.self-9b62645252f9e6535ff7f276a261597854ce5d34f3505101dec7e487d991b2eb.js?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/api/boards.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/api/cards.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/api/lists.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/assets/application.self-55d2f88127dcaaa99d5c6a5261f9015880991431c520781213525a199c900f0d.js?body=1" for ::1 at 2015-08-28 15:29:43 -0700
+
+
+Started GET "/api/boards" for ::1 at 2015-08-28 15:29:43 -0700
+Processing by Api::BoardsController#index as JSON
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Qjb2xzyr2ZnzNkyW0u2-XA"]]
+  [1m[35mBoard Load (0.4ms)[0m  SELECT "boards".* FROM "boards"
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.0ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.0ms)
+  Rendered api/boards/index.json.jbuilder (3.5ms)
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 15:29:43 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Qjb2xzyr2ZnzNkyW0u2-XA"]]
+Completed 200 OK in 116ms (Views: 115.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/api/boards.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/api/lists.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/api/cards.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/trello_app.self-d122dd122d7caf18e3c61d5994e0914a54c23464d1cc1d781cdf79467f185118.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/board/form.self-4feb192ae3a96572fad6f4f9d3f617ac73a9ef88a8907adc4c4b23f48cbfb181.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/board/index.self-6c5172487145153043448c902e41119663d9587a0fb427bcdee25524367736dd.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/board/index_deprecated.self-a4242141a646ffd0d5d69234f90ef816db80376549f581c0353d56fefa167133.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/board/index_item.self-2054b9d581b0849276cee8a37a2bf74741aea5bfc9a41bab9940863261958a2b.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/board/show.self-679183c6befed31b96c25bdf06d83eaff450eb6ad6a71c25741a3725148edbc7.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/list/form.self-f4e2fed226be1a99072f05907af25e983e4c8e0d8b24487938be2da045b098e5.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/list/list.self-112b0744a10ac9f11153a8826fe3a0fb822df9c4dab7ec9cb0eaa181bfb868f9.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/utils/composite_view.self-ae3948e953312d3e050f4baf312fdaea87b998a104d2eece8f5b81287ad1a4f7.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/models/board.self-b809cae4ef5ebe5d0cbc18aeaefa314a262e339932c9a96c64fde49392946628.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/models/card.self-4ff4265caa2ac826c076b89881646b309ae2638092671a32b9e05bfae3eca8d6.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/models/list.self-3a473167bf07984f30a880681330dc0134f8128bc8e2980504861b4f255c06ce.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/collections/boards.self-8623aebb08152a5bd0231b78d968ccd3e389443b6a47b382966474c6fb162ee5.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/collections/cards.self-65f2e9e3989272b19bf5b723f7df22857105a3ca10e3a8194f52fd962fd2c97b.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/collections/lists.self-4f74425b3eb818e06f9c45d0f21191556449526f4b948af3a4233126e8776c8d.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/views/board/form.self-e1db94e694137e7e5c6220103c4a8149bd729a3f88a7c320e77c851e0cce0753.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/views/board/index.self-b5a95e29cd15b5acb38329d9a2524cf14e8201312e78581e209401bd93206de1.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/views/board/index_item.self-6883d167b8213f1411fe426bfba519e3b56e5f7972e24b6ed95941a66bb96850.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/views/board/show.self-f161a3f5c395a74daf9f102f8d1e01baf6b7453b6e60046402fcc4675950c503.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/views/card/card.self-8ac4a7854bdcf2b662dfcf27f5d0ccec9ef00e36a322142c577bbd2b5dc1d589.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/views/list/form.self-05546ef01c4e33fb284aae0859f2a24cf93274877776230df59d9c658fbf6593.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/views/list/list.self-62d93ad6fd765df2d0448b082693c1f167a1fbea72fcfa118370c62a4b78eb37.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/routers/router.self-9b62645252f9e6535ff7f276a261597854ce5d34f3505101dec7e487d991b2eb.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/api/boards.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/api/cards.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/api/lists.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/application.self-55d2f88127dcaaa99d5c6a5261f9015880991431c520781213525a199c900f0d.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/api/boards" for ::1 at 2015-08-28 15:29:44 -0700
+Processing by Api::BoardsController#index as JSON
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Qjb2xzyr2ZnzNkyW0u2-XA"]]
+  [1m[36mBoard Load (0.3ms)[0m  [1mSELECT "boards".* FROM "boards"[0m
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.0ms)
+  Rendered api/boards/index.json.jbuilder (4.0ms)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 15:29:44 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Qjb2xzyr2ZnzNkyW0u2-XA"]]
+Completed 200 OK in 87ms (Views: 86.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/api/boards.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/api/cards.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/api/lists.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/trello_app.self-d122dd122d7caf18e3c61d5994e0914a54c23464d1cc1d781cdf79467f185118.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/board/form.self-4feb192ae3a96572fad6f4f9d3f617ac73a9ef88a8907adc4c4b23f48cbfb181.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/board/index.self-6c5172487145153043448c902e41119663d9587a0fb427bcdee25524367736dd.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/board/index_deprecated.self-a4242141a646ffd0d5d69234f90ef816db80376549f581c0353d56fefa167133.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/board/index_item.self-2054b9d581b0849276cee8a37a2bf74741aea5bfc9a41bab9940863261958a2b.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/board/show.self-679183c6befed31b96c25bdf06d83eaff450eb6ad6a71c25741a3725148edbc7.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/list/form.self-f4e2fed226be1a99072f05907af25e983e4c8e0d8b24487938be2da045b098e5.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/list/list.self-112b0744a10ac9f11153a8826fe3a0fb822df9c4dab7ec9cb0eaa181bfb868f9.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/utils/composite_view.self-ae3948e953312d3e050f4baf312fdaea87b998a104d2eece8f5b81287ad1a4f7.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/models/board.self-b809cae4ef5ebe5d0cbc18aeaefa314a262e339932c9a96c64fde49392946628.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/models/card.self-4ff4265caa2ac826c076b89881646b309ae2638092671a32b9e05bfae3eca8d6.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/models/list.self-3a473167bf07984f30a880681330dc0134f8128bc8e2980504861b4f255c06ce.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/collections/boards.self-8623aebb08152a5bd0231b78d968ccd3e389443b6a47b382966474c6fb162ee5.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/" for ::1 at 2015-08-28 15:29:44 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Qjb2xzyr2ZnzNkyW0u2-XA"]]
+Completed 200 OK in 103ms (Views: 102.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/collections/cards.self-65f2e9e3989272b19bf5b723f7df22857105a3ca10e3a8194f52fd962fd2c97b.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/collections/lists.self-4f74425b3eb818e06f9c45d0f21191556449526f4b948af3a4233126e8776c8d.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/views/board/form.self-e1db94e694137e7e5c6220103c4a8149bd729a3f88a7c320e77c851e0cce0753.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/views/board/index.self-b5a95e29cd15b5acb38329d9a2524cf14e8201312e78581e209401bd93206de1.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/views/board/index_item.self-6883d167b8213f1411fe426bfba519e3b56e5f7972e24b6ed95941a66bb96850.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/assets/views/board/show.self-f161a3f5c395a74daf9f102f8d1e01baf6b7453b6e60046402fcc4675950c503.js?body=1" for ::1 at 2015-08-28 15:29:44 -0700
+
+
+Started GET "/" for ::1 at 2015-08-28 15:29:44 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Qjb2xzyr2ZnzNkyW0u2-XA"]]
+Completed 200 OK in 108ms (Views: 107.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/views/card/card.self-8ac4a7854bdcf2b662dfcf27f5d0ccec9ef00e36a322142c577bbd2b5dc1d589.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/views/list/form.self-05546ef01c4e33fb284aae0859f2a24cf93274877776230df59d9c658fbf6593.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/views/list/list.self-62d93ad6fd765df2d0448b082693c1f167a1fbea72fcfa118370c62a4b78eb37.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/routers/router.self-9b62645252f9e6535ff7f276a261597854ce5d34f3505101dec7e487d991b2eb.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/api/boards.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/api/cards.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/api/lists.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/api/boards.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/api/cards.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/trello_app.self-d122dd122d7caf18e3c61d5994e0914a54c23464d1cc1d781cdf79467f185118.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/board/form.self-4feb192ae3a96572fad6f4f9d3f617ac73a9ef88a8907adc4c4b23f48cbfb181.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/board/index.self-6c5172487145153043448c902e41119663d9587a0fb427bcdee25524367736dd.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/board/index_deprecated.self-a4242141a646ffd0d5d69234f90ef816db80376549f581c0353d56fefa167133.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/board/index_item.self-2054b9d581b0849276cee8a37a2bf74741aea5bfc9a41bab9940863261958a2b.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/board/show.self-679183c6befed31b96c25bdf06d83eaff450eb6ad6a71c25741a3725148edbc7.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/list/form.self-f4e2fed226be1a99072f05907af25e983e4c8e0d8b24487938be2da045b098e5.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/list/list.self-112b0744a10ac9f11153a8826fe3a0fb822df9c4dab7ec9cb0eaa181bfb868f9.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/utils/composite_view.self-ae3948e953312d3e050f4baf312fdaea87b998a104d2eece8f5b81287ad1a4f7.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/models/board.self-b809cae4ef5ebe5d0cbc18aeaefa314a262e339932c9a96c64fde49392946628.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/models/card.self-4ff4265caa2ac826c076b89881646b309ae2638092671a32b9e05bfae3eca8d6.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/views/list/form.self-05546ef01c4e33fb284aae0859f2a24cf93274877776230df59d9c658fbf6593.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/views/list/list.self-62d93ad6fd765df2d0448b082693c1f167a1fbea72fcfa118370c62a4b78eb37.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/routers/router.self-9b62645252f9e6535ff7f276a261597854ce5d34f3505101dec7e487d991b2eb.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/models/list.self-3a473167bf07984f30a880681330dc0134f8128bc8e2980504861b4f255c06ce.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/collections/boards.self-8623aebb08152a5bd0231b78d968ccd3e389443b6a47b382966474c6fb162ee5.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/api/boards.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/api/cards.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/collections/cards.self-65f2e9e3989272b19bf5b723f7df22857105a3ca10e3a8194f52fd962fd2c97b.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/api/lists.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/collections/lists.self-4f74425b3eb818e06f9c45d0f21191556449526f4b948af3a4233126e8776c8d.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/views/board/form.self-e1db94e694137e7e5c6220103c4a8149bd729a3f88a7c320e77c851e0cce0753.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/application.self-55d2f88127dcaaa99d5c6a5261f9015880991431c520781213525a199c900f0d.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/views/board/index.self-b5a95e29cd15b5acb38329d9a2524cf14e8201312e78581e209401bd93206de1.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/views/board/index_item.self-6883d167b8213f1411fe426bfba519e3b56e5f7972e24b6ed95941a66bb96850.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/views/board/show.self-f161a3f5c395a74daf9f102f8d1e01baf6b7453b6e60046402fcc4675950c503.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/assets/views/card/card.self-8ac4a7854bdcf2b662dfcf27f5d0ccec9ef00e36a322142c577bbd2b5dc1d589.js?body=1" for ::1 at 2015-08-28 15:29:45 -0700
+
+
+Started GET "/api/boards" for ::1 at 2015-08-28 15:29:45 -0700
+Processing by Api::BoardsController#index as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Qjb2xzyr2ZnzNkyW0u2-XA"]]
+  [1m[35mBoard Load (0.3ms)[0m  SELECT "boards".* FROM "boards"
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.0ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.0ms)
+  Rendered api/boards/index.json.jbuilder (3.7ms)
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/boards" for ::1 at 2015-08-28 15:32:36 -0700
+Processing by Api::BoardsController#index as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Qjb2xzyr2ZnzNkyW0u2-XA"]]
+  [1m[35mBoard Load (0.3ms)[0m  SELECT "boards".* FROM "boards"
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.0ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/index.json.jbuilder (3.5ms)
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 15:41:05 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Qjb2xzyr2ZnzNkyW0u2-XA"]]
+Completed 200 OK in 386ms (Views: 385.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/boards/form.self-9ef9f167e09bcf635059661ec946e6c7af6297ebffd3c4106788f90f9f1daeed.js?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/api/lists.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/api/cards.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/api/boards.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/boards/index.self-ce925b988c6c941797fd3dc505f7fa4e5126cd89c9cb5599460cea371d00b539.js?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/boards/index_deprecated.self-460903cc9d522607e2b0dbc68f8ed7b2d48b3ff0b1cedfad6f82429a7407d8a7.js?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/boards/index_item.self-ae117c99ccdcaa4abbe1c6dab26180ebbebdfbb04e7dd6b7ddedff0be35e6724.js?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/boards/show.self-175fbb09e345a8068ca173109fdff174170bfa3ad6ee98296297da5f52a7a411.js?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/lists/form.self-872fc7c2159efa281ed8d4f61c8652ef58abb7c9dd6a106bae6ba5230f27c52e.js?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/lists/list.self-aaec33aab6811815db311e8325b1446499bc9927fa32c2b5529a68b2609f32fa.js?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/views/board/form.self-280b2b8cc16f67944e839472e6ef8f6d5ff5552c5e7be61ad26ba68201d1a0d9.js?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/views/board/index.self-a151e20285aff07095d23d9107de3d460822b2281e280dc17b2898c8d163ec7a.js?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/views/board/index_item.self-4807ab597596d23c3ad7f4132b13dac32dd7cfd3b53f874d44afd261ae19ee01.js?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/views/board/show.self-df49e9d0878a9e150ef010ac60604a06ecb04d42982f41cee4d65a4659246e25.js?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/views/list/form.self-64ab9c352922730724001b784beca32156c799ca43bacf256196b8d5c2b01834.js?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/views/list/list.self-1389b74075e4e57d5987c1b8a458089314fefb31b8c7f0a05d5844451b382949.js?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/trello_app.self-d122dd122d7caf18e3c61d5994e0914a54c23464d1cc1d781cdf79467f185118.js?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/utils/composite_view.self-ae3948e953312d3e050f4baf312fdaea87b998a104d2eece8f5b81287ad1a4f7.js?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/models/board.self-b809cae4ef5ebe5d0cbc18aeaefa314a262e339932c9a96c64fde49392946628.js?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/models/card.self-4ff4265caa2ac826c076b89881646b309ae2638092671a32b9e05bfae3eca8d6.js?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/models/list.self-3a473167bf07984f30a880681330dc0134f8128bc8e2980504861b4f255c06ce.js?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/collections/boards.self-8623aebb08152a5bd0231b78d968ccd3e389443b6a47b382966474c6fb162ee5.js?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/collections/cards.self-65f2e9e3989272b19bf5b723f7df22857105a3ca10e3a8194f52fd962fd2c97b.js?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/collections/lists.self-4f74425b3eb818e06f9c45d0f21191556449526f4b948af3a4233126e8776c8d.js?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/views/card/card.self-8ac4a7854bdcf2b662dfcf27f5d0ccec9ef00e36a322142c577bbd2b5dc1d589.js?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/routers/router.self-9b62645252f9e6535ff7f276a261597854ce5d34f3505101dec7e487d991b2eb.js?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/api/boards.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/api/cards.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/api/lists.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/assets/application.self-55d2f88127dcaaa99d5c6a5261f9015880991431c520781213525a199c900f0d.js?body=1" for ::1 at 2015-08-28 15:41:06 -0700
+
+
+Started GET "/api/boards" for ::1 at 2015-08-28 15:41:06 -0700
+Processing by Api::BoardsController#index as JSON
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Qjb2xzyr2ZnzNkyW0u2-XA"]]
+  [1m[36mBoard Load (0.3ms)[0m  [1mSELECT "boards".* FROM "boards"[0m
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.2ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.0ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/index.json.jbuilder (4.4ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 15:41:27 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Qjb2xzyr2ZnzNkyW0u2-XA"]]
+Completed 200 OK in 112ms (Views: 111.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/api/boards.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/api/lists.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/api/cards.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/trello_app.self-d122dd122d7caf18e3c61d5994e0914a54c23464d1cc1d781cdf79467f185118.js?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/boards/form.self-9ef9f167e09bcf635059661ec946e6c7af6297ebffd3c4106788f90f9f1daeed.js?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/boards/index.self-ce925b988c6c941797fd3dc505f7fa4e5126cd89c9cb5599460cea371d00b539.js?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/boards/index_deprecated.self-460903cc9d522607e2b0dbc68f8ed7b2d48b3ff0b1cedfad6f82429a7407d8a7.js?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/boards/index_item.self-ae117c99ccdcaa4abbe1c6dab26180ebbebdfbb04e7dd6b7ddedff0be35e6724.js?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/boards/show.self-175fbb09e345a8068ca173109fdff174170bfa3ad6ee98296297da5f52a7a411.js?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/lists/form.self-872fc7c2159efa281ed8d4f61c8652ef58abb7c9dd6a106bae6ba5230f27c52e.js?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/lists/list.self-aaec33aab6811815db311e8325b1446499bc9927fa32c2b5529a68b2609f32fa.js?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/utils/composite_view.self-ae3948e953312d3e050f4baf312fdaea87b998a104d2eece8f5b81287ad1a4f7.js?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/models/board.self-b809cae4ef5ebe5d0cbc18aeaefa314a262e339932c9a96c64fde49392946628.js?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/models/card.self-4ff4265caa2ac826c076b89881646b309ae2638092671a32b9e05bfae3eca8d6.js?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/models/list.self-3a473167bf07984f30a880681330dc0134f8128bc8e2980504861b4f255c06ce.js?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/collections/boards.self-8623aebb08152a5bd0231b78d968ccd3e389443b6a47b382966474c6fb162ee5.js?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/collections/cards.self-65f2e9e3989272b19bf5b723f7df22857105a3ca10e3a8194f52fd962fd2c97b.js?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/collections/lists.self-4f74425b3eb818e06f9c45d0f21191556449526f4b948af3a4233126e8776c8d.js?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/views/board/form.self-280b2b8cc16f67944e839472e6ef8f6d5ff5552c5e7be61ad26ba68201d1a0d9.js?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/views/board/index.self-a151e20285aff07095d23d9107de3d460822b2281e280dc17b2898c8d163ec7a.js?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/views/board/index_item.self-4807ab597596d23c3ad7f4132b13dac32dd7cfd3b53f874d44afd261ae19ee01.js?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/views/board/show.self-df49e9d0878a9e150ef010ac60604a06ecb04d42982f41cee4d65a4659246e25.js?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/views/card/card.self-8ac4a7854bdcf2b662dfcf27f5d0ccec9ef00e36a322142c577bbd2b5dc1d589.js?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/views/list/form.self-64ab9c352922730724001b784beca32156c799ca43bacf256196b8d5c2b01834.js?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/views/list/list.self-1389b74075e4e57d5987c1b8a458089314fefb31b8c7f0a05d5844451b382949.js?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/routers/router.self-9b62645252f9e6535ff7f276a261597854ce5d34f3505101dec7e487d991b2eb.js?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/api/boards.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/api/cards.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/api/lists.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/assets/application.self-55d2f88127dcaaa99d5c6a5261f9015880991431c520781213525a199c900f0d.js?body=1" for ::1 at 2015-08-28 15:41:27 -0700
+
+
+Started GET "/api/boards" for ::1 at 2015-08-28 15:41:27 -0700
+Processing by Api::BoardsController#index as JSON
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Qjb2xzyr2ZnzNkyW0u2-XA"]]
+  [1m[35mBoard Load (0.4ms)[0m  SELECT "boards".* FROM "boards"
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/index.json.jbuilder (5.1ms)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 1.0ms)
+  [1m[36m (5046.4ms)[0m  [1mDROP DATABASE IF EXISTS "TrelloApp_development"[0m
+PG::ObjectInUse: ERROR:  database "TrelloApp_development" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+: DROP DATABASE IF EXISTS "TrelloApp_development"
+  [1m[35m (141.0ms)[0m  DROP DATABASE IF EXISTS "TrelloApp_test"
+  [1m[36m (0.7ms)[0m  [1mCREATE DATABASE "TrelloApp_development" ENCODING = 'unicode'[0m
+PG::DuplicateDatabase: ERROR:  database "TrelloApp_development" already exists
+: CREATE DATABASE "TrelloApp_development" ENCODING = 'unicode'
+  [1m[35m (365.4ms)[0m  CREATE DATABASE "TrelloApp_test" ENCODING = 'unicode'
+  [1m[36mSQL (0.2ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (6.8ms)[0m  DROP TABLE "boards" CASCADE
+  [1m[36m (8.4ms)[0m  [1mCREATE TABLE "boards" ("id" serial primary key, "user_id" integer NOT NULL, "title" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (1.2ms)[0m  CREATE UNIQUE INDEX  "index_boards_on_user_id_and_title" ON "boards" USING btree ("user_id", "title")
+  [1m[36m (3.4ms)[0m  [1mDROP TABLE "cards" CASCADE[0m
+  [1m[35m (4.4ms)[0m  CREATE TABLE "cards" ("id" serial primary key, "list_id" integer NOT NULL, "title" character varying NOT NULL, "description" text NOT NULL, "ord" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (2.6ms)[0m  [1mDROP TABLE "lists" CASCADE[0m
+  [1m[35m (4.0ms)[0m  CREATE TABLE "lists" ("id" serial primary key, "board_id" integer NOT NULL, "title" character varying NOT NULL, "ord" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (3.0ms)[0m  [1mDROP TABLE "users" CASCADE[0m
+  [1m[35m (4.1ms)[0m  CREATE TABLE "users" ("id" serial primary key, "username" character varying NOT NULL, "password_digest" character varying NOT NULL, "session_token" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (1.2ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_password_digest" ON "users" USING btree ("password_digest")[0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX  "index_users_on_session_token" ON "users" USING btree ("session_token")
+  [1m[36m (0.4ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35mSQL (0.3ms)[0m  CREATE EXTENSION IF NOT EXISTS "plpgsql"
+  [1m[36m (6.6ms)[0m  [1mCREATE TABLE "boards" ("id" serial primary key, "user_id" integer NOT NULL, "title" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (1.7ms)[0m  CREATE UNIQUE INDEX  "index_boards_on_user_id_and_title" ON "boards" USING btree ("user_id", "title")
+  [1m[36m (4.6ms)[0m  [1mCREATE TABLE "cards" ("id" serial primary key, "list_id" integer NOT NULL, "title" character varying NOT NULL, "description" text NOT NULL, "ord" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (4.2ms)[0m  CREATE TABLE "lists" ("id" serial primary key, "board_id" integer NOT NULL, "title" character varying NOT NULL, "ord" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (4.2ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "username" character varying NOT NULL, "password_digest" character varying NOT NULL, "session_token" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX  "index_users_on_password_digest" ON "users" USING btree ("password_digest")
+  [1m[36m (1.2ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_session_token" ON "users" USING btree ("session_token")[0m
+  [1m[35m (2.6ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (1.2ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150811074524')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150807175352')
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150807212646')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150808014508')
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("username", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "edhuang"], ["password_digest", "$2a$10$C06zxoDdYbrP6NqkjZQBY.UpKuizh59iUIGbRKZe/gMVaUu/O0wEu"], ["session_token", "2bc8jqBxJ2SBsmCtvcHXqQ"], ["created_at", "2015-08-28 22:42:18.674918"], ["updated_at", "2015-08-28 22:42:18.674918"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "boards" ("user_id", "title", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 1], ["title", "shany"], ["created_at", "2015-08-28 22:42:18.926134"], ["updated_at", "2015-08-28 22:42:18.926134"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "boards" ("user_id", "title", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["title", "rosalinda.friesen"], ["created_at", "2015-08-28 22:42:18.930854"], ["updated_at", "2015-08-28 22:42:18.930854"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "boards" ("user_id", "title", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 1], ["title", "seth.koepp"], ["created_at", "2015-08-28 22:42:18.933787"], ["updated_at", "2015-08-28 22:42:18.933787"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "boards" ("user_id", "title", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["title", "nathen_kris"], ["created_at", "2015-08-28 22:42:18.936248"], ["updated_at", "2015-08-28 22:42:18.936248"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "boards" ("user_id", "title", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 1], ["title", "bradley.ritchie"], ["created_at", "2015-08-28 22:42:18.938444"], ["updated_at", "2015-08-28 22:42:18.938444"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["board_id", 1], ["title", "voluptatem temporibus et nulla"], ["ord", 1], ["created_at", "2015-08-28 22:42:18.950510"], ["updated_at", "2015-08-28 22:42:18.950510"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["board_id", 2], ["title", "et dicta dolores provident"], ["ord", 1], ["created_at", "2015-08-28 22:42:18.953458"], ["updated_at", "2015-08-28 22:42:18.953458"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["board_id", 3], ["title", "ipsa mollitia et est"], ["ord", 1], ["created_at", "2015-08-28 22:42:18.955221"], ["updated_at", "2015-08-28 22:42:18.955221"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["board_id", 4], ["title", "eum totam aut excepturi"], ["ord", 1], ["created_at", "2015-08-28 22:42:18.956818"], ["updated_at", "2015-08-28 22:42:18.956818"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["board_id", 5], ["title", "dolorem deleniti voluptatem quia"], ["ord", 1], ["created_at", "2015-08-28 22:42:18.958748"], ["updated_at", "2015-08-28 22:42:18.958748"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["board_id", 1], ["title", "qui nihil maxime non"], ["ord", 2], ["created_at", "2015-08-28 22:42:18.960504"], ["updated_at", "2015-08-28 22:42:18.960504"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["board_id", 2], ["title", "iste aliquam odio doloremque"], ["ord", 2], ["created_at", "2015-08-28 22:42:18.962524"], ["updated_at", "2015-08-28 22:42:18.962524"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["board_id", 3], ["title", "optio qui officia nisi"], ["ord", 2], ["created_at", "2015-08-28 22:42:18.964274"], ["updated_at", "2015-08-28 22:42:18.964274"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["board_id", 4], ["title", "consequuntur quo hic nihil"], ["ord", 2], ["created_at", "2015-08-28 22:42:18.966046"], ["updated_at", "2015-08-28 22:42:18.966046"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["board_id", 5], ["title", "vel eligendi est deleniti"], ["ord", 2], ["created_at", "2015-08-28 22:42:18.967935"], ["updated_at", "2015-08-28 22:42:18.967935"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["board_id", 1], ["title", "vel pariatur soluta eum"], ["ord", 3], ["created_at", "2015-08-28 22:42:18.970120"], ["updated_at", "2015-08-28 22:42:18.970120"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["board_id", 2], ["title", "tenetur cum totam magni"], ["ord", 3], ["created_at", "2015-08-28 22:42:18.971865"], ["updated_at", "2015-08-28 22:42:18.971865"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["board_id", 3], ["title", "autem consequuntur quam dolore"], ["ord", 3], ["created_at", "2015-08-28 22:42:18.973646"], ["updated_at", "2015-08-28 22:42:18.973646"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["board_id", 4], ["title", "amet error voluptatum autem"], ["ord", 3], ["created_at", "2015-08-28 22:42:18.975462"], ["updated_at", "2015-08-28 22:42:18.975462"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["board_id", 5], ["title", "rem laudantium ea eaque"], ["ord", 3], ["created_at", "2015-08-28 22:42:18.977119"], ["updated_at", "2015-08-28 22:42:18.977119"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["board_id", 1], ["title", "nisi aut in quas"], ["ord", 4], ["created_at", "2015-08-28 22:42:18.979036"], ["updated_at", "2015-08-28 22:42:18.979036"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["board_id", 2], ["title", "veniam a sint soluta"], ["ord", 4], ["created_at", "2015-08-28 22:42:18.980864"], ["updated_at", "2015-08-28 22:42:18.980864"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["board_id", 3], ["title", "eum aut voluptatum vero"], ["ord", 4], ["created_at", "2015-08-28 22:42:18.982837"], ["updated_at", "2015-08-28 22:42:18.982837"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["board_id", 4], ["title", "nisi velit et in"], ["ord", 4], ["created_at", "2015-08-28 22:42:18.984627"], ["updated_at", "2015-08-28 22:42:18.984627"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["board_id", 5], ["title", "doloremque molestiae est vero"], ["ord", 4], ["created_at", "2015-08-28 22:42:18.986455"], ["updated_at", "2015-08-28 22:42:18.986455"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["board_id", 1], ["title", "quia sunt illo repudiandae"], ["ord", 5], ["created_at", "2015-08-28 22:42:18.988014"], ["updated_at", "2015-08-28 22:42:18.988014"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["board_id", 2], ["title", "maiores laudantium dolorem fuga"], ["ord", 5], ["created_at", "2015-08-28 22:42:18.990031"], ["updated_at", "2015-08-28 22:42:18.990031"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["board_id", 3], ["title", "exercitationem placeat reprehenderit dolorem"], ["ord", 5], ["created_at", "2015-08-28 22:42:18.992002"], ["updated_at", "2015-08-28 22:42:18.992002"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["board_id", 4], ["title", "eum voluptate temporibus eum"], ["ord", 5], ["created_at", "2015-08-28 22:42:18.993660"], ["updated_at", "2015-08-28 22:42:18.993660"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["board_id", 5], ["title", "id exercitationem est et"], ["ord", 5], ["created_at", "2015-08-28 22:42:18.995623"], ["updated_at", "2015-08-28 22:42:18.995623"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["board_id", 1], ["title", "velit ex non deleniti"], ["ord", 6], ["created_at", "2015-08-28 22:42:18.997557"], ["updated_at", "2015-08-28 22:42:18.997557"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["board_id", 2], ["title", "et fugiat ad doloribus"], ["ord", 6], ["created_at", "2015-08-28 22:42:18.999284"], ["updated_at", "2015-08-28 22:42:18.999284"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["board_id", 3], ["title", "minus ipsam repudiandae repellendus"], ["ord", 6], ["created_at", "2015-08-28 22:42:19.000812"], ["updated_at", "2015-08-28 22:42:19.000812"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["board_id", 4], ["title", "quo totam eos voluptatem"], ["ord", 6], ["created_at", "2015-08-28 22:42:19.002775"], ["updated_at", "2015-08-28 22:42:19.002775"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["board_id", 5], ["title", "est sunt id ipsa"], ["ord", 6], ["created_at", "2015-08-28 22:42:19.004372"], ["updated_at", "2015-08-28 22:42:19.004372"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["board_id", 1], ["title", "dolores et unde totam"], ["ord", 7], ["created_at", "2015-08-28 22:42:19.006146"], ["updated_at", "2015-08-28 22:42:19.006146"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["board_id", 2], ["title", "libero sit qui perferendis"], ["ord", 7], ["created_at", "2015-08-28 22:42:19.007747"], ["updated_at", "2015-08-28 22:42:19.007747"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["board_id", 3], ["title", "quod dolores quia aut"], ["ord", 7], ["created_at", "2015-08-28 22:42:19.009360"], ["updated_at", "2015-08-28 22:42:19.009360"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["board_id", 4], ["title", "velit quo ratione laboriosam"], ["ord", 7], ["created_at", "2015-08-28 22:42:19.011472"], ["updated_at", "2015-08-28 22:42:19.011472"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["board_id", 5], ["title", "qui maiores iusto atque"], ["ord", 7], ["created_at", "2015-08-28 22:42:19.013230"], ["updated_at", "2015-08-28 22:42:19.013230"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["board_id", 1], ["title", "ut esse quia vel"], ["ord", 8], ["created_at", "2015-08-28 22:42:19.014892"], ["updated_at", "2015-08-28 22:42:19.014892"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["board_id", 2], ["title", "harum sapiente quis ut"], ["ord", 8], ["created_at", "2015-08-28 22:42:19.016694"], ["updated_at", "2015-08-28 22:42:19.016694"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["board_id", 3], ["title", "non nulla animi qui"], ["ord", 8], ["created_at", "2015-08-28 22:42:19.018843"], ["updated_at", "2015-08-28 22:42:19.018843"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["board_id", 4], ["title", "sit maxime velit est"], ["ord", 8], ["created_at", "2015-08-28 22:42:19.021011"], ["updated_at", "2015-08-28 22:42:19.021011"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["board_id", 5], ["title", "explicabo esse id recusandae"], ["ord", 8], ["created_at", "2015-08-28 22:42:19.023151"], ["updated_at", "2015-08-28 22:42:19.023151"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["board_id", 1], ["title", "rem consectetur velit quia"], ["ord", 9], ["created_at", "2015-08-28 22:42:19.024976"], ["updated_at", "2015-08-28 22:42:19.024976"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["board_id", 2], ["title", "itaque dignissimos voluptatem occaecati"], ["ord", 9], ["created_at", "2015-08-28 22:42:19.026647"], ["updated_at", "2015-08-28 22:42:19.026647"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["board_id", 3], ["title", "officiis quis praesentium consectetur"], ["ord", 9], ["created_at", "2015-08-28 22:42:19.028404"], ["updated_at", "2015-08-28 22:42:19.028404"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["board_id", 4], ["title", "et consequatur et harum"], ["ord", 9], ["created_at", "2015-08-28 22:42:19.030180"], ["updated_at", "2015-08-28 22:42:19.030180"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["board_id", 5], ["title", "et omnis repellat pariatur"], ["ord", 9], ["created_at", "2015-08-28 22:42:19.032329"], ["updated_at", "2015-08-28 22:42:19.032329"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["board_id", 1], ["title", "quis perferendis molestiae assumenda"], ["ord", 10], ["created_at", "2015-08-28 22:42:19.034581"], ["updated_at", "2015-08-28 22:42:19.034581"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["board_id", 2], ["title", "perspiciatis qui culpa laboriosam"], ["ord", 10], ["created_at", "2015-08-28 22:42:19.036412"], ["updated_at", "2015-08-28 22:42:19.036412"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["board_id", 3], ["title", "sit reiciendis aliquid repellendus"], ["ord", 10], ["created_at", "2015-08-28 22:42:19.038284"], ["updated_at", "2015-08-28 22:42:19.038284"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["board_id", 4], ["title", "dolore est fuga fugiat"], ["ord", 10], ["created_at", "2015-08-28 22:42:19.039859"], ["updated_at", "2015-08-28 22:42:19.039859"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "lists" ("board_id", "title", "ord", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["board_id", 5], ["title", "velit aut itaque incidunt"], ["ord", 10], ["created_at", "2015-08-28 22:42:19.041420"], ["updated_at", "2015-08-28 22:42:19.041420"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/api/boards/1" for ::1 at 2015-08-28 17:10:03 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::BoardsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Qjb2xzyr2ZnzNkyW0u2-XA"]]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as :redirect_if_not_logged_in rendered or redirected
+Completed 302 Found in 24ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/api/boards/1" for ::1 at 2015-08-28 17:10:03 -0700
+Processing by Api::BoardsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Qjb2xzyr2ZnzNkyW0u2-XA"]]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as :redirect_if_not_logged_in rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/session/new" for ::1 at 2015-08-28 17:10:03 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.2ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Qjb2xzyr2ZnzNkyW0u2-XA"]]
+Completed 200 OK in 623ms (Views: 621.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/models/board.self-ba7ac3f459608ce75c2f8154cc289ba991fdf58e79af228aa15844cd10c5c708.js?body=1" for ::1 at 2015-08-28 17:10:04 -0700
+
+
+Started GET "/assets/views/boards/index.self-a151e20285aff07095d23d9107de3d460822b2281e280dc17b2898c8d163ec7a.js?body=1" for ::1 at 2015-08-28 17:10:04 -0700
+
+
+Started GET "/assets/views/boards/form.self-280b2b8cc16f67944e839472e6ef8f6d5ff5552c5e7be61ad26ba68201d1a0d9.js?body=1" for ::1 at 2015-08-28 17:10:04 -0700
+
+
+Started GET "/assets/collections/cards.self-ac4ccecb5302fededfed63b13e00f9a331b1758eefc05e5681061ded52790ec5.js?body=1" for ::1 at 2015-08-28 17:10:04 -0700
+
+
+Started GET "/assets/views/boards/index_item.self-4807ab597596d23c3ad7f4132b13dac32dd7cfd3b53f874d44afd261ae19ee01.js?body=1" for ::1 at 2015-08-28 17:10:04 -0700
+
+
+Started GET "/assets/models/list.self-528853a20419f0e3fbf6a17c996025aa627e59bedde2ef2690170c4e019cffa4.js?body=1" for ::1 at 2015-08-28 17:10:04 -0700
+
+
+Started GET "/assets/views/boards/show.self-df49e9d0878a9e150ef010ac60604a06ecb04d42982f41cee4d65a4659246e25.js?body=1" for ::1 at 2015-08-28 17:10:04 -0700
+
+
+Started GET "/assets/views/cards/card.self-8ac4a7854bdcf2b662dfcf27f5d0ccec9ef00e36a322142c577bbd2b5dc1d589.js?body=1" for ::1 at 2015-08-28 17:10:04 -0700
+
+
+Started GET "/assets/views/lists/form.self-64ab9c352922730724001b784beca32156c799ca43bacf256196b8d5c2b01834.js?body=1" for ::1 at 2015-08-28 17:10:04 -0700
+
+
+Started GET "/assets/views/lists/list.self-1389b74075e4e57d5987c1b8a458089314fefb31b8c7f0a05d5844451b382949.js?body=1" for ::1 at 2015-08-28 17:10:04 -0700
+
+
+Started GET "/api/listings" for ::1 at 2015-08-28 17:10:10 -0700
+
+ActionController::RoutingError (No route matches [GET] "/api/listings"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/edhuang/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/edhuang/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/edhuang/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/edhuang/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/edhuang/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/edhuang/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.2ms)
+  Rendered /Users/edhuang/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/edhuang/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (42.2ms)
+  Rendered /Users/edhuang/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/edhuang/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/edhuang/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/edhuang/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/edhuang/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (21.6ms)
+  Rendered /Users/edhuang/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/edhuang/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/edhuang/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (43.5ms)
+
+
+Started GET "/api/lists/1" for ::1 at 2015-08-28 17:10:26 -0700
+
+AbstractController::ActionNotFound - The action 'show' could not be found for Api::ListsController:
+  actionpack (4.2.3) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.3) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/edhuang/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/edhuang/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/edhuang/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/3c24ae9020ea7f75/variables" for ::1 at 2015-08-28 17:10:26 -0700
+
+
+Started GET "/api/lists" for ::1 at 2015-08-28 17:10:31 -0700
+
+ActionController::RoutingError (No route matches [GET] "/api/lists"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/edhuang/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/edhuang/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/edhuang/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/edhuang/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/edhuang/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /Users/edhuang/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/edhuang/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/edhuang/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (31.9ms)
+  Rendered /Users/edhuang/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/edhuang/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/edhuang/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/edhuang/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/edhuang/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (15.0ms)
+  Rendered /Users/edhuang/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/edhuang/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/edhuang/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (30.8ms)
+
+
+Started GET "/api/boards" for ::1 at 2015-08-28 17:10:41 -0700
+Processing by Api::BoardsController#index as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Qjb2xzyr2ZnzNkyW0u2-XA"]]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as :redirect_if_not_logged_in rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/session/new" for ::1 at 2015-08-28 17:10:41 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.2ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Qjb2xzyr2ZnzNkyW0u2-XA"]]
+Completed 200 OK in 112ms (Views: 111.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/boards/1" for ::1 at 2015-08-28 17:10:50 -0700
+Processing by Api::BoardsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Qjb2xzyr2ZnzNkyW0u2-XA"]]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as :redirect_if_not_logged_in rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/session/new" for ::1 at 2015-08-28 17:10:50 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.2ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Qjb2xzyr2ZnzNkyW0u2-XA"]]
+Completed 200 OK in 146ms (Views: 145.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/session/new" for ::1 at 2015-08-28 17:10:53 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Qjb2xzyr2ZnzNkyW0u2-XA"]]
+Completed 200 OK in 151ms (Views: 150.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 17:10:59 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (1.6ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Qjb2xzyr2ZnzNkyW0u2-XA"]]
+Completed 200 OK in 156ms (Views: 155.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/boards" for ::1 at 2015-08-28 17:10:59 -0700
+Processing by Api::BoardsController#index as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Qjb2xzyr2ZnzNkyW0u2-XA"]]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as :redirect_if_not_logged_in rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/session/new" for ::1 at 2015-08-28 17:10:59 -0700
+Processing by SessionsController#new as JSON
+  Rendered sessions/new.html.erb within layouts/application (0.7ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Qjb2xzyr2ZnzNkyW0u2-XA"]]
+Completed 200 OK in 121ms (Views: 120.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/session/new" for ::1 at 2015-08-28 17:11:00 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Qjb2xzyr2ZnzNkyW0u2-XA"]]
+Completed 200 OK in 141ms (Views: 140.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/session" for ::1 at 2015-08-28 17:11:03 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"yPUBzoPDBe6Lbf5LVij1Vvad6bkX/MAP5qRhmqer06VHgiKMEQyKbA5P9VXIhgGtzKnUDnNjBe8QUyFKV/6daA==", "user"=>{"username"=>"edhuang", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[35mUser Load (1.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT 1  [["username", "edhuang"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", "yK9YPrYPL7kFJpRudGFVNg"], ["updated_at", "2015-08-29 00:11:03.452691"], ["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000#
+Completed 302 Found in 88ms (ActiveRecord: 4.9ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 17:11:03 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "yK9YPrYPL7kFJpRudGFVNg"]]
+Completed 200 OK in 98ms (Views: 97.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/boards" for ::1 at 2015-08-28 17:11:03 -0700
+Processing by Api::BoardsController#index as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "yK9YPrYPL7kFJpRudGFVNg"]]
+  [1m[35mBoard Load (0.8ms)[0m  SELECT "boards".* FROM "boards"
+  Rendered api/boards/_board.json.jbuilder (0.7ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/index.json.jbuilder (26.8ms)
+Completed 200 OK in 35ms (Views: 27.0ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/api/boards" for ::1 at 2015-08-28 17:11:07 -0700
+Processing by Api::BoardsController#index as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "yK9YPrYPL7kFJpRudGFVNg"]]
+  [1m[35mBoard Load (0.4ms)[0m  SELECT "boards".* FROM "boards"
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.2ms)
+  Rendered api/boards/_board.json.jbuilder (0.2ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/index.json.jbuilder (6.5ms)
+Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/boards/1" for ::1 at 2015-08-28 17:11:10 -0700
+Processing by Api::BoardsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "yK9YPrYPL7kFJpRudGFVNg"]]
+  [1m[35mBoard Load (0.3ms)[0m  SELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mList Load (0.6ms)[0m  [1mSELECT "lists".* FROM "lists" WHERE "lists"."board_id" IN (1)[0m
+  [1m[35mCard Load (1.7ms)[0m  SELECT "cards".* FROM "cards" WHERE "cards"."list_id" IN (1, 6, 11, 16, 21, 26, 31, 36, 41, 46)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.3ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.0ms)
+  Rendered api/lists/_list.json.jbuilder (0.0ms)
+  Rendered api/lists/_list.json.jbuilder (0.0ms)
+  Rendered api/lists/_list.json.jbuilder (0.0ms)
+  Rendered api/lists/_list.json.jbuilder (0.0ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/boards/show.json.jbuilder (11.1ms)
+Completed 200 OK in 54ms (Views: 12.6ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/api/boards/1" for ::1 at 2015-08-28 17:11:10 -0700
+Processing by Api::BoardsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "yK9YPrYPL7kFJpRudGFVNg"]]
+  [1m[35mBoard Load (0.3ms)[0m  SELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mList Load (0.5ms)[0m  [1mSELECT "lists".* FROM "lists" WHERE "lists"."board_id" IN (1)[0m
+  [1m[35mCard Load (0.6ms)[0m  SELECT "cards".* FROM "cards" WHERE "cards"."list_id" IN (1, 6, 11, 16, 21, 26, 31, 36, 41, 46)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.2ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/boards/show.json.jbuilder (13.9ms)
+Completed 200 OK in 24ms (Views: 16.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/boards/1" for ::1 at 2015-08-28 17:11:37 -0700
+Processing by Api::BoardsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "yK9YPrYPL7kFJpRudGFVNg"]]
+  [1m[35mBoard Load (0.3ms)[0m  SELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mList Load (0.4ms)[0m  [1mSELECT "lists".* FROM "lists" WHERE "lists"."board_id" IN (1)[0m
+  [1m[35mCard Load (0.3ms)[0m  SELECT "cards".* FROM "cards" WHERE "cards"."list_id" IN (1, 6, 11, 16, 21, 26, 31, 36, 41, 46)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.0ms)
+  Rendered api/lists/_list.json.jbuilder (0.0ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/boards/show.json.jbuilder (8.3ms)
+Completed 200 OK in 17ms (Views: 9.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/boards/1" for ::1 at 2015-08-28 17:11:39 -0700
+Processing by Api::BoardsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "yK9YPrYPL7kFJpRudGFVNg"]]
+  [1m[35mBoard Load (0.3ms)[0m  SELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT "lists".* FROM "lists" WHERE "lists"."board_id" IN (1)[0m
+  [1m[35mCard Load (1.1ms)[0m  SELECT "cards".* FROM "cards" WHERE "cards"."list_id" IN (1, 6, 11, 16, 21, 26, 31, 36, 41, 46)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.0ms)
+  Rendered api/lists/_list.json.jbuilder (0.0ms)
+  Rendered api/lists/_list.json.jbuilder (0.0ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/boards/show.json.jbuilder (8.2ms)
+Completed 200 OK in 16ms (Views: 9.6ms | ActiveRecord: 2.0ms)
+  [1m[36mBoard Load (0.9ms)[0m  [1mSELECT  "boards".* FROM "boards"  ORDER BY "boards"."id" ASC LIMIT 1[0m
+  [1m[35mList Load (0.5ms)[0m  SELECT "lists".* FROM "lists" WHERE "lists"."board_id" = $1  [["board_id", 1]]
+  [1m[36mBoard Load (0.5ms)[0m  [1mSELECT  "boards".* FROM "boards"  ORDER BY "boards"."id" ASC LIMIT 1[0m
+  [1m[35mList Load (0.4ms)[0m  SELECT "lists".* FROM "lists" WHERE "lists"."board_id" = $1  [["board_id", 1]]
+
+
+Started GET "/api/boards/1" for ::1 at 2015-08-28 17:14:43 -0700
+Processing by Api::BoardsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "yK9YPrYPL7kFJpRudGFVNg"]]
+  [1m[35mBoard Load (0.3ms)[0m  SELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mList Load (0.4ms)[0m  [1mSELECT "lists".* FROM "lists" WHERE "lists"."board_id" IN (1)[0m
+  [1m[35mCard Load (0.4ms)[0m  SELECT "cards".* FROM "cards" WHERE "cards"."list_id" IN (1, 6, 11, 16, 21, 26, 31, 36, 41, 46)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.0ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.0ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/boards/show.json.jbuilder (8.0ms)
+Completed 200 OK in 15ms (Views: 9.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/boards/1" for ::1 at 2015-08-28 17:14:44 -0700
+Processing by Api::BoardsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "yK9YPrYPL7kFJpRudGFVNg"]]
+  [1m[35mBoard Load (0.3ms)[0m  SELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mList Load (0.4ms)[0m  [1mSELECT "lists".* FROM "lists" WHERE "lists"."board_id" IN (1)[0m
+  [1m[35mCard Load (0.4ms)[0m  SELECT "cards".* FROM "cards" WHERE "cards"."list_id" IN (1, 6, 11, 16, 21, 26, 31, 36, 41, 46)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.0ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.0ms)
+  Rendered api/lists/_list.json.jbuilder (0.0ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.0ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/boards/show.json.jbuilder (8.3ms)
+Completed 200 OK in 16ms (Views: 10.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/boards/1" for ::1 at 2015-08-28 17:14:45 -0700
+Processing by Api::BoardsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "yK9YPrYPL7kFJpRudGFVNg"]]
+  [1m[35mBoard Load (0.2ms)[0m  SELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mList Load (0.4ms)[0m  [1mSELECT "lists".* FROM "lists" WHERE "lists"."board_id" IN (1)[0m
+  [1m[35mCard Load (0.4ms)[0m  SELECT "cards".* FROM "cards" WHERE "cards"."list_id" IN (1, 6, 11, 16, 21, 26, 31, 36, 41, 46)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.0ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.2ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/boards/show.json.jbuilder (8.2ms)
+Completed 200 OK in 15ms (Views: 9.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/boards/1" for ::1 at 2015-08-28 17:15:09 -0700
+Processing by Api::BoardsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "yK9YPrYPL7kFJpRudGFVNg"]]
+  [1m[35mBoard Load (0.2ms)[0m  SELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT "lists".* FROM "lists" WHERE "lists"."board_id" IN (1)[0m
+  [1m[35mCard Load (0.3ms)[0m  SELECT "cards".* FROM "cards" WHERE "cards"."list_id" IN (1, 6, 11, 16, 21, 26, 31, 36, 41, 46)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/boards/show.json.jbuilder (8.7ms)
+Completed 200 OK in 15ms (Views: 10.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/boards/1" for ::1 at 2015-08-28 17:16:41 -0700
+Processing by Api::BoardsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "yK9YPrYPL7kFJpRudGFVNg"]]
+  [1m[35mBoard Load (0.1ms)[0m  SELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT "lists".* FROM "lists" WHERE "lists"."board_id" IN (1)[0m
+  [1m[35mCard Load (0.3ms)[0m  SELECT "cards".* FROM "cards" WHERE "cards"."list_id" IN (1, 6, 11, 16, 21, 26, 31, 36, 41, 46)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.0ms)
+  Rendered api/lists/_list.json.jbuilder (0.0ms)
+  Rendered api/lists/_list.json.jbuilder (0.0ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.0ms)
+  Rendered api/lists/_list.json.jbuilder (0.0ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.0ms)
+  Rendered api/lists/_list.json.jbuilder (0.0ms)
+  Rendered api/boards/show.json.jbuilder (5.6ms)
+Completed 200 OK in 11ms (Views: 6.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/boards/1" for ::1 at 2015-08-28 17:17:01 -0700
+Processing by Api::BoardsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "yK9YPrYPL7kFJpRudGFVNg"]]
+  [1m[35mBoard Load (0.3ms)[0m  SELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mList Load (0.6ms)[0m  [1mSELECT "lists".* FROM "lists" WHERE "lists"."board_id" IN (1)[0m
+  [1m[35mCard Load (0.3ms)[0m  SELECT "cards".* FROM "cards" WHERE "cards"."list_id" IN (1, 6, 11, 16, 21, 26, 31, 36, 41, 46)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.0ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/boards/show.json.jbuilder (9.8ms)
+Completed 200 OK in 19ms (Views: 11.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/boards/1" for ::1 at 2015-08-28 17:17:03 -0700
+Processing by Api::BoardsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "yK9YPrYPL7kFJpRudGFVNg"]]
+  [1m[35mBoard Load (0.2ms)[0m  SELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mList Load (0.4ms)[0m  [1mSELECT "lists".* FROM "lists" WHERE "lists"."board_id" IN (1)[0m
+  [1m[35mCard Load (0.4ms)[0m  SELECT "cards".* FROM "cards" WHERE "cards"."list_id" IN (1, 6, 11, 16, 21, 26, 31, 36, 41, 46)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.0ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/boards/show.json.jbuilder (8.2ms)
+Completed 200 OK in 16ms (Views: 9.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 20:49:35 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "yK9YPrYPL7kFJpRudGFVNg"]]
+Completed 200 OK in 402ms (Views: 397.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/api/lists.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 20:49:35 -0700
+
+
+Started GET "/assets/api/cards.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 20:49:35 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 20:49:35 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 20:49:36 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 20:49:36 -0700
+
+
+Started GET "/assets/api/boards.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 20:49:36 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-28 20:49:36 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 20:49:36 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 20:49:36 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-28 20:49:36 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 20:49:36 -0700
+
+
+Started GET "/assets/boards/index_deprecated.self-460903cc9d522607e2b0dbc68f8ed7b2d48b3ff0b1cedfad6f82429a7407d8a7.js?body=1" for ::1 at 2015-08-28 20:49:36 -0700
+
+
+Started GET "/assets/trello_app.self-d122dd122d7caf18e3c61d5994e0914a54c23464d1cc1d781cdf79467f185118.js?body=1" for ::1 at 2015-08-28 20:49:36 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-28 20:49:36 -0700
+
+
+Started GET "/assets/boards/form.self-9ef9f167e09bcf635059661ec946e6c7af6297ebffd3c4106788f90f9f1daeed.js?body=1" for ::1 at 2015-08-28 20:49:36 -0700
+
+
+Started GET "/assets/boards/index.self-ce925b988c6c941797fd3dc505f7fa4e5126cd89c9cb5599460cea371d00b539.js?body=1" for ::1 at 2015-08-28 20:49:36 -0700
+
+
+Started GET "/assets/boards/index_item.self-ae117c99ccdcaa4abbe1c6dab26180ebbebdfbb04e7dd6b7ddedff0be35e6724.js?body=1" for ::1 at 2015-08-28 20:49:36 -0700
+
+
+Started GET "/assets/boards/show.self-175fbb09e345a8068ca173109fdff174170bfa3ad6ee98296297da5f52a7a411.js?body=1" for ::1 at 2015-08-28 20:49:36 -0700
+
+
+Started GET "/assets/lists/form.self-872fc7c2159efa281ed8d4f61c8652ef58abb7c9dd6a106bae6ba5230f27c52e.js?body=1" for ::1 at 2015-08-28 20:49:36 -0700
+
+
+Started GET "/assets/lists/list.self-aaec33aab6811815db311e8325b1446499bc9927fa32c2b5529a68b2609f32fa.js?body=1" for ::1 at 2015-08-28 20:49:36 -0700
+
+
+Started GET "/assets/utils/composite_view.self-ae3948e953312d3e050f4baf312fdaea87b998a104d2eece8f5b81287ad1a4f7.js?body=1" for ::1 at 2015-08-28 20:49:36 -0700
+
+
+Started GET "/assets/models/board.self-ba7ac3f459608ce75c2f8154cc289ba991fdf58e79af228aa15844cd10c5c708.js?body=1" for ::1 at 2015-08-28 20:49:36 -0700
+
+
+Started GET "/assets/models/card.self-4ff4265caa2ac826c076b89881646b309ae2638092671a32b9e05bfae3eca8d6.js?body=1" for ::1 at 2015-08-28 20:49:36 -0700
+
+
+Started GET "/assets/models/list.self-528853a20419f0e3fbf6a17c996025aa627e59bedde2ef2690170c4e019cffa4.js?body=1" for ::1 at 2015-08-28 20:49:36 -0700
+
+
+Started GET "/assets/collections/lists.self-4f74425b3eb818e06f9c45d0f21191556449526f4b948af3a4233126e8776c8d.js?body=1" for ::1 at 2015-08-28 20:49:36 -0700
+
+
+Started GET "/assets/views/boards/form.self-280b2b8cc16f67944e839472e6ef8f6d5ff5552c5e7be61ad26ba68201d1a0d9.js?body=1" for ::1 at 2015-08-28 20:49:36 -0700
+
+
+Started GET "/assets/collections/boards.self-8623aebb08152a5bd0231b78d968ccd3e389443b6a47b382966474c6fb162ee5.js?body=1" for ::1 at 2015-08-28 20:49:36 -0700
+
+
+Started GET "/assets/collections/cards.self-ac4ccecb5302fededfed63b13e00f9a331b1758eefc05e5681061ded52790ec5.js?body=1" for ::1 at 2015-08-28 20:49:36 -0700
+
+
+Started GET "/assets/views/boards/index.self-a151e20285aff07095d23d9107de3d460822b2281e280dc17b2898c8d163ec7a.js?body=1" for ::1 at 2015-08-28 20:49:36 -0700
+
+
+Started GET "/assets/views/boards/index_item.self-4807ab597596d23c3ad7f4132b13dac32dd7cfd3b53f874d44afd261ae19ee01.js?body=1" for ::1 at 2015-08-28 20:49:36 -0700
+
+
+Started GET "/assets/views/boards/show.self-df49e9d0878a9e150ef010ac60604a06ecb04d42982f41cee4d65a4659246e25.js?body=1" for ::1 at 2015-08-28 20:49:36 -0700
+
+
+Started GET "/assets/views/cards/card.self-8ac4a7854bdcf2b662dfcf27f5d0ccec9ef00e36a322142c577bbd2b5dc1d589.js?body=1" for ::1 at 2015-08-28 20:49:36 -0700
+
+
+Started GET "/assets/views/lists/form.self-64ab9c352922730724001b784beca32156c799ca43bacf256196b8d5c2b01834.js?body=1" for ::1 at 2015-08-28 20:49:36 -0700
+
+
+Started GET "/assets/api/boards.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 20:49:36 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 20:49:36 -0700
+
+
+Started GET "/assets/api/lists.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 20:49:36 -0700
+
+
+Started GET "/assets/api/cards.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 20:49:36 -0700
+
+
+Started GET "/assets/views/lists/list.self-1389b74075e4e57d5987c1b8a458089314fefb31b8c7f0a05d5844451b382949.js?body=1" for ::1 at 2015-08-28 20:49:36 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 20:49:36 -0700
+
+
+Started GET "/assets/routers/router.self-9b62645252f9e6535ff7f276a261597854ce5d34f3505101dec7e487d991b2eb.js?body=1" for ::1 at 2015-08-28 20:49:36 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 20:49:36 -0700
+
+
+Started GET "/assets/application.self-55d2f88127dcaaa99d5c6a5261f9015880991431c520781213525a199c900f0d.js?body=1" for ::1 at 2015-08-28 20:49:36 -0700
+
+
+Started GET "/api/boards" for ::1 at 2015-08-28 20:49:36 -0700
+Processing by Api::BoardsController#index as JSON
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "yK9YPrYPL7kFJpRudGFVNg"]]
+  [1m[36mBoard Load (0.7ms)[0m  [1mSELECT "boards".* FROM "boards"[0m
+  Rendered api/boards/_board.json.jbuilder (0.3ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/index.json.jbuilder (7.8ms)
+Completed 200 OK in 13ms (Views: 10.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 23:55:43 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (1.6ms)
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "yK9YPrYPL7kFJpRudGFVNg"]]
+Completed 200 OK in 401ms (Views: 394.2ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/assets/api/boards.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/api/cards.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/api/lists.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/trello_app.self-d122dd122d7caf18e3c61d5994e0914a54c23464d1cc1d781cdf79467f185118.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/boards/form.self-9ef9f167e09bcf635059661ec946e6c7af6297ebffd3c4106788f90f9f1daeed.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/boards/index.self-ce925b988c6c941797fd3dc505f7fa4e5126cd89c9cb5599460cea371d00b539.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/boards/index_deprecated.self-460903cc9d522607e2b0dbc68f8ed7b2d48b3ff0b1cedfad6f82429a7407d8a7.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/boards/index_item.self-ae117c99ccdcaa4abbe1c6dab26180ebbebdfbb04e7dd6b7ddedff0be35e6724.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/boards/show.self-175fbb09e345a8068ca173109fdff174170bfa3ad6ee98296297da5f52a7a411.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/lists/form.self-872fc7c2159efa281ed8d4f61c8652ef58abb7c9dd6a106bae6ba5230f27c52e.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/lists/list.self-aaec33aab6811815db311e8325b1446499bc9927fa32c2b5529a68b2609f32fa.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/utils/composite_view.self-ae3948e953312d3e050f4baf312fdaea87b998a104d2eece8f5b81287ad1a4f7.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/models/board.self-ba7ac3f459608ce75c2f8154cc289ba991fdf58e79af228aa15844cd10c5c708.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/models/card.self-4ff4265caa2ac826c076b89881646b309ae2638092671a32b9e05bfae3eca8d6.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/models/list.self-528853a20419f0e3fbf6a17c996025aa627e59bedde2ef2690170c4e019cffa4.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/collections/boards.self-8623aebb08152a5bd0231b78d968ccd3e389443b6a47b382966474c6fb162ee5.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/collections/cards.self-ac4ccecb5302fededfed63b13e00f9a331b1758eefc05e5681061ded52790ec5.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/collections/lists.self-4f74425b3eb818e06f9c45d0f21191556449526f4b948af3a4233126e8776c8d.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/views/boards/form.self-280b2b8cc16f67944e839472e6ef8f6d5ff5552c5e7be61ad26ba68201d1a0d9.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/views/boards/index.self-a151e20285aff07095d23d9107de3d460822b2281e280dc17b2898c8d163ec7a.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/views/boards/index_item.self-4807ab597596d23c3ad7f4132b13dac32dd7cfd3b53f874d44afd261ae19ee01.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/views/boards/show.self-df49e9d0878a9e150ef010ac60604a06ecb04d42982f41cee4d65a4659246e25.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/views/cards/card.self-8ac4a7854bdcf2b662dfcf27f5d0ccec9ef00e36a322142c577bbd2b5dc1d589.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/views/lists/form.self-64ab9c352922730724001b784beca32156c799ca43bacf256196b8d5c2b01834.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/views/lists/list.self-1389b74075e4e57d5987c1b8a458089314fefb31b8c7f0a05d5844451b382949.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/routers/router.self-9b62645252f9e6535ff7f276a261597854ce5d34f3505101dec7e487d991b2eb.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/api/boards.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/api/cards.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/api/lists.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/application.self-55d2f88127dcaaa99d5c6a5261f9015880991431c520781213525a199c900f0d.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/boards/form.self-9ef9f167e09bcf635059661ec946e6c7af6297ebffd3c4106788f90f9f1daeed.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/boards/index.self-ce925b988c6c941797fd3dc505f7fa4e5126cd89c9cb5599460cea371d00b539.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/boards/index_deprecated.self-460903cc9d522607e2b0dbc68f8ed7b2d48b3ff0b1cedfad6f82429a7407d8a7.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/boards/index_item.self-ae117c99ccdcaa4abbe1c6dab26180ebbebdfbb04e7dd6b7ddedff0be35e6724.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/boards/show.self-175fbb09e345a8068ca173109fdff174170bfa3ad6ee98296297da5f52a7a411.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/lists/form.self-872fc7c2159efa281ed8d4f61c8652ef58abb7c9dd6a106bae6ba5230f27c52e.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/lists/list.self-aaec33aab6811815db311e8325b1446499bc9927fa32c2b5529a68b2609f32fa.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/utils/composite_view.self-ae3948e953312d3e050f4baf312fdaea87b998a104d2eece8f5b81287ad1a4f7.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/views/boards/form.self-280b2b8cc16f67944e839472e6ef8f6d5ff5552c5e7be61ad26ba68201d1a0d9.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/routers/router.self-9b62645252f9e6535ff7f276a261597854ce5d34f3505101dec7e487d991b2eb.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/api/boards.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/assets/api/cards.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-28 23:55:44 -0700
+
+
+Started GET "/api/boards" for ::1 at 2015-08-28 23:55:44 -0700
+Processing by Api::BoardsController#index as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "yK9YPrYPL7kFJpRudGFVNg"]]
+  [1m[35mBoard Load (0.7ms)[0m  SELECT "boards".* FROM "boards"
+  Rendered api/boards/_board.json.jbuilder (0.4ms)
+  Rendered api/boards/_board.json.jbuilder (0.1ms)
+  Rendered api/boards/_board.json.jbuilder (0.0ms)
+  Rendered api/boards/_board.json.jbuilder (0.0ms)
+  Rendered api/boards/_board.json.jbuilder (0.0ms)
+  Rendered api/boards/index.json.jbuilder (17.6ms)
+Completed 200 OK in 27ms (Views: 16.9ms | ActiveRecord: 3.2ms)

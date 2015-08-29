@@ -11,3 +11,28 @@ User.create!(username: "edhuang", password: "password");
 5.times do
   Board.create!(user_id: 1, title: Faker::Internet.user_name)
 end
+
+counter = 1
+2.times do
+  List.create!(board_id: 1, title: Faker::Lorem.words(4).join(" "), ord: counter)
+  List.create!(board_id: 2, title: Faker::Lorem.words(4).join(" "), ord: counter)
+  List.create!(board_id: 3, title: Faker::Lorem.words(4).join(" "), ord: counter)
+  List.create!(board_id: 4, title: Faker::Lorem.words(4).join(" "), ord: counter)
+  List.create!(board_id: 5, title: Faker::Lorem.words(4).join(" "), ord: counter)
+  counter += 1
+end
+
+card_counter = 1
+5.times do
+  Card.create!(list_id: 1, title: Faker::Lorem.words(2).join(" "), description: Faker::Lorem.words(4).join(" "), ord: card_counter)
+  Card.create!(list_id: 2, title: Faker::Lorem.words(2).join(" "), description: Faker::Lorem.words(4).join(" "), ord: card_counter)
+  Card.create!(list_id: 3, title: Faker::Lorem.words(2).join(" "), description: Faker::Lorem.words(4).join(" "), ord: card_counter)
+  Card.create!(list_id: 4, title: Faker::Lorem.words(2).join(" "), description: Faker::Lorem.words(4).join(" "), ord: card_counter)
+  Card.create!(list_id: 5, title: Faker::Lorem.words(2).join(" "), description: Faker::Lorem.words(4).join(" "), ord: card_counter)
+  Card.create!(list_id: 6, title: Faker::Lorem.words(2).join(" "), description: Faker::Lorem.words(4).join(" "), ord: card_counter)
+  Card.create!(list_id: 7, title: Faker::Lorem.words(2).join(" "), description: Faker::Lorem.words(4).join(" "), ord: card_counter)
+  Card.create!(list_id: 8, title: Faker::Lorem.words(2).join(" "), description: Faker::Lorem.words(4).join(" "), ord: card_counter)
+  Card.create!(list_id: 9, title: Faker::Lorem.words(2).join(" "), description: Faker::Lorem.words(4).join(" "), ord: card_counter)
+  Card.create!(list_id: 10, title: Faker::Lorem.words(2).join(" "), description: Faker::Lorem.words(4).join(" "), ord: card_counter)
+  counter += 1
+end
