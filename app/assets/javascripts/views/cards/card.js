@@ -14,6 +14,7 @@ TrelloApp.Views.Card = Backbone.CompositeView.extend({
 
   render: function () {
     this.$el.html(this.template({ card: this.model }));
+    this.$el.data('card-id', this.model.id);
     return this;
   }
 });

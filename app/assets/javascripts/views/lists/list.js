@@ -41,14 +41,37 @@ TrelloApp.Views.List = Backbone.CompositeView.extend({
 
   render: function () {
     this.$el.html(this.template({ list: this.model }));
+    this.attachSubviews();
     this.onRender();
     return this;
   },
 
   onRender: function () {
-    $('.cards').sortable(
-      
-    );
+    $('.cards').sortable ({
+      connectWith: ".cards",
+      stop: function( event, ui ) {
+        var newOrder = [];
+        $('.card').each( function (i, el) {
+          newOrder.push($(el).data('card-id'));
+        });
+        newOrder.forEach( function (el, i) {
+          var card = this.model.cards().get(el);
+          if (card) {
+            card.set({'ord': i + 1});
+            card.save({}, {
+              success: function (response, response_models, message) {
+                // debugger
+                // Backbone.history.navigate("#/" + Backbone.history.fragment, { trigger: true });
+                // window.location.reload();
+              },
+              error: function (response, message) {
+                debugger
+              }
+            });
+          }
+        }.bind(this));
+      }.bind(this)
+    });
     // this adds the list id as a data attribute to this DOM element
     this.$el.data('list-id', this.model.id);
     Backbone.CompositeView.prototype.onRender.call(this);

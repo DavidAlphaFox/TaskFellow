@@ -36,29 +36,14 @@ TrelloApp.Views.BoardShow = Backbone.CompositeView.extend({
   onRender: function () {
     $('.lists-container').sortable({
       stop: function( event, ui ) {
-        // event.preventDefault();
         var newOrder = [];
         $('.list-container').each( function (i, el) {
           newOrder.push($(el).data('list-id'));
         });
-        var lists = this.model.lists();
-        // newOrder.forEach( function (el, i) {
-        //   var list = lists.get(el);
-        //   list.set({'ord': i + 1});
-        //   list.save({}, {
-        //     success: function (response, response_models, message) {
-        //       // debugger
-        //       // Backbone.history.navigate("#/" + Backbone.history.fragment, { trigger: true });
-        //       // window.location.reload();
-        //     },
-        //     error: function (response, message) {
-        //       debugger
-        //     }
-        //   });
-        // });
-        for (i = 0; i < newOrder.length; i++) {
-          var list = lists.get(newOrder[i]);
-          list.save({ list: { ord: i + 1 } }, {
+        newOrder.forEach( function (el, i) {
+          var list = this.model.lists().get(el);
+          list.set({'ord': i + 1});
+          list.save({}, {
             success: function (response, response_models, message) {
               // debugger
               // Backbone.history.navigate("#/" + Backbone.history.fragment, { trigger: true });
@@ -68,7 +53,20 @@ TrelloApp.Views.BoardShow = Backbone.CompositeView.extend({
               debugger
             }
           });
-        }
+        }.bind(this));
+        // for (i = 0; i < newOrder.length; i++) {
+        //   var list = this.model.lists().get(newOrder[i]);
+        //   list.save({ list: { ord: i + 1 } }, {
+        //     success: function (response, response_models, message) {
+        //       // debugger
+        //       // Backbone.history.navigate("#/" + Backbone.history.fragment, { trigger: true });
+        //       // window.location.reload();
+        //     }.bind(this),
+        //     error: function (response, message) {
+        //       debugger
+        //     }
+        //   });
+        // }
       }.bind(this)
     });
     Backbone.CompositeView.prototype.onRender.call(this);
