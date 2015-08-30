@@ -24,15 +24,15 @@ end
 
 card_counter = 1
 5.times do
-  Card.create!(list_id: 1, title: Faker::Lorem.words(2).join(" "), description: Faker::Lorem.words(4).join(" "), ord: card_counter)
-  Card.create!(list_id: 2, title: Faker::Lorem.words(2).join(" "), description: Faker::Lorem.words(4).join(" "), ord: card_counter)
-  Card.create!(list_id: 3, title: Faker::Lorem.words(2).join(" "), description: Faker::Lorem.words(4).join(" "), ord: card_counter)
-  Card.create!(list_id: 4, title: Faker::Lorem.words(2).join(" "), description: Faker::Lorem.words(4).join(" "), ord: card_counter)
-  Card.create!(list_id: 5, title: Faker::Lorem.words(2).join(" "), description: Faker::Lorem.words(4).join(" "), ord: card_counter)
-  Card.create!(list_id: 6, title: Faker::Lorem.words(2).join(" "), description: Faker::Lorem.words(4).join(" "), ord: card_counter)
-  Card.create!(list_id: 7, title: Faker::Lorem.words(2).join(" "), description: Faker::Lorem.words(4).join(" "), ord: card_counter)
-  Card.create!(list_id: 8, title: Faker::Lorem.words(2).join(" "), description: Faker::Lorem.words(4).join(" "), ord: card_counter)
-  Card.create!(list_id: 9, title: Faker::Lorem.words(2).join(" "), description: Faker::Lorem.words(4).join(" "), ord: card_counter)
-  Card.create!(list_id: 10, title: Faker::Lorem.words(2).join(" "), description: Faker::Lorem.words(4).join(" "), ord: card_counter)
+  Card.create!(list_id: 1, description: Faker::Lorem.words(4).join(" "), ord: card_counter)
+  Card.create!(list_id: 2, description: Faker::Lorem.words(4).join(" "), ord: card_counter)
+  Card.create!(list_id: 3, description: Faker::Lorem.words(4).join(" "), ord: card_counter)
+  Card.create!(list_id: 4, description: Faker::Lorem.words(4).join(" "), ord: card_counter)
+  Card.create!(list_id: 5, description: Faker::Lorem.words(4).join(" "), ord: card_counter)
+  Card.create!(list_id: 6, description: Faker::Lorem.words(4).join(" "), ord: card_counter)
+  Card.create!(list_id: 7, description: Faker::Lorem.words(4).join(" "), ord: card_counter)
+  Card.create!(list_id: 8, description: Faker::Lorem.words(4).join(" "), ord: card_counter)
+  Card.create!(list_id: 9, description: Faker::Lorem.words(4).join(" "), ord: card_counter)
+  Card.create!(list_id: 10, description: Faker::Lorem.words(4).join(" "), ord: card_counter)
   counter += 1
 end

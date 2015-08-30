@@ -1,13 +1,13 @@
 TrelloApp.Collections.Cards = Backbone.Collection.extend({
   model: TrelloApp.Models.Card,
-  url: "api/cards",
+  url: "/api/cards",
   comparator: "ord",
 
   initialize: function (models, options) {
   	if (options && options.list) {
-	  this.list = options.list;
+	    this.list = options.list;
   	}
-  }
+  },
 
   getOrFetch: function (id) {
   	var card = this.get(id);

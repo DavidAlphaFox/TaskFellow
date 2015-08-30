@@ -1,0 +1,1 @@
+json.(model, :id, :list_id, :description, :ord)

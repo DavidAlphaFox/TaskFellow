@@ -1,0 +1,20 @@
+<% if (!model.id) { %>
+  <h3>New Board Form</h3>
+  <% var formValue = ""; %>
+<% } else { %>
+  <h3>Edit Board Form</h3>
+  <% var formValue = model.escape('title'); %>
+<% }; %>
+
+<ul class="errors"></ul>
+
+<form class="new-board-form" method="post">
+  <p>
+    Board Title:
+  </p>
+  <input type="text" name="board[title]" value="<%= formValue %>">
+
+  <p>
+    <button type="submit" class="new-board-form-button" name="button">Submit</button>
+  </p>
+</form>

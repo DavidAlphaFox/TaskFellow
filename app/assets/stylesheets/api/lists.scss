@@ -1,3 +1,25 @@
 // Place all the styles related to the api/lists controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.lists-container {
+	display: block;
+	margin: 20px 0px;
+}
+
+.list-container {
+	/*float: left;*/
+	border: 1px solid red;
+}
+
+.card-description {
+	font-size: 14px;
+}
+
+.delete-card-button {
+	display: none;
+}
+
+.card:hover .delete-card-button {
+	display: inline-block;
+}

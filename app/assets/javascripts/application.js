@@ -16,6 +16,7 @@
 //= require backbone
 //= require trello_app
 //= require serialize_json
+//= require bootstrap
 //= require_tree ../templates
 //= require_tree ./utils
 //= require_tree ./models

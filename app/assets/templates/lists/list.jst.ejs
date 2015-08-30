@@ -1,0 +1,13 @@
+<!-- <a href="<#%= "#/lists/" + list.id %>"> -->
+  <strong><%= list.escape('title') %></strong>
+<!-- </a> -->
+<button class="delete-list-button" type="submit" name="button" data-id=<%= list.id %>>Delete</button>
+
+<div class="cards"></div>
+<div>
+	<form class="new-card-form">
+		<input type="text" name="card[description]" placeholder="Add a card...">
+		<br>
+		<button type="submit" class="new-card-button">Add</button>
+	</form>
+</div>

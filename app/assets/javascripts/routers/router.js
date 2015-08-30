@@ -21,7 +21,7 @@ TrelloApp.Routers.Router = Backbone.Router.extend({
   boardNew: function () {
     var board = new TrelloApp.Models.Board();
     var view = new TrelloApp.Views.BoardForm({ model: board, collection: this.collection });
-    this._swapview(view);
+    // this._swapview(view);
   },
 
   boardShow: function (board_id) {
@@ -39,6 +39,7 @@ TrelloApp.Routers.Router = Backbone.Router.extend({
   _swapview: function (view) {
     this._view && this._view.remove();
     this._view = view;
-    this.$el.html(view.render().$el);
+    this.$el.html(this._view.$el);
+    this._view.render();
   }
 });

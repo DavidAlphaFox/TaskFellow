@@ -1,0 +1,1 @@
+I"*function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<span class="card-description">',  card.escape('description') ,'<span>\n<button class="delete-card-button" type="submit" name="button" data-id=',  card.id ,'>Delete</button>\n');}return __p.join('');}:ET

@@ -3,16 +3,16 @@ TrelloApp.Models.List = Backbone.Model.extend({
 
   cards: function () {
   	if (!this._cards) {
-  	  this._lists = new TrelloApp.Collections.Cards([], { list: this });
+  	  this._cards = new TrelloApp.Collections.Cards([], { list: this });
   	}
 
   	return this._cards;
   },
 
-  parse: function () {
+  parse: function (response) {
   	if (response.cards) {
-	  this.cards().set(response.cards);
-	  delete response.cards;
+	    this.cards().set(response.cards);
+	    delete response.cards;
   	}
   	return response;
   }
