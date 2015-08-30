@@ -50,26 +50,28 @@ TrelloApp.Views.List = Backbone.CompositeView.extend({
     $('.cards').sortable ({
       connectWith: ".cards",
       stop: function( event, ui ) {
-        var newOrder = [];
+        var cardOrder = [];
+        var listOrder = [];
         $('.card').each( function (i, el) {
-          newOrder.push($(el).data('card-id'));
+          cardOrder.push($(el).data('card-id'));
+          listOrder.push($(el).parent().parent().data('list-id'));
         });
-        newOrder.forEach( function (el, i) {
-          var card = this.model.cards().get(el);
-          if (card) {
-            card.set({'ord': i + 1});
-            card.save({}, {
-              success: function (response, response_models, message) {
-                // debugger
-                // Backbone.history.navigate("#/" + Backbone.history.fragment, { trigger: true });
-                // window.location.reload();
-              },
-              error: function (response, message) {
-                debugger
-              }
-            });
-          }
-        }.bind(this));
+        cards = new TrelloApp.Collections.Cards();
+        cards.fetch({
+          success: function () {
+            cardOrder.forEach( function (el, i) {
+              var card = cards.get(el);
+                card.set({'ord': i + 1, 'list_id': listOrder[i] });
+                card.save({}, {
+                  success: function (response, response_models, message) {
+                  },
+                  error: function (response, message) {
+                    debugger
+                  }
+                });
+            }.bind(this));
+          }.bind(this)
+        });
       }.bind(this)
     });
     // this adds the list id as a data attribute to this DOM element

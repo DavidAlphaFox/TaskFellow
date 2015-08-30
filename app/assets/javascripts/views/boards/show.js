@@ -45,28 +45,12 @@ TrelloApp.Views.BoardShow = Backbone.CompositeView.extend({
           list.set({'ord': i + 1});
           list.save({}, {
             success: function (response, response_models, message) {
-              // debugger
-              // Backbone.history.navigate("#/" + Backbone.history.fragment, { trigger: true });
-              // window.location.reload();
             },
             error: function (response, message) {
               debugger
             }
           });
         }.bind(this));
-        // for (i = 0; i < newOrder.length; i++) {
-        //   var list = this.model.lists().get(newOrder[i]);
-        //   list.save({ list: { ord: i + 1 } }, {
-        //     success: function (response, response_models, message) {
-        //       // debugger
-        //       // Backbone.history.navigate("#/" + Backbone.history.fragment, { trigger: true });
-        //       // window.location.reload();
-        //     }.bind(this),
-        //     error: function (response, message) {
-        //       debugger
-        //     }
-        //   });
-        // }
       }.bind(this)
     });
     Backbone.CompositeView.prototype.onRender.call(this);
