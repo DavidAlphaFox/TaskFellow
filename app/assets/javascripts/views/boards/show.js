@@ -4,10 +4,10 @@ TrelloApp.Views.BoardShow = Backbone.CompositeView.extend({
   className: 'board',
 
   events: {
+    // 'mousedown .list-container': 'drag',
+    // 'mouseup .list-container': 'drop',
     'click .delete-list-button': 'deleteList',
-    'click .delete-board-link': 'deleteBoard',
-    'mousedown .list-container': 'drag',
-    'mouseup .list-container': 'drop'
+    'click .delete-board-link': 'deleteBoard'
   },
 
   initialize: function () {
@@ -41,13 +41,13 @@ TrelloApp.Views.BoardShow = Backbone.CompositeView.extend({
     }.bind(this));
   },
 
-  drag: function (e) {
-    $(e.currentTarget).addClass('dragged');
-  },
+  // drag: function (e) {
+  //   $(e.currentTarget).addClass('dragged');
+  // },
 
-  drop: function (e) {
-    $(e.currentTarget).removeClass('dragged');
-  },
+  // drop: function (e) {
+  //   $(e.currentTarget).removeClass('dragged');
+  // },
 
   renderListForm: function () {
     var list = new TrelloApp.Models.List();
@@ -64,6 +64,9 @@ TrelloApp.Views.BoardShow = Backbone.CompositeView.extend({
 
   onRender: function () {
     $('.lists-container').sortable({
+      start: function (event, ui) {
+        ui.item.addClass('dragged');
+      },
       stop: function( event, ui ) {
         var newOrder = [];
         $('.list-container').each( function (i, el) {
@@ -74,6 +77,7 @@ TrelloApp.Views.BoardShow = Backbone.CompositeView.extend({
           list.set({'ord': i + 1});
           list.save({}, {
             success: function (response, response_models, message) {
+              ui.item.removeClass('dragged');
             },
             error: function (response, message) {
               debugger

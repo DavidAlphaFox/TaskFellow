@@ -1,0 +1,1 @@
+I"efunction(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<h3 class="board-index-title">My Boards</h3>\n\n<div class="boards">\n\n</div>\n\n<a class="new-board-link" href="#/boards/new">\n\t<div class="add-board-container"><span class="add-board-text">Create new board...</span></div>\n</a>\n');}return __p.join('');}:ET

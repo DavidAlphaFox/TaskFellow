@@ -5,8 +5,8 @@ TrelloApp.Views.List = Backbone.CompositeView.extend({
 
   events: {
     'submit .new-card-form': 'newCard',
-    'mousedown .card': 'drag',
-    'mouseup .card': 'drop',
+    // 'mousedown .card': 'drag',
+    // 'mouseup .card': 'drop',
     'click .add-card-link': 'showCardForm',
     'blur .add-card-input': 'hideCardForm'
   },
@@ -43,13 +43,13 @@ TrelloApp.Views.List = Backbone.CompositeView.extend({
     })
   },
 
-  drag: function (e) {
-    $(e.currentTarget).addClass('dragged');
-  },
+  // drag: function (e) {
+  //   $(e.currentTarget).addClass('dragged');
+  // },
 
-  drop: function (e) {
-    $(e.currentTarget).removeClass('dragged');
-  },
+  // drop: function (e) {
+  //   $(e.currentTarget).removeClass('dragged');
+  // },
 
   showCardForm: function (e) {
     e.preventDefault();
@@ -74,7 +74,11 @@ TrelloApp.Views.List = Backbone.CompositeView.extend({
   onRender: function () {
     $('.cards').sortable ({
       connectWith: ".cards",
+      start: function (event, ui) {
+        ui.item.addClass('dragged');
+      },
       stop: function( event, ui ) {
+        var view = this;
         var cardOrder = [];
         var listOrder = [];
         $('.card').each( function (i, el) {
@@ -89,6 +93,7 @@ TrelloApp.Views.List = Backbone.CompositeView.extend({
                 card.set({'ord': i + 1, 'list_id': listOrder[i] });
                 card.save({}, {
                   success: function (response, response_models, message) {
+                    ui.item.removeClass('dragged');
                   },
                   error: function (response, message) {
                     debugger

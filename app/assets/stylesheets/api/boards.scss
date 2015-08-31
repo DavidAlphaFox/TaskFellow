@@ -26,9 +26,10 @@
 }
 
 .board-index-item-link {
+	padding: 5px 10px;
+	font-size: 16px;
 	color: white;
 	position: absolute;
-	text-decoration: none;
 	top: 0;
 	left: 0;
 }
@@ -49,4 +50,28 @@
 .item-link-box {
 	height: 100px;
 	width: 300px;
+}
+
+.new-board-link {
+	/*padding: 5px 10px;*/
+	font-size: 16px;
+	margin: 10px;
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.new-board-link:hover {
+}
+
+.add-board-container {
+	height: 100px;
+	width: 300px;
+	background-color: rgba(255, 0, 0, 0.4);
+}
+
+.add-board-text {
+	display: inline-block;
+	margin: 5px 10px;
 }
