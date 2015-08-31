@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-User.create!(username: "edhuang", password: "password");
+User.create!(username: "test", password: "password");
 
 5.times do
   Board.create!(user_id: 1, title: Faker::Internet.user_name)

@@ -22,8 +22,8 @@ html, body {
 }
 
 .splash-container {
-	background-image: url("/images/splash.jpeg");
-	background-size: contain;
+	/*background-image: url("/images/splash.jpeg");*/
+	background-size: cover;
 	height: 100%;
 	display: flex;
 	flex-direction: row;
@@ -32,6 +32,13 @@ html, body {
 
 .splash-content {
 	margin-top: 20%;
+	background: rgba(255, 255, 255, 0.4);
+	height: 225px;
+	padding: 10px 20px;
+}
+
+.splash-title {
+	font-size: 24px;
 }
 
 #content {

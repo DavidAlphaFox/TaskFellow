@@ -1,6 +1,6 @@
 <div class="splash-container">
   <div class="splash-content">
-    <h2>Sign In</h2>
+    <h4 class="splash-title">Sign In</h4>
 
     <form class="new-user-form" action="<%= session_url %>" method="post">
       <%= auth_token %>
@@ -8,14 +8,21 @@
       <p>
         Username:
       </p>
-      <input type="text" name="user[username]" value="">
+      <input type="text" name="user[username]" value="test">
       <p>
         Password:
       </p>
-      <input type="password" name="user[password]" value="">
+      <input type="password" name="user[password]" value="password">
       <p>
         <button class="btn btn-default authentication-button" type="submit" name="button">Sign In</button>
       </p>
     </form>
   </div>
 <div>
+
+<script>
+  $(document).ready(function(){
+    var images = ["/images/image1.jpeg", "/images/image2.jpeg", "/images/image3.jpeg", "/images/image4.jpeg", "/images/image5.jpeg", "/images/image6.jpeg", "/images/image7.jpeg", "/images/image8.jpeg", "/images/image9.jpeg"];
+    $('.splash-container').css({'background-image': 'url(' + images[Math.floor(Math.random() * images.length)] + ')'});
+  });
+</script>
