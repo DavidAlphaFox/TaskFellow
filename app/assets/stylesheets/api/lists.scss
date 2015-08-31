@@ -7,8 +7,8 @@ body {
 }
 
 .lists-container {
-	display: inline-block;
-	float: left;
+	display: flex;
+	/*display: -webkit-box;*/
 }
 
 .list-title {
@@ -16,7 +16,6 @@ body {
 }
 
 .list-container {
-	float: left;
 	background: rgba(192, 192, 192, 0.4);
 	margin: 0px 10px;
 	padding: 0px 10px;
@@ -24,6 +23,12 @@ body {
 	display: inline-block;
 	border-radius: 5px;
 	position: relative;
+	height: 100%;
+}
+
+.ui-sortable-placeholder {
+	visibility: visible !important;
+	background: rgba(255, 0, 0, 0.2);
 }
 
 .list-form {
@@ -34,6 +39,7 @@ body {
 	background: rgba(255, 0, 0, 0.2);
 	padding: 0px 10px;
 	border-radius: 5px;
+	height: 100%;
 }
 
 a.add-list-link {
@@ -144,7 +150,6 @@ a.add-card-link.clicked {
 }
 
 .dragged {
-	background-color: lightyellow;
 	transform: rotate(3deg);
 	box-shadow: 10px 10px 5px #888888;
 }

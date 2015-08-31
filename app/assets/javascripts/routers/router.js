@@ -22,7 +22,7 @@ TrelloApp.Routers.Router = Backbone.Router.extend({
   boardNew: function () {
     var board = new TrelloApp.Models.Board();
     var view = new TrelloApp.Views.BoardForm({ model: board, collection: this.collection });
-    // this._swapview(view);
+    this._swapview(view);
     this._navbar();
   },
 

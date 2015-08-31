@@ -36,17 +36,21 @@ html, body {
 
 #content {
 	height: 100%;
-	overflow-x: scroll;
+	margin-top: 60px;
 }
 
 .navbar-header {
-	padding: 8px 0px;
+	padding: 9px 0px;
 }
 
 .navbar.navbar-default.navbar-solid {
 	background: rgba(255, 0, 0, 0.4);
 	border: 1px rgba(255, 0, 0, 0.4);
 	border-radius: 0px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 }
 
 .btn.btn-default.board-button {

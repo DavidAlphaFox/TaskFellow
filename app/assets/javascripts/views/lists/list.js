@@ -5,6 +5,7 @@ TrelloApp.Views.List = Backbone.CompositeView.extend({
 
   events: {
     'submit .new-card-form': 'newCard',
+    'click .delete-list-button': 'deleteList',
     // 'mousedown .card': 'drag',
     // 'mouseup .card': 'drop',
     'click .add-card-link': 'showCardForm',
@@ -41,6 +42,11 @@ TrelloApp.Views.List = Backbone.CompositeView.extend({
         debugger
       }
     })
+  },
+
+  deleteList: function (e) {
+    e.preventDefault();
+    this.model.destroy();
   },
 
   // drag: function (e) {
