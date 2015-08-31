@@ -2,14 +2,131 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body {
+	background: rgba(255, 0, 0, 0.1) !important;
+}
+
+.board-container {
+	display: table;
+}
+
 .lists-container {
-	display: block;
-	margin: 20px 0px;
+	display: inline-block;
+	float: left;
+}
+
+.list-title {
+	padding: 5px 0px;
 }
 
 .list-container {
 	/*float: left;*/
-	border: 1px solid red;
+	background: rgba(192, 192, 192, 0.4);
+	margin: 0px 10px;
+	padding: 0px 10px;
+	width: 300px;
+	display: inline-block;
+	border-radius: 5px;
+	position: relative;
+}
+
+.list-form {
+	min-height: 50px;
+	display: inline-block;
+	width: 300px;
+	margin: 0px 10px;
+	background: rgba(255, 0, 0, 0.2);
+	padding: 0px 10px;
+	border-radius: 5px;
+}
+
+a.add-list-link {
+	width: 100%;
+	text-decoration: none;
+	height: 30px;
+	display: block;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: white;
+}
+
+a.add-list-link.clicked {
+	display: none;
+}
+
+.new-list-form {
+	display: none;
+}
+
+.new-list-form.clicked {
+	display: block;
+}
+
+.add-list-input {
+	width: 100%;
+}
+
+.add-list-input:hover {
+	background-color: rgba(255, 0, 0, 0.2)
+}
+
+.delete-list-button {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.list-title:hover .delete-list-button {
+	display: inline-block;
+}
+
+a.add-card-link {
+	width: 100%;
+	color: rgba(150, 150, 150, 1);
+	text-decoration: none;
+	height: 30px;
+	display: block;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+a.add-card-link.clicked {
+	display: none;
+}
+
+.new-card-form {
+	display: none;
+}
+
+.new-card-form.clicked {
+	display: block;
+}
+
+.add-card-input {
+	width: 100%;
+}
+
+.add-card-input:hover {
+	background-color: lightgray;
+}
+
+.card {
+	background: rgba(255, 255, 255, 0.8);
+	padding: 0px 10px;
+	border-radius: 5px;
+	margin: 5px 0px;
+	height: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+}
+
+.card:hover {
+	background: rgba(192, 192, 192, 0.4);
 }
 
 .card-description {
@@ -18,8 +135,16 @@
 
 .delete-card-button {
 	display: none;
+	position: absolute;
+	right: 0;
 }
 
 .card:hover .delete-card-button {
 	display: inline-block;
+}
+
+.dragged {
+	background-color: lightyellow;
+	transform: rotate(3deg);
+	box-shadow: 10px 10px 5px #888888;
 }

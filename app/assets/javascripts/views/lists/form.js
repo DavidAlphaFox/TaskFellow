@@ -2,12 +2,27 @@ TrelloApp.Views.ListForm = Backbone.View.extend({
   template: JST['lists/form'],
 
   events: {
-    "click .new-list-form-button": "submitForm"
+    'click .new-list-form-button': 'submitForm',
+    'click .add-list-link': 'showListForm',
+    'blur .add-list-input': 'hideListForm'
   },
 
   initialize: function (options) {
     this.board = options.board;
-    this.listenTo(this.model, "sync", this.render);
+    this.listenTo(this.model, 'sync', this.render);
+  },
+
+  showListForm: function (e) {
+    e.preventDefault();
+    this.$('.add-list-link').addClass('clicked');
+    this.$('.new-list-form').addClass('clicked');
+    this.$('.add-list-input').focus();
+  },
+
+  hideListForm: function (e) {
+    e.preventDefault();
+    this.$('.add-list-link').removeClass('clicked');
+    this.$('.new-list-form').removeClass('clicked');
   },
 
   render: function () {

@@ -1,18 +1,19 @@
 <% if (!model.id) { %>
-  <h3>New List Form</h3>
+  <!-- <h3>New List Form</h3> -->
   <% var formValue = ""; %>
 <% } else { %>
   <h3>Edit List Form</h3>
   <% var formValue = model.escape('title'); %>
 <% }; %>
 
-<ul class="errors"></ul>
-
+<!-- <ul class="errors"></ul>
+ -->
+<a href="" class="add-list-link">Add a list...</a>
 <form class="new-list-form" method="post">
-  <p>
+<!--   <p>
     List Title:
-  </p>
-  <input type="text" name="list[title]" value="<%= formValue %>">
+  </p> -->
+  <input class="add-list-input" type="text" name="list[title]" value="<%= formValue %>">
 
   <p>
     <button type="submit" class="new-list-form-button" name="button" data-board-id="<%= board.id %>">Submit</button>

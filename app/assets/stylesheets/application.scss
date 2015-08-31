@@ -16,3 +16,8 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+#content {
+	height: 100%;
+	overflow-x: scroll;
+}

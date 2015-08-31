@@ -1,9 +1,10 @@
 <h2><%= board.escape('title') %></h2>
 
-<div class="lists-container col-lg-12">
+<div class="board-container">
+<div class="lists-container">
 </div>
 
 <div class="list-form"></div>
-
-<a href="<%= "/#/boards/" + board.id + "/edit" %>">Edit Board</a>
-<a href="<%= "/#/boards/" + board.id + "/lists/new" %>">New List</a>
+</div>
+<div><a href="<%= "/#/boards/" + board.id + "/edit" %>">Edit Board</a></div>
+<div><a class="delete-board-link" href="">Delete Board</a></div>

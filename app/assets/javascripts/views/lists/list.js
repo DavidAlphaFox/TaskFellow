@@ -1,10 +1,14 @@
 TrelloApp.Views.List = Backbone.CompositeView.extend({
   template: JST['lists/list'],
   tagName: 'div',
-  className: 'list-container col-lg-4',
+  className: 'list-container',
 
   events: {
-    'submit .new-card-form': 'newCard'
+    'submit .new-card-form': 'newCard',
+    'mousedown .card': 'drag',
+    'mouseup .card': 'drop',
+    'click .add-card-link': 'showCardForm',
+    'blur .add-card-input': 'hideCardForm'
   },
 
   initialize: function() {
@@ -37,6 +41,27 @@ TrelloApp.Views.List = Backbone.CompositeView.extend({
         debugger
       }
     })
+  },
+
+  drag: function (e) {
+    $(e.currentTarget).addClass('dragged');
+  },
+
+  drop: function (e) {
+    $(e.currentTarget).removeClass('dragged');
+  },
+
+  showCardForm: function (e) {
+    e.preventDefault();
+    this.$('.add-card-link').addClass('clicked');
+    this.$('.new-card-form').addClass('clicked');
+    this.$('.add-card-input').focus();
+  },
+
+  hideCardForm: function (e) {
+    e.preventDefault();
+    this.$('.add-card-link').removeClass('clicked');
+    this.$('.new-card-form').removeClass('clicked');
   },
 
   render: function () {
