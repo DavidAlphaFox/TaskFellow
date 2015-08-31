@@ -60,6 +60,20 @@ html, body {
 	right: 0;
 }
 
+.navbar-left.brand-name {
+	height: 34px;
+	margin: 8px 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 24px;
+	color: white;
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	margin-left: -60px;
+}
+
 .btn.btn-default.board-button {
 	background: rgba(255, 255, 255, 0.3);
 	color: white;
