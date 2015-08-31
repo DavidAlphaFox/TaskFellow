@@ -1,3 +1,36 @@
 // Place all the styles related to the api/cards controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.card {
+	background: rgba(255, 255, 255, 0.8);
+	padding: 0px 10px;
+	border-radius: 5px;
+	margin: 5px 0px;
+	height: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+}
+
+.card:hover {
+	background: rgba(192, 192, 192, 0.4);
+}
+
+.card-description {
+	font-size: 14px;
+}
+
+.delete-card-button {
+	display: none;
+	position: absolute;
+	background: rgba(0, 0, 0, 0);
+	border: none;
+	right: 0;
+	top: 0;
+}
+
+.card:hover .delete-card-button {
+	display: inline-block;
+}

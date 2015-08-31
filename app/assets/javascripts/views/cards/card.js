@@ -4,12 +4,28 @@ TrelloApp.Views.Card = Backbone.CompositeView.extend({
   className: 'card',
 
   events: {
-  	'click .delete-card-button': 'deleteCard'
+  	'click .delete-card-button': 'deleteCard',
+    'click .card-link': 'showCardModal'
+  },
+
+  initialize: function (options) {
   },
 
   deleteCard: function (e) {
   	e.preventDefault();
-  	this.model.destroy();
+    bootbox.confirm("Are you sure you would like to delete the card?", function (result) {
+      if (result === false) {
+      } else {
+        this.model.destroy();
+        bootbox.alert("Your card was successfully deleted");
+      }
+    }.bind(this));
+  },
+
+  showCardModal: function (e) {
+    e.preventDefault();
+    modal = new TrelloApp.Views.CardModal({ model: this.model });
+    this.$el.prepend(modal.render().$el);
   },
 
   render: function () {

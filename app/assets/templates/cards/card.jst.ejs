@@ -1,2 +1,4 @@
-<span class="card-description"><%= card.escape('description') %><span>
+<a class="card-link" href="#/cards/<%= card.id %>">
+<span class="card-description"><%= card.escape('description') %></span>
+</a>
 <button class="delete-card-button" type="submit" name="button" data-id=<%= card.id %>>X</button>

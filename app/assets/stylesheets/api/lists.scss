@@ -113,38 +113,6 @@ a.add-card-link.clicked {
 	background-color: lightgray;
 }
 
-.card {
-	background: rgba(255, 255, 255, 0.8);
-	padding: 0px 10px;
-	border-radius: 5px;
-	margin: 5px 0px;
-	height: 30px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	position: relative;
-}
-
-.card:hover {
-	background: rgba(192, 192, 192, 0.4);
-}
-
-.card-description {
-	font-size: 14px;
-}
-
-.delete-card-button {
-	display: none;
-	position: absolute;
-	background: rgba(0, 0, 0, 0);
-	border: none;
-	right: 0;
-}
-
-.card:hover .delete-card-button {
-	display: inline-block;
-}
-
 .dragged {
 	transform: rotate(3deg);
 	box-shadow: 10px 10px 5px #888888;

@@ -49,7 +49,7 @@ body {
 #content {
 	height: 100%;
 	margin-top: 60px;
-	overflow: hidden;
+	overflow-x: scroll;
 }
 
 .navbar-header {
@@ -107,4 +107,28 @@ body {
 .authentication-button {
 	margin-top: 10px;
 	float: right;
+}
+
+.modal-container {
+
+  .modal-background {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+  }
+
+  .modal-content {
+    position: fixed !important;
+    z-index: 2001;
+    top: 20%;
+    left: 30%;
+    right: 30%;
+    background-color: white;
+    padding: 10px;
+
+  }
 }
