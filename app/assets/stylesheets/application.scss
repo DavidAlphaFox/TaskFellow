@@ -19,6 +19,11 @@
 
 html, body {
 	height: 100%;
+	overflow-y: hidden;
+}
+
+body {
+	background: rgba(255, 230, 230, 1) !important;
 }
 
 .splash-container {
@@ -32,7 +37,7 @@ html, body {
 
 .splash-content {
 	margin-top: 20%;
-	background: rgba(255, 255, 255, 0.4);
+	/*background: rgba(255, 255, 255, 0.4);*/
 	height: 225px;
 	padding: 10px 20px;
 }
@@ -44,6 +49,7 @@ html, body {
 #content {
 	height: 100%;
 	margin-top: 60px;
+	overflow: hidden;
 }
 
 .navbar-header {
@@ -51,8 +57,8 @@ html, body {
 }
 
 .navbar.navbar-default.navbar-solid {
-	background: rgba(255, 0, 0, 0.4);
-	border: 1px rgba(255, 0, 0, 0.4);
+	background: rgba(255, 138, 138, 1);
+	border: 1px rgba(255, 138, 138, 1);
 	border-radius: 0px;
 	position: fixed;
 	top: 0;
