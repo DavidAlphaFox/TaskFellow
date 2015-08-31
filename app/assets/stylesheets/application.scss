@@ -17,7 +17,63 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+html, body {
+	height: 100%;
+}
+
+.splash-container {
+	background-image: url("/images/splash.jpeg");
+	background-size: contain;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.splash-content {
+	margin-top: 20%;
+}
+
 #content {
 	height: 100%;
 	overflow-x: scroll;
+}
+
+.navbar-header {
+	padding: 8px 0px;
+}
+
+.navbar.navbar-default.navbar-solid {
+	background: rgba(255, 0, 0, 0.4);
+	border: 1px rgba(255, 0, 0, 0.4);
+	border-radius: 0px;
+}
+
+.btn.btn-default.board-button {
+	background: rgba(255, 255, 255, 0.3);
+	color: white;
+	font-weight: bold;
+	border: none;
+}
+
+.form-control.search-input {
+	background: rgba(255, 255, 255, 0.3);
+	border: none;
+}
+
+.form-control.search-input::-webkit-input-placeholder {
+	color: white;
+}
+
+.nav.navbar-nav.navbar-right {
+	background: rgba(255, 255, 255, 0.3); 
+}
+
+.dropdown-toggle {
+	color: white !important;
+}
+
+.authentication-button {
+	margin-top: 10px;
+	float: right;
 }

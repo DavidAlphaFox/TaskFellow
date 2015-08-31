@@ -13,12 +13,12 @@ TrelloApp.Collections.Cards = Backbone.Collection.extend({
   	var card = this.get(id);
   	var cards = this;
   	if (!card) {
-	  card = new TrelloApp.Models.Card({ id: id });
-	  card.fetch({
-	  	success: function () {
-	  	  cards.add(card);
-	  	}
-	  })
+  	  card = new TrelloApp.Models.Card({ id: id });
+  	  card.fetch({
+  	  	success: function () {
+  	  	  cards.add(card);
+  	  	}
+  	  });
   	} else {
   	  card.fetch();
   	}

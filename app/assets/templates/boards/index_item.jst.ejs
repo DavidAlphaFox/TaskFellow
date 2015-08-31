@@ -1,4 +1,4 @@
-<li>
-  <a href="<%= "#/boards/" + board.id %>"><%= board.escape('title') %></a>
-  <button class="delete-board-button" type="submit" name="button" data-id=<%= board.id %>>Delete</button>
-</li>
+<a class="board-index-item-link" href="<%= "#/boards/" + board.id %>">
+<div class="item-link-box"><%= board.escape('title') %></div>
+</a>
+<button class="delete-board-button" type="submit" name="button" data-id=<%= board.id %>>X</button>

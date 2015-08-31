@@ -1,0 +1,1 @@
+I"lfunction(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<a class="board-index-item-link" href="',  "#/boards/" + board.id ,'">\n<div class="item-link-box">',  board.escape('title') ,'</div>\n</a>\n<button class="delete-board-button" type="submit" name="button" data-id=',  board.id ,'>X</button>\n');}return __p.join('');}:ET

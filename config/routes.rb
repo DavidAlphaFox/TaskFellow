@@ -8,5 +8,6 @@ Rails.application.routes.draw do
     resources :boards, except: [:new, :edit]
     resources :lists, only: [:index, :create, :update, :show, :destroy]
     resources :cards, only: [:index, :create, :update, :show, :destroy]
+    resources :users, except: [:new, :edit]
   end
 end

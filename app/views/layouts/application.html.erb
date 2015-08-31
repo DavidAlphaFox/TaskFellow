@@ -18,7 +18,7 @@
       <% end %>
     <% end %>
   </div>
-  <div class="status-bar" align="right">
+<!--   <div class="status-bar" align="right">
     <% if logged_in? %>
       <p>
         <%= current_user.username %>
@@ -34,8 +34,14 @@
         <%= link_to "Sign Up", new_user_url, target: :blank %>
       </p>
     <% end %>
-  </div>
+  </div> -->
   
   <%= yield %>
+
+  <script>
+    <% if logged_in? %>
+      var current_user_id = <%= current_user.id %>;
+    <% end %>
+  </script>
 </body>
 </html>

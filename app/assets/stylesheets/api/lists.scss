@@ -6,10 +6,6 @@ body {
 	background: rgba(255, 0, 0, 0.1) !important;
 }
 
-.board-container {
-	display: table;
-}
-
 .lists-container {
 	display: inline-block;
 	float: left;
@@ -74,6 +70,8 @@ a.add-list-link.clicked {
 .delete-list-button {
 	display: none;
 	position: absolute;
+	background: rgba(0, 0, 0, 0);
+	border: none;
 	top: 0;
 	right: 0;
 }
@@ -136,6 +134,8 @@ a.add-card-link.clicked {
 .delete-card-button {
 	display: none;
 	position: absolute;
+	background: rgba(0, 0, 0, 0);
+	border: none;
 	right: 0;
 }
 

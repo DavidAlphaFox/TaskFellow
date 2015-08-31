@@ -1,6 +1,8 @@
 TrelloApp.Views.BoardIndexItem = Backbone.View.extend({
   template: JST['boards/index_item'],
-  tagName: 'li',
+  className: 'board-index-item',
+
+  
 
   render: function () {
     this.$el.html(this.template({ board: this.model }));
