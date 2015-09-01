@@ -8,6 +8,7 @@ class Api::BoardsController < ApplicationController
 
   def create
     @board = Board.new(board_params)
+    @board.id = Board.last.id + 1
     @board.user_id = current_user.id
     if @board.save
       render "show"
