@@ -98,7 +98,7 @@ TrelloApp.Views.List = Backbone.CompositeView.extend({
   },
 
   hideCardFormHelper: function (e) {
-    setTimeout(function () { this.hideCardForm.call(this, e) }.bind(this), 300);
+    setTimeout(function () { this.hideCardForm.call(this, e) }.bind(this), 200);
   },
 
   hideCardForm: function (e) {

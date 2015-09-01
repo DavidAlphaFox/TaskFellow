@@ -9,6 +9,7 @@ TrelloApp.Views.Card = Backbone.CompositeView.extend({
   },
 
   initialize: function (options) {
+    this.listenTo(this.model, 'sync', this.render);
   },
 
   deleteCard: function (e) {
@@ -25,7 +26,7 @@ TrelloApp.Views.Card = Backbone.CompositeView.extend({
   showCardModal: function (e) {
     e.preventDefault();
     modal = new TrelloApp.Views.CardModal({ model: this.model });
-    this.$el.prepend(modal.render().$el);
+    $('body').prepend(modal.render().$el);
   },
 
   render: function () {

@@ -23,10 +23,10 @@ TrelloApp.Views.CardModal = Backbone.View.extend({
 		var formData = $(e.currentTarget).serializeJSON();
 		this.model.save(formData, {
 			success: function (response, response_models, message) {
-				bootbox
+		        bootbox.alert("Your card was successfully edited");
 			},
 			error: function (response, messages) {
-
+				debugger
 			}
 		});
 	},
