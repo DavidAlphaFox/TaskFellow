@@ -1,6 +1,10 @@
-A clone of Trello.com using Backbone.js and Ruby on Rails
+Drag and drop task organization and project management app.
 
-http://taskfellow.herokuapp.com/
+Built with Ruby on Rails, Backbone.js, jQuery, jQuery UI, Javascript, HTML5, and CSS3.
+
+[link][live]
+
+[live]: http://taskfellow.herokuapp.com/
 
 Demo GIF:
 
