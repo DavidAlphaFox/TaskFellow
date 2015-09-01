@@ -5,7 +5,7 @@ TrelloApp.Views.CardModal = Backbone.View.extend({
 	events: {
 		'click .modal-background': 'remove',
 		'click .close': 'removeModal',
-		'click .form-submit-button': 'submitForm'
+		'submit .edit-card-form': 'submitForm'
 	},
 
 	initialize: function(options) {
@@ -16,6 +16,19 @@ TrelloApp.Views.CardModal = Backbone.View.extend({
 	removeModal: function (e) {
 		e.preventDefault();
 		this.remove();
+	},
+
+	submitForm: function (e) {
+		e.preventDefault();
+		var formData = $(e.currentTarget).serializeJSON();
+		this.model.save(formData, {
+			success: function (response, response_models, message) {
+				bootbox
+			},
+			error: function (response, messages) {
+
+			}
+		});
 	},
 
 	handleKey: function (e) {

@@ -34,3 +34,29 @@
 .card:hover .delete-card-button {
 	display: inline-block;
 }
+
+.card-description-input {
+	width: 100%;
+	margin: 10px 0px;
+}
+
+.card-description-input:disabled {
+	border: none;
+}
+
+.comment-textarea {
+	width: 100%;
+	margin: 0px;
+}
+
+.card-description-save-button {
+	margin: 0px 0px 10px 0px;
+}
+
+.comment-form {
+	margin: 10px 0px;
+}
+
+.comment-submit-button {
+	margin: 10px 0px;
+}

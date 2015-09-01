@@ -9,7 +9,7 @@ TrelloApp.Views.List = Backbone.CompositeView.extend({
     // 'mousedown .card': 'drag',
     // 'mouseup .card': 'drop',
     'click .add-card-link': 'showCardForm',
-    'blur .add-card-input': 'hideCardForm'
+    'blur .add-card-input': 'hideCardFormHelper'
   },
 
   initialize: function() {
@@ -55,7 +55,11 @@ TrelloApp.Views.List = Backbone.CompositeView.extend({
     e.preventDefault();
     var formData = $(e.currentTarget).serializeJSON();
     formData.card.list_id = this.model.id;
-    formData.card.ord = this.model.cards().at(this.model.cards().length - 1).get('ord') + 1;
+    if (this.model.cards().length - 1 === -1) {
+      formData.card.ord = 1;
+    } else {
+      formData.card.ord = this.model.cards().at(this.model.cards().length - 1).get('ord') + 1;
+    }
     var card = new TrelloApp.Models.Card();
     card.save(formData, {
       success: function (response, response_models, message) {
@@ -93,8 +97,12 @@ TrelloApp.Views.List = Backbone.CompositeView.extend({
     this.$('.add-card-input').focus();
   },
 
+  hideCardFormHelper: function (e) {
+    setTimeout(function () { this.hideCardForm.call(this, e) }.bind(this), 300);
+  },
+
   hideCardForm: function (e) {
-    e.preventDefault();
+    // e.preventDefault();
     this.$('.add-card-link').removeClass('clicked');
     this.$('.new-card-form').removeClass('clicked');
   },
@@ -107,13 +115,13 @@ TrelloApp.Views.List = Backbone.CompositeView.extend({
   },
 
   onRender: function () {
+    var view = this;
     $('.cards').sortable ({
       connectWith: ".cards",
       start: function (event, ui) {
         ui.item.addClass('dragged');
       },
       stop: function( event, ui ) {
-        var view = this;
         var cardOrder = [];
         var listOrder = [];
         $('.card').each( function (i, el) {
