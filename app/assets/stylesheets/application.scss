@@ -23,27 +23,44 @@ html, body {
 }
 
 body {
-	background: rgba(255, 230, 230, 1) !important;
+	/*background: rgba(255, 230, 230, 1) !important;*/
+	background-color: #0079BF !important;
 }
 
 .splash-container {
 	/*background-image: url("/images/splash.jpeg");*/
 	background-size: cover;
 	height: 100%;
-	display: flex;
+	/*display: flex;*/
 	flex-direction: row;
 	justify-content: center;
 }
 
+.welcome {
+	font-family: Parkavenue, cursive;
+	display: block;
+	width: 600px;
+	margin: 0 auto;
+	padding-top: 200px;
+	text-align: center;
+	font-size: 40px;
+	color: white;
+	text-shadow: 2px 2px black;
+}
+
 .splash-content {
-	margin-top: 20%;
 	background: rgba(255, 255, 255, 0.4);
-	height: 225px;
+	height: 275px;
 	padding: 10px 20px;
+	width: 300px;
+	margin: 0 auto;
+	margin-top: 200px;
 }
 
 .splash-title {
 	font-size: 24px;
+	text-align: center;
+	margin: 20px 0px;
 }
 
 #content {
@@ -57,7 +74,8 @@ body {
 }
 
 .navbar.navbar-default.navbar-solid {
-	background: rgba(255, 138, 138, 1);
+	/*background: rgba(255, 138, 138, 1);*/
+	background-color: #0067A3;
 	border: 1px rgba(255, 138, 138, 1);
 	border-radius: 0px;
 	position: fixed;
@@ -104,9 +122,19 @@ body {
 	color: white !important;
 }
 
+.authentication-input {
+	width: 260px;
+	margin-bottom: 10px;
+}
+
 .authentication-button {
-	margin-top: 10px;
+	margin: 10px 0px 0px 10px;
 	float: right;
+	background-color: #58A842;
+	border: none;
+	box-shadow: 2px 2px #4d4d4d;
+	color: white;
+	font-weight: bold;
 }
 
 .modal-container {
