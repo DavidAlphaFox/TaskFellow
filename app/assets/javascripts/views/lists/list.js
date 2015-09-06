@@ -40,9 +40,9 @@ TrelloApp.Views.List = Backbone.CompositeView.extend({
           var card = cards.get(el);
             card.set({'ord': i + 1, 'list_id': listOrder[i] });
             card.save({}, {
-              success: function (response, response_models, message) {
+              success: function (model, response, options) {
               },
-              error: function (response, message) {
+              error: function (model, response, options) {
                 debugger
               }
             });
@@ -62,10 +62,10 @@ TrelloApp.Views.List = Backbone.CompositeView.extend({
     }
     var card = new TrelloApp.Models.Card();
     card.save(formData, {
-      success: function (response, response_models, message) {
+      success: function (model, response, options) {
         Backbone.history.navigate("#/" + Backbone.history.fragment, { trigger: true });
       },
-      error: function (response, message) {
+      error: function (model, response, options) {
         debugger
       }
     })
@@ -135,10 +135,10 @@ TrelloApp.Views.List = Backbone.CompositeView.extend({
               var card = cards.get(el);
                 card.set({'ord': i + 1, 'list_id': listOrder[i] });
                 card.save({}, {
-                  success: function (response, response_models, message) {
+                  success: function (model, response, options) {
                     ui.item.removeClass('dragged');
                   },
-                  error: function (response, message) {
+                  error: function (model, response, options) {
                     debugger
                   }
                 });

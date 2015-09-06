@@ -10,7 +10,8 @@
 #
 
 class Comment < ActiveRecord::Base
-	validates :card_id, :content, presence: true
+	validates :card_id, :user_id, :content, presence: true
 
 	belongs_to :card
+	belongs_to :user
 end

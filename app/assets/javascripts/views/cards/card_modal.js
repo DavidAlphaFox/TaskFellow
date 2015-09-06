@@ -1,4 +1,4 @@
-TrelloApp.Views.CardModal = Backbone.View.extend({
+TrelloApp.Views.CardModal = Backbone.CompositeView.extend({
 	template: JST['cards/card_modal'],
 	className: 'modal-container',
 
@@ -8,13 +8,27 @@ TrelloApp.Views.CardModal = Backbone.View.extend({
 		'click .card-title-link': 'focusTitleInput',
 		'blur .card-title-input': 'hideTitleInput',
 		'click .card-description-link': 'focusDescriptionInput',
-		'blur .card-description-input': 'hideDescriptionInput',
-		'submit .edit-card-form': 'submitForm',
+		'blur .card-description-input': 'hideDescriptionInputHelper',
+		'submit .edit-card-form': 'submitCardForm',
+		'submit .edit-card-description-form': 'submitCardForm',
+		'submit .comment-form': 'submitCommentForm'
 	},
 
 	initialize: function(options) {
 		this.listenTo(this.model, 'sync', this.render);
+		this.listenTo(this.model.comments(), 'add', this.addComment);
+		this.listenTo(this.model.comments(), 'remove', this.removeComment);
+		this.model.comments().each(this.addComment.bind(this));
 		$(document).on('keyup', this.handleKey.bind(this));
+	},
+
+	addComment: function (model) {
+		var subview = new TrelloApp.Views.Comment({ model: model, card: this.model });
+		this.addSubview('.comments-container', subview);
+	},
+
+	removeComment: function (model) {
+		this.removeModelSubview('.comments-container', model);
 	},
 
 	removeModal: function (e) {
@@ -54,17 +68,35 @@ TrelloApp.Views.CardModal = Backbone.View.extend({
 		this.$('.card-description-link').removeClass('hide');
 	},
 
-	submitForm: function (e) {
+	hideDescriptionInputHelper: function (e) {
+		setTimeout(function () { this.hideDescriptionInput.call(this, e) }.bind(this), 200);
+	},
+
+	submitCardForm: function (e) {
 		e.preventDefault();
 		var formData = $(e.currentTarget).serializeJSON();
 		this.model.save(formData, {
-			success: function (response, response_models, message) {
+			success: function (model, response, options) {
 		        bootbox.alert("Your card was successfully edited");
 			},
-			error: function (response, messages) {
+			error: function (model, response, options) {
 				debugger
 			}
 		});
+	},
+
+	submitCommentForm: function (e) {
+		e.preventDefault();
+		var formData = $(e.currentTarget).serializeJSON();
+		formData.comment.card_id = this.model.id;
+		var comment = new TrelloApp.Models.Comment();
+		comment.save(formData, {
+			success: function (model, response, options) {
+			},
+			error: function (model, response, options) {
+				debugger
+			}
+		})
 	},
 
 	handleKey: function (e) {
@@ -75,6 +107,7 @@ TrelloApp.Views.CardModal = Backbone.View.extend({
 
 	render: function () {
 		this.$el.html(this.template({ card: this.model }));
+		this.attachSubviews();
 		return this;
 	}
 });

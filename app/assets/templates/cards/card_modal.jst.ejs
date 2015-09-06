@@ -20,5 +20,7 @@
 		<br>
 		<button class="comment-submit-button btn btn-default">Comment</button>
 	</form>
-	<div>this card was created on <%= new Date(card.escape('created_at')).toString() %> and last updated on <%= new Date(card.escape('updated_at')).toString() %>.</div>
+	<div class="comments-container"></div>
+	<br>
+	<div class="card-info">this card was created on <%= new Date(card.escape('created_at')).toString() %> and last updated on <%= new Date(card.escape('updated_at')).toString() %>.</div>
 </div>

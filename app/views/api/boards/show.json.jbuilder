@@ -7,6 +7,16 @@ json.lists do
     json.cards do
       json.array!(list.cards.order(:ord)) do |card|
     	json.partial!("api/cards/card", model: card)
+
+    	json.comments do
+    		json.array!(card.comments) do |comment|
+    			json.partial!("api/comments/comment", model: comment)
+
+          json.user do
+            json.partial!("api/users/user", model: comment.user)
+          end
+    		end
+    	end
       end
 	end
   end

@@ -5,7 +5,7 @@ TrelloApp.Collections.Lists = Backbone.Collection.extend({
 
   initialize: function (models, options) {
   	if (options && options.board) {
-	  this.board = options.board;
+  	  this.board = options.board;
   	}
   },
 

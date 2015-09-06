@@ -98,8 +98,9 @@
 }
 
 .comment-textarea {
-	width: 100%;
+	width: 97%;
 	margin: 0px;
+	margin-left: 10px;
 }
 
 .comment-form {
@@ -108,6 +109,7 @@
 
 .comment-submit-button.btn.btn-default {
 	margin: 10px 0px;
+	margin-left: 10px;
 	background: rgba(87, 166, 65, 1);
 	border: none;
 	color: white;

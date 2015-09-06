@@ -6,7 +6,10 @@ class Api::CommentsController < ApplicationController
 
 	def create
 		@comment = Comment.new(comment_params)
-		@comment.id = Comment.last.id + 1
+		@comment.user_id = current_user.id
+		if Comment.last
+			@comment.id = Comment.last.id + 1
+		end
 		if @comment.save
 			render "show"
 		else
@@ -35,6 +38,6 @@ class Api::CommentsController < ApplicationController
 
 	private
 	def comment_params
-		params.require(:comment).permit(:card_id, :content)
+		params.require(:comment).permit(:card_id, :user_id, :content)
 	end
 end

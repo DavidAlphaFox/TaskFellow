@@ -74,10 +74,10 @@ TrelloApp.Views.BoardShow = Backbone.CompositeView.extend({
           var list = this.model.lists().get(el);
           list.set({'ord': i + 1});
           list.save({}, {
-            success: function (response, response_models, message) {
+            success: function (model, response, options) {
               ui.item.removeClass('dragged');
             },
-            error: function (response, message) {
+            error: function (model, response, options) {
               debugger
             }
           });
