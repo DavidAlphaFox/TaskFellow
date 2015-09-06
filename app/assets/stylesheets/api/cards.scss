@@ -18,7 +18,7 @@
 	background: rgba(192, 192, 192, 0.4);
 }
 
-.card-description {
+.card-title {
 	font-size: 14px;
 	color: black;
 }
@@ -40,13 +40,46 @@
 	display: inline-block;
 }
 
-.card-description-input {
+.card-title-link {
+	margin-top: 15px;
+	display: block;
 	width: 100%;
-	margin: 10px 0px;
+	font-size: 18px;
+	color: black;
+	font-weight: bold;
 }
 
-.card-description-input:disabled {
+.card-title-link.hide {
+	display: none;
+}
+
+.card-title-input {
+	display: none;
+    background: rgba(237, 239, 240, 1);
+    font-weight: bold;
+	width: 100%;
+	margin-top: 10px;
+	font-size: 18px;
+}
+
+.card-title-input.show {
+	display: block;
+}
+
+.card-title-input:disabled {
 	border: none;
+}
+
+.card-title-save-button.btn.btn-default {
+	display: none;
+	background: rgba(87, 166, 65, 1);
+	border: none;
+	color: white;
+	font-weight: bold;
+}
+
+.card-title-save-button.show {
+	display: block;
 }
 
 .comment-textarea {
@@ -54,14 +87,14 @@
 	margin: 0px;
 }
 
-.card-description-save-button {
-	margin: 0px 0px 10px 0px;
-}
-
 .comment-form {
 	margin: 10px 0px;
 }
 
-.comment-submit-button {
+.comment-submit-button.btn.btn-default {
 	margin: 10px 0px;
+	background: rgba(87, 166, 65, 1);
+	border: none;
+	color: white;
+	font-weight: bold;
 }

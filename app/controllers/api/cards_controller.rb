@@ -7,6 +7,7 @@ class Api::CardsController < ApplicationController
   def create
     @card = Card.new(card_params)
     @card.id = Card.last.id + 1
+    @card.description = @card.description || ""
     # card.list_id = params[:id]
     if @card.save
       render :json => @card
@@ -32,6 +33,6 @@ class Api::CardsController < ApplicationController
 
   private
   def card_params
-    params.require(:card).permit(:list_id, :description, :ord)
+    params.require(:card).permit(:list_id, :title, :description, :ord)
   end
 end
