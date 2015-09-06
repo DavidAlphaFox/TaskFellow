@@ -7,16 +7,18 @@
 	<form class="edit-card-form">
 		<a class="card-title-link" href=""><%= card.escape('title') %></a>
 		<input class="card-title-input" type="text" name="card[title]" value="<%= card.escape('title') %>">
-		<br>
 		<button class="card-title-save-button btn btn-default" type="submit">Save</button>
 	</form>
-	<h4 style="font-weight: bold;">Activity</h4>
+	<form class="edit-card-description-form">
+		<a class="card-description-link" href="">Edit the Description...</a>
+		<input class="card-description-input" type="text" name="card[description]" value="<%= card.escape('description') %>">
+		<button class="card-description-save-button btn btn-default" type="submit">Save</button>
+	</form>
+	<h4 class="activity-title">Activity</h4>
 	<form class="comment-form">
-		<label for="comment[content]">Comment:</label>
+		<textarea class="comment-textarea" name="comment[content]" placeholder="Write a comment..."></textarea>
 		<br>
-		<textarea class="comment-textarea" name="comment[content]">Write a comment...</textarea>
-		<br>
-		<button class="comment-submit-button btn btn-default">Submit</button>
+		<button class="comment-submit-button btn btn-default">Comment</button>
 	</form>
 	<div>this card was created on <%= new Date(card.escape('created_at')).toString() %> and last updated on <%= new Date(card.escape('updated_at')).toString() %>.</div>
 </div>

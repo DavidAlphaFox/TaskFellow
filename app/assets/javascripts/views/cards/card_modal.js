@@ -5,8 +5,10 @@ TrelloApp.Views.CardModal = Backbone.View.extend({
 	events: {
 		'click .modal-background': 'remove',
 		'click .close': 'removeModal',
-		'click .card-title-link': 'focusInput',
-		'blur .card-title-input': 'hideInput',
+		'click .card-title-link': 'focusTitleInput',
+		'blur .card-title-input': 'hideTitleInput',
+		'click .card-description-link': 'focusDescriptionInput',
+		'blur .card-description-input': 'hideDescriptionInput',
 		'submit .edit-card-form': 'submitForm',
 	},
 
@@ -20,7 +22,7 @@ TrelloApp.Views.CardModal = Backbone.View.extend({
 		this.remove();
 	},
 
-	focusInput: function (e) {
+	focusTitleInput: function (e) {
 		e.preventDefault();
 		this.$('.card-title-input').addClass('show');
 		this.$('.card-title-input').select();
@@ -29,11 +31,27 @@ TrelloApp.Views.CardModal = Backbone.View.extend({
 		this.$('.card-title-input').focus();
 	},
 
-	hideInput: function (e) {
+	hideTitleInput: function (e) {
 		e.preventDefault();
 		this.$('.card-title-input').removeClass('show');
 		this.$('.card-title-save-button').removeClass('show');
 		this.$('.card-title-link').removeClass('hide');
+	},
+
+	focusDescriptionInput: function (e) {
+		e.preventDefault();
+		this.$('.card-description-input').addClass('show');
+		this.$('.card-description-input').select();
+		this.$('.card-description-save-button').addClass('show');
+		this.$('.card-description-link').addClass('hide');
+		this.$('.card-description-input').focus();
+	},
+
+	hideDescriptionInput: function (e) {
+		e.preventDefault();
+		this.$('.card-description-input').removeClass('show');
+		this.$('.card-description-save-button').removeClass('show');
+		this.$('.card-description-link').removeClass('hide');
 	},
 
 	submitForm: function (e) {

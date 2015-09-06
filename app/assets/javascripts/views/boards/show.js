@@ -6,8 +6,8 @@ TrelloApp.Views.BoardShow = Backbone.CompositeView.extend({
   events: {
     // 'mousedown .list-container': 'drag',
     // 'mouseup .list-container': 'drop',
-    'click .delete-list-button': 'deleteList',
-    'click .delete-board-link': 'deleteBoard'
+    'click .add-list-link': 'grayFormBackground',
+    'blur .add-list-input': 'blueFormBackground'
   },
 
   initialize: function () {
@@ -29,16 +29,14 @@ TrelloApp.Views.BoardShow = Backbone.CompositeView.extend({
     this.removeModelSubview('.lists-container', model);
   },
 
-  deleteBoard: function (e) {
+  grayFormBackground: function (e) {
     e.preventDefault();
-    bootbox.confirm("Are you sure you would like to delete the board?", function (result) {
-      if (result === false) {
-      } else {
-        this.model.destroy();
-        Backbone.history.navigate("#/boards", { trigger: true });
-        bootbox.alert("Your board was successfully deleted");
-      }
-    }.bind(this));
+    this.$('.list-form').addClass('clicked');
+  },
+
+  blueFormBackground: function (e) {
+    e.preventDefault();
+    setTimeout(function () { this.$('.list-form').removeClass('clicked') }.bind(this), 200);
   },
 
   // drag: function (e) {

@@ -38,6 +38,10 @@
 	height: 100%;
 }
 
+.list-form.clicked {
+	background-color: #E2E4E6;
+}
+
 a.add-list-link {
 	width: 100%;
 	text-decoration: none;
@@ -63,6 +67,7 @@ a.add-list-link.clicked {
 
 .add-list-input {
 	width: 100%;
+	margin-top: 10px;
 }
 
 .add-list-input:hover {
@@ -97,16 +102,34 @@ a.add-card-link.clicked {
 	display: none;
 }
 
+.new-list-form-button {
+	background: rgba(87, 166, 65, 1);
+	border: none;
+	color: white;
+	font-weight: bold;
+	margin-top: 5px;
+}
+
 .new-card-form {
 	display: none;
+	margin: 10px 0px;
 }
 
 .new-card-form.clicked {
 	display: block;
 }
 
+.new-card-button {
+	background: rgba(87, 166, 65, 1);
+	border: none;
+	color: white;
+	font-weight: bold;
+	margin-top: 5px;
+}
+
 .add-card-input {
 	width: 100%;
+	height: 90px;
 }
 
 .add-card-input:hover {

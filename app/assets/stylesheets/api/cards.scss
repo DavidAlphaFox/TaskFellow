@@ -40,7 +40,7 @@
 	display: inline-block;
 }
 
-.card-title-link {
+.card-title-link, .card-description-link {
 	margin-top: 15px;
 	display: block;
 	width: 100%;
@@ -49,11 +49,18 @@
 	font-weight: bold;
 }
 
-.card-title-link.hide {
+.card-description-link {
+	font-size: 14px;
+	font-weight: normal;
+	margin-left: 10px;
+	color: rgba(150, 150, 150, 1);
+}
+
+.hide {
 	display: none;
 }
 
-.card-title-input {
+.card-title-input, .card-description-input {
 	display: none;
     background: rgba(237, 239, 240, 1);
     font-weight: bold;
@@ -62,24 +69,32 @@
 	font-size: 18px;
 }
 
-.card-title-input.show {
+.card-description-input {
+	font-size: 14px;
+	font-weight: normal;
+	margin-left: 10px;
+}
+
+.show {
 	display: block;
 }
 
-.card-title-input:disabled {
-	border: none;
-}
-
-.card-title-save-button.btn.btn-default {
+.card-title-save-button.btn.btn-default, .card-description-save-button.btn.btn-default {
 	display: none;
 	background: rgba(87, 166, 65, 1);
 	border: none;
 	color: white;
 	font-weight: bold;
+	margin-top: 15px;
 }
 
-.card-title-save-button.show {
-	display: block;
+.card-description-save-button.btn.btn-default {
+	margin-left: 8px;
+}
+
+.activity-title {
+	font-weight: bold;
+	margin-top: 20px;
 }
 
 .comment-textarea {

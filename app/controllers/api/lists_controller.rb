@@ -31,8 +31,7 @@ class Api::ListsController < ApplicationController
 
   def destroy
     @list = List.find(params[:id])
-    @list.destroy()
-    redirect_to api_boards_url
+    @list.destroy
   end
 
   private

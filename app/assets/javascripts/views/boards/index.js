@@ -31,9 +31,16 @@ TrelloApp.Views.BoardIndex = Backbone.CompositeView.extend({
   },
 
   deleteBoard: function (e) {
-    var target = $(e.currentTarget);
-    var id = target.data('id');
-    var board = this.collection.getOrFetch(id);
-    board.destroy();
+    e.preventDefault();
+    bootbox.confirm("Are you sure you would like to delete the board?", function (result) {
+      if (result === false) {
+
+      } else {
+        var target = $(e.currentTarget);
+        var id = target.data('id');
+        var board = this.collection.getOrFetch(id);
+        board.destroy();
+      }
+    }.bind(this));
   }
 });

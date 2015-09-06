@@ -10,16 +10,21 @@ class Api::CardsController < ApplicationController
     @card.description = @card.description || ""
     # card.list_id = params[:id]
     if @card.save
-      render :json => @card
+      render "show"
     else
       render :json => { error: @card.errors.full_messages }, status: :unproccessable_entity
     end
   end
 
+  def show
+    @card = Card.find(params[:id])
+    render "show"
+  end
+
   def update
     @card = Card.find(params[:id])
     if @card.update(card_params)
-      render :json => @card
+      render "show"
     else
       render :json => { error: @card.errors.full_messages }, status: :unproccessable_entity
     end
@@ -27,7 +32,7 @@ class Api::CardsController < ApplicationController
 
   def destroy
     @card = Card.find(params[:id])
-    @card.destroy()
+    @card.destroy
     redirect_to api_boards_url
   end
 
