@@ -65,7 +65,7 @@ TaskFellow.Views.List = Backbone.CompositeView.extend({
     card.save(formData, {
       success: function (model, response, options) {
         Backbone.history.navigate("#/" + Backbone.history.fragment, { trigger: true });
-        view.newCard = true;
+        view.cardMade = true;
       },
       error: function (model, response, options) {
         debugger
@@ -142,7 +142,7 @@ TaskFellow.Views.List = Backbone.CompositeView.extend({
                 card.save({}, {
                   success: function (model, response, options) {
                     ui.item.removeClass('dragged');
-                    if (view.newCard) {
+                    if (view.cardMade) {
                       window.location.reload();
                     }
                   },
