@@ -13,7 +13,7 @@ TaskFellow.Views.List = Backbone.CompositeView.extend({
   },
 
   initialize: function() {
-  	this.listenTo(this.model, 'sync', this.renderHelper);
+  	this.listenTo(this.model, 'sync', this.render);
     this.listenTo(this.model.cards(), 'add', this.addCard);
   	this.listenTo(this.model.cards(), 'remove', this.removeCard);
     this.model.cards().each(this.addCard.bind(this));
@@ -53,6 +53,7 @@ TaskFellow.Views.List = Backbone.CompositeView.extend({
 
   newCard: function (e) {
     e.preventDefault();
+    var view = this;
     var formData = $(e.currentTarget).serializeJSON();
     formData.card.list_id = this.model.id;
     if (this.model.cards().length - 1 === -1) {
@@ -64,6 +65,7 @@ TaskFellow.Views.List = Backbone.CompositeView.extend({
     card.save(formData, {
       success: function (model, response, options) {
         Backbone.history.navigate("#/" + Backbone.history.fragment, { trigger: true });
+        view.newCard = true;
       },
       error: function (model, response, options) {
         debugger
@@ -114,12 +116,11 @@ TaskFellow.Views.List = Backbone.CompositeView.extend({
     return this;
   },
 
-  renderHelper: function () {
-    setTimeout(function () { this.render.bind(this) }.bind(this), 1000);
-  },
-
   onRender: function () {
     var view = this;
+    // this adds the list id as a data attribute to this DOM element
+    this.$el.data('list-id', this.model.id);
+
     $('.cards').sortable ({
       connectWith: ".cards",
       start: function (event, ui) {
@@ -141,7 +142,9 @@ TaskFellow.Views.List = Backbone.CompositeView.extend({
                 card.save({}, {
                   success: function (model, response, options) {
                     ui.item.removeClass('dragged');
-                    window.location.reload();
+                    if (view.newCard) {
+                      window.location.reload();
+                    }
                   },
                   error: function (model, response, options) {
                     debugger
@@ -152,8 +155,6 @@ TaskFellow.Views.List = Backbone.CompositeView.extend({
         });
       }.bind(this)
     });
-    // this adds the list id as a data attribute to this DOM element
-    this.$el.data('list-id', this.model.id);
     Backbone.CompositeView.prototype.onRender.call(this);
   }
 });

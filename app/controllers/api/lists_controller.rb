@@ -1,6 +1,6 @@
 class Api::ListsController < ApplicationController
   def index
-    @lists = List.all
+    @lists = List.includes({ cards: :comments }).all
     render "index"
   end 
 
@@ -25,7 +25,7 @@ class Api::ListsController < ApplicationController
   end
 
   def show
-    @list = List.includes(:cards).find(params[:id])
+    @list = List.includes({ cards: :comments }).find(params[:id])
     render "show"
   end
 
