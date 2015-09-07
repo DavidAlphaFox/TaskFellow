@@ -6,7 +6,7 @@ TaskFellow.Views.CardModal = Backbone.CompositeView.extend({
 		'click .modal-background': 'remove',
 		'click .close': 'removeModal',
 		'click .card-title-link': 'focusTitleInput',
-		'blur .card-title-input': 'hideTitleInput',
+		'blur .card-title-input': 'hideTitleInputHelper',
 		'click .card-description-link': 'focusDescriptionInput',
 		'blur .card-description-input': 'hideDescriptionInputHelper',
 		'submit .edit-card-form': 'submitCardForm',
@@ -50,6 +50,10 @@ TaskFellow.Views.CardModal = Backbone.CompositeView.extend({
 		this.$('.card-title-input').removeClass('show');
 		this.$('.card-title-save-button').removeClass('show');
 		this.$('.card-title-link').removeClass('hide');
+	},
+
+	hideTitleInputHelper: function (e) {
+		setTimeout(function () { this.hideTitleInput.call(this, e) }.bind(this), 200);
 	},
 
 	focusDescriptionInput: function (e) {
