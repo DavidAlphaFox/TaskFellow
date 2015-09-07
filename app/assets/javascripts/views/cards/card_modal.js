@@ -87,11 +87,14 @@ TrelloApp.Views.CardModal = Backbone.CompositeView.extend({
 
 	submitCommentForm: function (e) {
 		e.preventDefault();
+		var view = this;
 		var formData = $(e.currentTarget).serializeJSON();
 		formData.comment.card_id = this.model.id;
-		var comment = new TrelloApp.Models.Comment();
+		var comment = new TrelloApp.Models.Comment({ card: this.model });
 		comment.save(formData, {
 			success: function (model, response, options) {
+				view.model.comments().add(comment);
+				bootbox.alert("Your comment was successfully submitted");
 			},
 			error: function (model, response, options) {
 				debugger

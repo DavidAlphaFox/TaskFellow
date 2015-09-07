@@ -6,5 +6,29 @@
 	margin-left: 10px;
 }
 
-.card-info {
+.comment-content {
+	font-weight: normal;
+}
+
+.edit-comment-textarea {
+	display: none;
+	resize: none;
+	width: 98.5%;
+	border: none;
+	border-radius: 4px;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+	padding-left: 10px;
+}
+
+.edit-comment-submit-button.btn.btn-default {
+	display: none;
+	background: rgba(87, 166, 65, 1);
+	border: none;
+	color: white;
+	font-weight: bold;
+	margin-top: 15px;
+}
+
+.edit-comment-textarea:focus {
+	outline: 0;
 }

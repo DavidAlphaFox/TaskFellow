@@ -64,7 +64,7 @@
 	display: none;
     background: rgba(237, 239, 240, 1);
     font-weight: bold;
-	width: 100%;
+	width: 98.5%;
 	margin-top: 10px;
 	font-size: 18px;
 }
@@ -98,9 +98,14 @@
 }
 
 .comment-textarea {
+	resize: none;
 	width: 97%;
 	margin: 0px;
 	margin-left: 10px;
+	border: none;
+	border-radius: 4px;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+	padding-left: 10px;
 }
 
 .comment-form {

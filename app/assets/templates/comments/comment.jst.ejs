@@ -1,2 +1,15 @@
-<div style="font-weight: bold;"><%= comment.user().escape('username') %></div>
-<div><%= comment.escape('content') %></div>
+<div style="font-weight: bold; text-transform: uppercase; margin-bottom: 4px"><%= comment.user().escape('username') %></div>
+<div>
+	<form class="edit-comment-form">
+		<label class="comment-content" for="comment[content]"><%= comment.escape('content') %></label>
+		<textarea class="edit-comment-textarea" name="comment[content]"><%= comment.escape('content') %></textarea>
+		<button class="edit-comment-submit-button btn btn-default">Save</button>
+	</form>
+</div>
+<div class="comment-info">
+	<%= new Date(comment.escape('created_at')).toLocaleDateString() + " " + new Date(comment.escape('created_at')).toLocaleTimeString() %> | 
+	<% if (comment.escape('created_at') !== comment.escape('updated_at')) { %>
+		<%= new Date(comment.escape('updated_at')).toLocaleDateString() + " " + new Date(comment.escape('updated_at')).toLocaleTimeString() %> |
+	<% } %>
+	<a href="" class="edit-link">Edit</a> | <a href="" class="delete-link">Delete</a>
+</div>
