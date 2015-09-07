@@ -21,7 +21,7 @@ TaskFellow.Views.BoardShow = Backbone.CompositeView.extend({
   },
 
   addList: function (model) {
-    var subview = new TaskFellow.Views.List({ model: model });
+    var subview = new TaskFellow.Views.List({ model: model, collection: this.model.lists() });
     this.addSubview('.lists-container', subview);
   },
 

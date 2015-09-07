@@ -13,7 +13,7 @@ TaskFellow.Views.List = Backbone.CompositeView.extend({
   },
 
   initialize: function() {
-  	this.listenTo(this.model, 'sync', this.render);
+  	this.listenTo(this.model, 'sync', this.renderHelper);
     this.listenTo(this.model.cards(), 'add', this.addCard);
   	this.listenTo(this.model.cards(), 'remove', this.removeCard);
     this.model.cards().each(this.addCard.bind(this));
@@ -26,29 +26,29 @@ TaskFellow.Views.List = Backbone.CompositeView.extend({
 
   removeCard: function (model) {
   	this.removeModelSubview('.cards', model);
-    var view = this;
-    var cardOrder = [];
-    var listOrder = [];
-    $('.card').each( function (i, el) {
-      cardOrder.push($(el).data('card-id'));
-      listOrder.push($(el).parent().parent().data('list-id'));
-    });
-    cards = new TaskFellow.Collections.Cards();
-    cards.fetch({
-      success: function () {
-        cardOrder.forEach( function (el, i) {
-          var card = cards.get(el);
-            card.set({'ord': i + 1, 'list_id': listOrder[i] });
-            card.save({}, {
-              success: function (model, response, options) {
-              },
-              error: function (model, response, options) {
-                debugger
-              }
-            });
-        }.bind(this));
-      }.bind(this)
-    });
+    // var view = this;
+    // var cardOrder = [];
+    // var listOrder = [];
+    // $('.card').each( function (i, el) {
+    //   cardOrder.push($(el).data('card-id'));
+    //   listOrder.push($(el).parent().parent().data('list-id'));
+    // });
+    // cards = new TaskFellow.Collections.Cards();
+    // cards.fetch({
+    //   success: function () {
+    //     cardOrder.forEach( function (el, i) {
+    //       var card = cards.get(el);
+    //         card.set({'ord': i + 1, 'list_id': listOrder[i] });
+    //         card.save({}, {
+    //           success: function (model, response, options) {
+    //           },
+    //           error: function (model, response, options) {
+    //             debugger
+    //           }
+    //         });
+    //     }.bind(this));
+    //   }.bind(this)
+    // });
   },
 
   newCard: function (e) {
@@ -114,6 +114,10 @@ TaskFellow.Views.List = Backbone.CompositeView.extend({
     return this;
   },
 
+  renderHelper: function () {
+    setTimeout(function () { this.render.bind(this) }.bind(this), 1000);
+  },
+
   onRender: function () {
     var view = this;
     $('.cards').sortable ({
@@ -137,6 +141,7 @@ TaskFellow.Views.List = Backbone.CompositeView.extend({
                 card.save({}, {
                   success: function (model, response, options) {
                     ui.item.removeClass('dragged');
+                    window.location.reload();
                   },
                   error: function (model, response, options) {
                     debugger

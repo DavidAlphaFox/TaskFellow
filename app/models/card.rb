@@ -12,7 +12,7 @@
 #
 
 class Card < ActiveRecord::Base
-  validates :list_id, :title, :description, :ord, presence: true
+  validates :list_id, :title, :ord, presence: true
 
   belongs_to :list
   has_many :comments, dependent: :destroy

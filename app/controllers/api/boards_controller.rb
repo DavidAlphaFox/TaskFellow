@@ -40,6 +40,7 @@ class Api::BoardsController < ApplicationController
   def destroy
     @board = Board.find(params[:id])
     @board.destroy
+    render "show"
   end
 
   private

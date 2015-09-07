@@ -7,8 +7,6 @@ class Api::CardsController < ApplicationController
   def create
     @card = Card.new(card_params)
     @card.id = Card.last.id + 1
-    @card.description = @card.description || ""
-    # card.list_id = params[:id]
     if @card.save
       render "show"
     else
@@ -33,7 +31,7 @@ class Api::CardsController < ApplicationController
   def destroy
     @card = Card.find(params[:id])
     @card.destroy
-    redirect_to api_boards_url
+    render "show"
   end
 
   private

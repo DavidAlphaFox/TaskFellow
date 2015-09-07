@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 20150906034209) do
   create_table "cards", force: :cascade do |t|
     t.integer  "list_id",     null: false
     t.string   "title",       null: false
-    t.text     "description", null: false
+    t.text     "description"
     t.integer  "ord",         null: false
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
