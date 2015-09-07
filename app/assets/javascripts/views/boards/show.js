@@ -31,12 +31,12 @@ TaskFellow.Views.BoardShow = Backbone.CompositeView.extend({
 
   grayFormBackground: function (e) {
     e.preventDefault();
-    this.$('.list-form').addClass('clicked');
+    this.$('.list-form-container').addClass('clicked');
   },
 
   blueFormBackground: function (e) {
     e.preventDefault();
-    setTimeout(function () { this.$('.list-form').removeClass('clicked') }.bind(this), 200);
+    setTimeout(function () { this.$('.list-form-container').removeClass('clicked') }.bind(this), 200);
   },
 
   // drag: function (e) {
@@ -50,7 +50,7 @@ TaskFellow.Views.BoardShow = Backbone.CompositeView.extend({
   renderListForm: function () {
     var list = new TaskFellow.Models.List();
     var view = new TaskFellow.Views.ListForm({ model: list, board: this.model });
-    this.addSubview('div.list-form', view);
+    this.addSubview('div.list-form-container', view);
   },
 
   render: function () {

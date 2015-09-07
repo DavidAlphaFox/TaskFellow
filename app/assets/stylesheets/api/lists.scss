@@ -27,7 +27,7 @@
 	background: rgba(0, 0, 0, 0.2);
 }
 
-.list-form {
+.list-form-container {
 	min-height: 50px;
 	display: inline-block;
 	width: 300px;
@@ -38,7 +38,7 @@
 	height: 100%;
 }
 
-.list-form.clicked {
+.list-form-container.clicked {
 	background-color: #E2E4E6;
 }
 
@@ -71,7 +71,7 @@ a.add-list-link.clicked {
 }
 
 .add-list-input:hover {
-	background-color: rgba(255, 0, 0, 0.2);
+	background-color: rgba(0, 0, 0, 0.2);
 }
 
 .delete-list-button {
