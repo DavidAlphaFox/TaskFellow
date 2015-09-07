@@ -64,8 +64,10 @@ TaskFellow.Views.List = Backbone.CompositeView.extend({
     var card = new TaskFellow.Models.Card();
     card.save(formData, {
       success: function (model, response, options) {
-        Backbone.history.navigate("#/" + Backbone.history.fragment, { trigger: true });
-        view.cardMade = true;
+        view.model.cards().add(card);
+        if (view.dragged) {
+          window.location.reload();
+        }
       },
       error: function (model, response, options) {
         debugger
@@ -127,6 +129,7 @@ TaskFellow.Views.List = Backbone.CompositeView.extend({
         ui.item.addClass('dragged');
       },
       stop: function( event, ui ) {
+        view.dragged = true;
         var cardOrder = [];
         var listOrder = [];
         $('.card').each( function (i, el) {
@@ -142,9 +145,6 @@ TaskFellow.Views.List = Backbone.CompositeView.extend({
                 card.save({}, {
                   success: function (model, response, options) {
                     ui.item.removeClass('dragged');
-                    if (view.cardMade) {
-                      window.location.reload();
-                    }
                   },
                   error: function (model, response, options) {
                     debugger
