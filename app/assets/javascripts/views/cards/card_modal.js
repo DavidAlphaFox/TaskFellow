@@ -1,4 +1,4 @@
-TrelloApp.Views.CardModal = Backbone.CompositeView.extend({
+TaskFellow.Views.CardModal = Backbone.CompositeView.extend({
 	template: JST['cards/card_modal'],
 	className: 'modal-container',
 
@@ -23,7 +23,7 @@ TrelloApp.Views.CardModal = Backbone.CompositeView.extend({
 	},
 
 	addComment: function (model) {
-		var subview = new TrelloApp.Views.Comment({ model: model, card: this.model });
+		var subview = new TaskFellow.Views.Comment({ model: model, card: this.model });
 		this.addSubview('.comments-container', subview);
 	},
 
@@ -90,7 +90,7 @@ TrelloApp.Views.CardModal = Backbone.CompositeView.extend({
 		var view = this;
 		var formData = $(e.currentTarget).serializeJSON();
 		formData.comment.card_id = this.model.id;
-		var comment = new TrelloApp.Models.Comment({ card: this.model });
+		var comment = new TaskFellow.Models.Comment({ card: this.model });
 		comment.save(formData, {
 			success: function (model, response, options) {
 				view.model.comments().add(comment);

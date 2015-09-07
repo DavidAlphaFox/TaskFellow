@@ -1,4 +1,4 @@
-TrelloApp.Views.BoardForm = Backbone.View.extend({
+TaskFellow.Views.BoardForm = Backbone.View.extend({
   template: JST['boards/form'],
   tagName: 'div',
 

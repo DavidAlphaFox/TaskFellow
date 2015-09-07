@@ -1,4 +1,4 @@
-TrelloApp.Views.Card = Backbone.CompositeView.extend({
+TaskFellow.Views.Card = Backbone.CompositeView.extend({
   template: JST['cards/card'],
   tagName: 'div',
   className: 'card',
@@ -25,7 +25,7 @@ TrelloApp.Views.Card = Backbone.CompositeView.extend({
 
   showCardModal: function (e) {
     e.preventDefault();
-    modal = new TrelloApp.Views.CardModal({ model: this.model });
+    modal = new TaskFellow.Views.CardModal({ model: this.model });
     $('body').prepend(modal.render().$el);
   },
 

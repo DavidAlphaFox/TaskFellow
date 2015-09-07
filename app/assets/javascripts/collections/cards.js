@@ -1,5 +1,5 @@
-TrelloApp.Collections.Cards = Backbone.Collection.extend({
-  model: TrelloApp.Models.Card,
+TaskFellow.Collections.Cards = Backbone.Collection.extend({
+  model: TaskFellow.Models.Card,
   url: "/api/cards",
   comparator: "ord",
 
@@ -13,7 +13,7 @@ TrelloApp.Collections.Cards = Backbone.Collection.extend({
   	var card = this.get(id);
   	var cards = this;
   	if (!card) {
-  	  card = new TrelloApp.Models.Card({ id: id });
+  	  card = new TaskFellow.Models.Card({ id: id });
   	  card.fetch({
   	  	success: function () {
   	  	  cards.add(card);

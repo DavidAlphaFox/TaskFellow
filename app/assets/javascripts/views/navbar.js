@@ -1,4 +1,4 @@
-TrelloApp.Views.Navbar = Backbone.View.extend({
+TaskFellow.Views.Navbar = Backbone.View.extend({
 	template: JST['navbar'],
 	tagName: 'nav',
 	className: 'navbar navbar-default navbar-solid',

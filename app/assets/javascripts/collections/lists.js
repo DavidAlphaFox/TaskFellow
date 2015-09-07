@@ -1,5 +1,5 @@
-TrelloApp.Collections.Lists = Backbone.Collection.extend({
-  model: TrelloApp.Models.List,
+TaskFellow.Collections.Lists = Backbone.Collection.extend({
+  model: TaskFellow.Models.List,
   url: "/api/lists",
   comparator: "ord",
 
@@ -13,7 +13,7 @@ TrelloApp.Collections.Lists = Backbone.Collection.extend({
   	var list = this.get(id);
   	var lists = this;
   	if (!list) {
-	  list = new TrelloApp.Models.list({ id: id });
+	  list = new TaskFellow.Models.list({ id: id });
 	  list.fetch({
 	  	success: function () {
 	  	  lists.add(list);

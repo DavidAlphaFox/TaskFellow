@@ -1,12 +1,12 @@
-TrelloApp.Collections.Boards = Backbone.Collection.extend({
+TaskFellow.Collections.Boards = Backbone.Collection.extend({
   url: "/api/boards",
-  model: TrelloApp.Models.Board,
+  model: TaskFellow.Models.Board,
 
   getOrFetch: function (board_id) {
     var board = this.get(board_id);
     var boards = this;
     if (!board) {
-      board = new TrelloApp.Models.Board({ id: board_id });
+      board = new TaskFellow.Models.Board({ id: board_id });
       boards.add(board);
       board.fetch({
         error: function () {

@@ -1,5 +1,5 @@
-TrelloApp.Collections.Users = Backbone.Collection.extend({
-	model: TrelloApp.Models.Card,
+TaskFellow.Collections.Users = Backbone.Collection.extend({
+	model: TaskFellow.Models.Card,
 	url: "/api/cards",
 
 	initialize: function () {
@@ -10,7 +10,7 @@ TrelloApp.Collections.Users = Backbone.Collection.extend({
 		var user = this.get(id);
 		var users = this;
 		if (!user) {
-			user = new TrelloApp.Models.user({ id: id });
+			user = new TaskFellow.Models.user({ id: id });
 			user.fetch({
 				success: function () {
 				  users.add(user);

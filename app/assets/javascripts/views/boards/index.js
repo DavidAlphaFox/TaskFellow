@@ -1,4 +1,4 @@
-TrelloApp.Views.BoardIndex = Backbone.CompositeView.extend({
+TaskFellow.Views.BoardIndex = Backbone.CompositeView.extend({
   template: JST['boards/index'],
 
   events: {
@@ -14,7 +14,7 @@ TrelloApp.Views.BoardIndex = Backbone.CompositeView.extend({
   },
 
   addIndexItem: function (model) {
-    var subview = new TrelloApp.Views.BoardIndexItem({ model: model });
+    var subview = new TaskFellow.Views.BoardIndexItem({ model: model });
     this.addSubview('.boards', subview);
   },
 

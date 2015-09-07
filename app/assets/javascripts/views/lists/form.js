@@ -1,4 +1,4 @@
-TrelloApp.Views.ListForm = Backbone.View.extend({
+TaskFellow.Views.ListForm = Backbone.View.extend({
   template: JST['lists/form'],
 
   events: {

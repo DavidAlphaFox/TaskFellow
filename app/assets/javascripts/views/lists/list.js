@@ -1,4 +1,4 @@
-TrelloApp.Views.List = Backbone.CompositeView.extend({
+TaskFellow.Views.List = Backbone.CompositeView.extend({
   template: JST['lists/list'],
   tagName: 'div',
   className: 'list-container',
@@ -20,7 +20,7 @@ TrelloApp.Views.List = Backbone.CompositeView.extend({
   },
 
   addCard: function (model) {
-  	var subview = new TrelloApp.Views.Card({ model: model, list: this.model });
+  	var subview = new TaskFellow.Views.Card({ model: model, list: this.model });
   	this.addSubview('.cards', subview);
   },
 
@@ -33,7 +33,7 @@ TrelloApp.Views.List = Backbone.CompositeView.extend({
       cardOrder.push($(el).data('card-id'));
       listOrder.push($(el).parent().parent().data('list-id'));
     });
-    cards = new TrelloApp.Collections.Cards();
+    cards = new TaskFellow.Collections.Cards();
     cards.fetch({
       success: function () {
         cardOrder.forEach( function (el, i) {
@@ -60,7 +60,7 @@ TrelloApp.Views.List = Backbone.CompositeView.extend({
     } else {
       formData.card.ord = this.model.cards().at(this.model.cards().length - 1).get('ord') + 1;
     }
-    var card = new TrelloApp.Models.Card();
+    var card = new TaskFellow.Models.Card();
     card.save(formData, {
       success: function (model, response, options) {
         Backbone.history.navigate("#/" + Backbone.history.fragment, { trigger: true });
@@ -128,7 +128,7 @@ TrelloApp.Views.List = Backbone.CompositeView.extend({
           cardOrder.push($(el).data('card-id'));
           listOrder.push($(el).parent().parent().data('list-id'));
         });
-        cards = new TrelloApp.Collections.Cards();
+        cards = new TaskFellow.Collections.Cards();
         cards.fetch({
           success: function () {
             cardOrder.forEach( function (el, i) {

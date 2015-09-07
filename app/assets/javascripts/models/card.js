@@ -1,9 +1,9 @@
-TrelloApp.Models.Card = Backbone.Model.extend({
+TaskFellow.Models.Card = Backbone.Model.extend({
   urlRoot: "/api/cards",
 
   comments: function () {
   	if (!this._comments) {
-  	  this._comments = new TrelloApp.Collections.Comments([], { card: this });
+  	  this._comments = new TaskFellow.Collections.Comments([], { card: this });
   	}
 
   	return this._comments;

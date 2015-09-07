@@ -1,4 +1,4 @@
-TrelloApp.Views.BoardShow = Backbone.CompositeView.extend({
+TaskFellow.Views.BoardShow = Backbone.CompositeView.extend({
   template: JST['boards/show'],
   tagName: 'div',
   className: 'board',
@@ -21,7 +21,7 @@ TrelloApp.Views.BoardShow = Backbone.CompositeView.extend({
   },
 
   addList: function (model) {
-    var subview = new TrelloApp.Views.List({ model: model });
+    var subview = new TaskFellow.Views.List({ model: model });
     this.addSubview('.lists-container', subview);
   },
 
@@ -48,8 +48,8 @@ TrelloApp.Views.BoardShow = Backbone.CompositeView.extend({
   // },
 
   renderListForm: function () {
-    var list = new TrelloApp.Models.List();
-    var view = new TrelloApp.Views.ListForm({ model: list, board: this.model });
+    var list = new TaskFellow.Models.List();
+    var view = new TaskFellow.Views.ListForm({ model: list, board: this.model });
     this.addSubview('div.list-form', view);
   },
 

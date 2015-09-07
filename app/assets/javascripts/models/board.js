@@ -1,9 +1,9 @@
-TrelloApp.Models.Board = Backbone.Model.extend({
+TaskFellow.Models.Board = Backbone.Model.extend({
   urlRoot: "/api/boards",
 
   lists: function () {
     if (!this._lists) {
-      this._lists = new TrelloApp.Collections.Lists([], { board: this });
+      this._lists = new TaskFellow.Collections.Lists([], { board: this });
     }
 
     return this._lists;

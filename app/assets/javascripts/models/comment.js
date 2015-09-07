@@ -1,4 +1,4 @@
-TrelloApp.Models.Comment = Backbone.Model.extend({
+TaskFellow.Models.Comment = Backbone.Model.extend({
 	urlRoot: "/api/comments",
 
 	initialize: function (options) {
@@ -9,7 +9,7 @@ TrelloApp.Models.Comment = Backbone.Model.extend({
 
 	user: function () {
 		if (!this._user) {
-		  this._user = new TrelloApp.Models.User({ comment: this });
+		  this._user = new TaskFellow.Models.User({ comment: this });
 		}
 
 		return this._user;

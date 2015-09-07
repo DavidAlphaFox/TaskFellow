@@ -1,4 +1,4 @@
-TrelloApp.Views.Comment = Backbone.View.extend({
+TaskFellow.Views.Comment = Backbone.View.extend({
 	template: JST['comments/comment'],
 	tagName: 'div',
 	className: 'comments',

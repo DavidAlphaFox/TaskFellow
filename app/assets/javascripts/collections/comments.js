@@ -1,5 +1,5 @@
-TrelloApp.Collections.Comments = Backbone.Collection.extend({
-  model: TrelloApp.Models.Comment,
+TaskFellow.Collections.Comments = Backbone.Collection.extend({
+  model: TaskFellow.Models.Comment,
   url: "/api/comments",
   // comparator: "ord",
 
@@ -13,7 +13,7 @@ TrelloApp.Collections.Comments = Backbone.Collection.extend({
   	var comment = this.get(id);
   	var comments = this;
   	if (!comment) {
-  	  comment = new TrelloApp.Models.Comment({ id: id });
+  	  comment = new TaskFellow.Models.Comment({ id: id });
   	  comment.fetch({
   	  	success: function () {
   	  	  comments.add(comment);
