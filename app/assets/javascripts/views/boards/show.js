@@ -61,22 +61,29 @@ TaskFellow.Views.BoardShow = Backbone.CompositeView.extend({
   },
 
   onRender: function () {
+    var view = this;
     $('.lists-container').sortable({
       start: function (event, ui) {
         ui.item.addClass('dragged');
       },
       stop: function( event, ui ) {
         var newOrder = [];
+        // var cardOrder = [];
+        // var listOrder = [];
         $('.list-container').each( function (i, el) {
           newOrder.push($(el).data('list-id'));
         });
+        // $('.card').each( function (i, el) {
+        //   cardOrder.push($(el).data('card-id'));
+        //   listOrder.push($(el).parent().parent().data('list-id'));
+        // });
         newOrder.forEach( function (el, i) {
           var list = this.model.lists().get(el);
           list.set({'ord': i + 1});
           list.save({}, {
             success: function (model, response, options) {
               ui.item.removeClass('dragged');
-            },
+            }.bind(this),
             error: function (model, response, options) {
               debugger
             }

@@ -12,11 +12,12 @@ TaskFellow.Views.List = Backbone.CompositeView.extend({
     'blur .add-card-input': 'hideCardFormHelper'
   },
 
-  initialize: function() {
-  	this.listenTo(this.model, 'sync', this.render);
+  initialize: function(options) {
+  	this.listenTo(this.model, 'sync', this.renderHelper);
     this.listenTo(this.model.cards(), 'add', this.addCard);
-  	this.listenTo(this.model.cards(), 'remove', this.removeCard);
+    this.listenTo(this.model.cards(), 'remove', this.removeCard);
     this.model.cards().each(this.addCard.bind(this));
+    this.board = options.board;
   },
 
   addCard: function (model) {
@@ -65,9 +66,6 @@ TaskFellow.Views.List = Backbone.CompositeView.extend({
     card.save(formData, {
       success: function (model, response, options) {
         view.model.cards().add(card);
-        if (view.dragged) {
-          window.location.reload();
-        }
       },
       error: function (model, response, options) {
         debugger
@@ -118,6 +116,15 @@ TaskFellow.Views.List = Backbone.CompositeView.extend({
     return this;
   },
 
+  renderHelper: function () {
+    this.$el.html(this.template({ list: this.model }));
+    this._subviews = {};
+    this.model.cards().each(this.addCard.bind(this));
+    this.attachSubviews();
+    this.onRender();
+    return this;
+  },
+
   onRender: function () {
     var view = this;
     // this adds the list id as a data attribute to this DOM element
@@ -129,7 +136,6 @@ TaskFellow.Views.List = Backbone.CompositeView.extend({
         ui.item.addClass('dragged');
       },
       stop: function( event, ui ) {
-        view.dragged = true;
         var cardOrder = [];
         var listOrder = [];
         $('.card').each( function (i, el) {
@@ -139,18 +145,20 @@ TaskFellow.Views.List = Backbone.CompositeView.extend({
         cards = new TaskFellow.Collections.Cards();
         cards.fetch({
           success: function () {
-            cardOrder.forEach( function (el, i) {
-              var card = cards.get(el);
-                card.set({'ord': i + 1, 'list_id': listOrder[i] });
-                card.save({}, {
-                  success: function (model, response, options) {
-                    ui.item.removeClass('dragged');
-                  },
-                  error: function (model, response, options) {
-                    debugger
-                  }
-                });
-            }.bind(this));
+            var counter = 1;
+            var listId = listOrder[0];
+            for (var i = 0; i < cardOrder.length; i++) {
+              var card = cards.get(cardOrder[i]);
+              card.set({'ord': i, 'list_id': listOrder[i] });
+              card.save({}, {
+                success: function (model, response, options) {
+                  ui.item.removeClass('dragged');
+                },
+                error: function (model, response, options) {
+                  debugger
+                }
+              });
+            }
           }.bind(this)
         });
       }.bind(this)
