@@ -43,8 +43,7 @@ TaskFellow.Views.ListForm = Backbone.View.extend({
     var view = this;
     this.model.save(formData, {
       success: function () {
-        view.board.lists().add(view.list);
-        Backbone.history.navigate("#/boards/" + view.board.id, { trigger: true });
+        view.board.lists().add(view.model);
       }
     });
   }
