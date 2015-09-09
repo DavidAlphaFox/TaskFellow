@@ -36,7 +36,7 @@ TaskFellow.Views.BoardShow = Backbone.CompositeView.extend({
 
   blueFormBackground: function (e) {
     e.preventDefault();
-    setTimeout(function () { this.$('.list-form-container').removeClass('clicked') }.bind(this), 200);
+    setTimeout(function () { this.$('.list-form-container').removeClass('clicked'); }.bind(this), 200);
   },
 
   // drag: function (e) {

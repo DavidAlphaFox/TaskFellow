@@ -27,6 +27,7 @@ TaskFellow.Views.ListForm = Backbone.View.extend({
     e.preventDefault();
     this.$('.add-list-link').removeClass('clicked');
     this.$('.new-list-form').removeClass('clicked');
+    this.$('.add-list-input').val("");
   },
 
   render: function () {

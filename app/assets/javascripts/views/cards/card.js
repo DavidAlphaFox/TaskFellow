@@ -31,6 +31,7 @@ TaskFellow.Views.Card = Backbone.CompositeView.extend({
 
   render: function () {
     this.$el.html(this.template({ card: this.model }));
+    this.onRender();
     return this;
   },
 

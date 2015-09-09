@@ -107,6 +107,7 @@ TaskFellow.Views.List = Backbone.CompositeView.extend({
     // e.preventDefault();
     this.$('.add-card-link').removeClass('clicked');
     this.$('.new-card-form').removeClass('clicked');
+    this.$('.add-card-input').val("");
   },
 
   render: function () {
@@ -149,6 +150,7 @@ TaskFellow.Views.List = Backbone.CompositeView.extend({
             var listId = listOrder[0];
             for (var i = 0; i < cardOrder.length; i++) {
               var card = cards.get(cardOrder[i]);
+              // debugger
               card.set({'ord': i, 'list_id': listOrder[i] });
               card.save({}, {
                 success: function (model, response, options) {
