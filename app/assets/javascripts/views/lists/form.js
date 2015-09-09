@@ -41,9 +41,11 @@ TaskFellow.Views.ListForm = Backbone.View.extend({
     formData.list.ord = this.board.lists().length + 1;
     formData.list.board_id = $(e.currentTarget).data('board-id');
     var view = this;
-    this.model.save(formData, {
+    var newList = new TaskFellow.Models.List();
+    newList.save(formData, {
       success: function () {
-        view.board.lists().add(view.model);
+        view.board.lists().add(newList);
+        // Backbone.history.navigate("#/boards/" + view.board.id, { trigger: true });
       }
     });
   }

@@ -2,6 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.cards {
+	padding: 0;
+	list-style-type: none;
+	min-height: 5px;
+}
+
 .card {
 	background: rgba(255, 255, 255, 1);
 	padding: 0px 10px;

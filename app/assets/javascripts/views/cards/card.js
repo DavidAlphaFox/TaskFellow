@@ -1,6 +1,6 @@
 TaskFellow.Views.Card = Backbone.CompositeView.extend({
   template: JST['cards/card'],
-  tagName: 'div',
+  tagName: 'li',
   className: 'card',
 
   events: {
